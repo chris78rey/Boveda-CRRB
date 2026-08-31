@@ -15,6 +15,7 @@ tags:
 
 ```tasks
 not done
+description does not include #archivada
 priority is highest
 path does not include 09_Plantillas
 path does not include 99_Archivo
@@ -27,6 +28,7 @@ hide backlink
 
 ```tasks
 not done
+description does not include #archivada
 due after yesterday
 due before in 8 days
 path does not include 09_Plantillas
@@ -41,7 +43,7 @@ hide backlink
 ```dataview
 TASK
 FROM ""
-WHERE orden = 100 AND !completed
+WHERE orden = 100 AND !completed AND !contains(text, "#archivada")
 SORT file.name ASC
 ```
 
@@ -64,4 +66,3 @@ WHERE tipo = "decision" AND estado != "cerrada"
 SORT file.mtime DESC
 LIMIT 8
 ```
-

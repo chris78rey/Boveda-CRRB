@@ -1,4 +1,7 @@
----
+<%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
+%>---
 tipo: persona
 estado: activo
 organizacion: ""
@@ -7,8 +10,7 @@ relacion: ""
 correo: ""
 telefono: ""
 ultimo_contacto: <% tp.date.now("YYYY-MM-DD") %>
-tags:
-  - persona
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -32,4 +34,3 @@ SORT fecha DESC
 ## Compromisos
 
 - [ ] 
-

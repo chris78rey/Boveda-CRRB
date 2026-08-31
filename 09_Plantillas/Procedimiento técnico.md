@@ -1,4 +1,7 @@
----
+<%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
+%>---
 tipo: procedimiento
 estado: vigente
 ambito: oficina
@@ -7,8 +10,7 @@ ultima_revision: <% tp.date.now("YYYY-MM-DD") %>
 proxima_revision: <% tp.date.now("YYYY-MM-DD", 90) %>
 sistema: ""
 riesgo: medio
-tags:
-  - procedimiento
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -50,4 +52,3 @@ tags:
 | Fecha | Cambio | Responsable |
 |---|---|---|
 | <% tp.date.now("YYYY-MM-DD") %> | Creación |  |
-

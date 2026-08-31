@@ -1,5 +1,7 @@
 <%*
 const tema = await tp.system.prompt("Tema principal", "");
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
 tipo: curso
 estado: activo
@@ -9,9 +11,7 @@ fecha_fin: ""
 progreso: 0
 siguiente_sesion: ""
 fuente: ""
-tags:
-  - curso
-  - estudio
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -43,4 +43,3 @@ SORT fecha ASC
 - [ ] Explicar el tema sin consultar apuntes
 - [ ] Resolver un ejercicio práctico
 - [ ] Aplicarlo en un proyecto real
-

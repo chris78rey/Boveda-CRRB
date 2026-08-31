@@ -1,5 +1,7 @@
 <%*
 const tema = await tp.system.prompt("Tema", "");
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const fuente = await tp.system.prompt("Fuente", "");
 %>---
 tipo: estudio
@@ -8,8 +10,7 @@ tema: "<% tema %>"
 fuente: "<% fuente %>"
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 ambito: personal
-tags:
-  - estudio
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -41,4 +42,3 @@ tags:
 ## Enlaces relacionados
 
 - [[04_Conocimiento/00_Mapas/MOC - Tecnología]]
-

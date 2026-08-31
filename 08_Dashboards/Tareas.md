@@ -12,6 +12,7 @@ tags:
 > [!danger] Vencidas
 > ```tasks
 > not done
+> description does not include #archivada
 > due before today
 > path does not include 09_Plantillas
 > path does not include 99_Archivo
@@ -22,6 +23,7 @@ tags:
 > [!warning] Prioridad máxima
 > ```tasks
 > not done
+> description does not include #archivada
 > priority is highest
 > path does not include 09_Plantillas
 > path does not include 99_Archivo
@@ -33,6 +35,7 @@ tags:
 > [!info] Prioridad alta
 > ```tasks
 > not done
+> description does not include #archivada
 > priority is high
 > path does not include 09_Plantillas
 > path does not include 99_Archivo
@@ -45,6 +48,7 @@ tags:
 
 ```tasks
 not done
+description does not include #archivada
 has no due date
 path does not include 09_Plantillas
 path does not include 99_Archivo
@@ -58,7 +62,7 @@ hide backlink
 ```dataview
 TASK
 FROM "00_Inbox/Tareas.md"
-WHERE !completed
+WHERE !completed AND !contains(text, "#archivada")
 SORT orden ASC
 ```
 
@@ -66,10 +70,10 @@ SORT orden ASC
 
 ```tasks
 done
+description does not include #archivada
 path does not include 09_Plantillas
 path does not include 99_Archivo
 sort by done reverse
 limit 30
 hide backlink
 ```
-

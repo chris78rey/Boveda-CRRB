@@ -1,9 +1,12 @@
 <%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const servicio = await tp.system.prompt("Servicio o consola", "SSH");
 const equipo = await tp.system.prompt("Equipo relacionado (nombre exacto de la nota)", "");
 const referencia = await tp.system.prompt("Referencia en KeePassXC/Bitwarden", "");
 %>---
 tipo: credencial
+fecha_creacion: <% tp.date.now("YYYY-MM-DD") %>
 estado: activa
 equipo: "[[<% equipo %>]]"
 servicio: "<% servicio %>"
@@ -13,9 +16,7 @@ rotacion_dias: 90
 ultima_rotacion: ""
 proxima_rotacion: ""
 responsable: ""
-tags:
-  - infraestructura
-  - credencial
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>

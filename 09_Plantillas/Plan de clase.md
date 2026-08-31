@@ -1,6 +1,8 @@
 <%*
 const asignatura = await tp.system.prompt("Asignatura", "");
 const tema = await tp.system.prompt("Tema de la clase", "");
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
 tipo: clase
 estado: planificada
@@ -9,9 +11,7 @@ asignatura: "<% asignatura %>"
 tema: "<% tema %>"
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 duracion_minutos: 120
-tags:
-  - docencia
-  - clase
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -46,4 +46,3 @@ tags:
 ## Materiales
 
 - 
-

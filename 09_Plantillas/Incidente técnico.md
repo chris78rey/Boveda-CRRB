@@ -1,5 +1,7 @@
 <%*
 const severidad = await tp.system.suggester(["Crítica", "Alta", "Media", "Baja"], ["critica", "alta", "media", "baja"]);
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const sistema = await tp.system.prompt("Sistema afectado", "");
 %>---
 tipo: incidente
@@ -11,9 +13,7 @@ hora_fin: ""
 severidad: <% severidad %>
 sistema: "<% sistema %>"
 causa: ""
-tags:
-  - incidente
-  - <% severidad %>
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -54,4 +54,3 @@ Pegar mensajes de error sin incluir contraseñas ni secretos.
 ## Prevención
 
 - [ ] Crear o actualizar procedimiento [ambito:: oficina] ➕ <% tp.date.now("YYYY-MM-DD") %>
-

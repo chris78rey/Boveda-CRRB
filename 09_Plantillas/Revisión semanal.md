@@ -1,10 +1,11 @@
----
+<%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
+%>---
 tipo: revision-semanal
 semana: <% tp.date.now("YYYY-[W]WW") %>
 fecha: <% tp.date.now("YYYY-MM-DD") %>
-tags:
-  - revision
-  - semanal
+tags:<% tagsYaml %>
 ---
 
 # Revisión semanal — <% tp.date.now("YYYY-[W]WW") %>
@@ -25,6 +26,7 @@ tags:
 
 ```tasks
 not done
+description does not include #archivada
 due before today
 sort by due
 hide backlink
@@ -43,4 +45,3 @@ hide backlink
 1. 
 2. 
 3. 
-

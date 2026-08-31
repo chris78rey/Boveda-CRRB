@@ -29,6 +29,7 @@ tags:
 
 ```tasks
 not done
+description does not include #archivada
 due before today
 path does not include 09_Plantillas
 path does not include 99_Archivo
@@ -41,6 +42,7 @@ hide backlink
 
 ```tasks
 not done
+description does not include #archivada
 due today
 path does not include 09_Plantillas
 path does not include 99_Archivo

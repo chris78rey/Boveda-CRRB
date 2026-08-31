@@ -29,6 +29,12 @@ Templater ya apunta a `09_Plantillas` y ejecuta automáticamente las instruccion
 de cada plantilla cuando QuickAdd crea una nota. Para crear manualmente una nota
 se puede usar **Templater: Create new note from template**.
 
+Las plantillas usan la función `scripts/heredar_tags.js`: al crear una nota desde
+otra nota, copian sus tags; si la nota origen no tiene tags, generan `tags: []`.
+La fecha de creación se calcula con la fecha actual mediante `tp.date.now`.
+Después de cambiar la carpeta de scripts, recargar Obsidian para que Templater
+vuelva a cargar la función.
+
 ## QuickAdd
 
 QuickAdd ya contiene los dos menús CRRB dentro de su archivo `data.json`:
@@ -77,6 +83,11 @@ guardar opcionalmente en `07_Recursos/Prompts/Historial`.
 Para requisitos, abrir **QuickAdd → CRRB - Requisitos → Nuevo requisito**. Cada nota
 solicita ID, nivel, tema, padre, orden y proyecto. El dashboard [[08_Dashboards/Requisitos de software]]
 los ordena y agrupa automáticamente.
+
+Para archivar únicamente las notas enlazadas desde `00_Inbox/Tareas.md`, usar los
+macros **Archivar notas de tareas** y **Reversar notas de tareas**. Se retiran solo
+las líneas enlazadas, se conserva el contenido en el manifiesto y cada movimiento
+puede revertirse sin perder notas.
 
 ## Tasks
 

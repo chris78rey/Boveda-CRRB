@@ -47,6 +47,7 @@ module.exports = async ({ app, obsidian }) => {
     "08_Dashboards",
     "09_Plantillas",
     "99_Archivo",
+    "99_Archivo/Notas de tareas",
     "Configuracion"
   ];
 

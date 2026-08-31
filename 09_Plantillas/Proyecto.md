@@ -1,5 +1,7 @@
 <%*
 const ambito = await tp.system.suggester(["Oficina", "Externo", "Docencia", "Personal"], ["oficina", "externo", "docencia", "personal"]);
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const area = await tp.system.prompt("Área relacionada", "");
 const limite = await tp.system.prompt("Fecha límite (AAAA-MM-DD)", "");
 %>---
@@ -14,9 +16,7 @@ progreso: 0
 siguiente_accion: ""
 responsable: ""
 cliente: ""
-tags:
-  - proyecto
-  - <% ambito %>
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -80,4 +80,3 @@ SORT fecha DESC
 - Resultado:
 - Lecciones aprendidas:
 - Fecha de cierre:
-

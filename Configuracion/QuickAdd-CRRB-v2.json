@@ -12,9 +12,13 @@
     "c3000000-0000-4000-8000-000000000001",
     "c4000000-0000-4000-8000-000000000001",
     "c5000000-0000-4000-8000-000000000001",
-    "c6000000-0000-4000-8000-000000000001"
+    "c6000000-0000-4000-8000-000000000001",
+    "c7000000-0000-4000-8000-000000000001",
+    "c7010000-0000-4000-8000-000000000001"
   ],
   "choices": [
+    {"choice": {"id": "c7000000-0000-4000-8000-000000000001", "name": "Archivar notas de tareas", "type": "Macro", "command": true, "runOnStartup": false, "macro": {"name": "Archivar notas de tareas", "id": "c7000000-0000-4000-8000-000000000002", "commands": [{"name": "archivar_notas_tareas", "type": "UserScript", "id": "c7000000-0000-4000-8000-000000000003", "path": "scripts/archivar_notas_tareas.js", "settings": {}}]}}, "pathHint": ["Archivar notas de tareas"]},
+    {"choice": {"id": "c7010000-0000-4000-8000-000000000001", "name": "Reversar notas de tareas", "type": "Macro", "command": true, "runOnStartup": false, "macro": {"name": "Reversar notas de tareas", "id": "c7010000-0000-4000-8000-000000000002", "commands": [{"name": "reversar_notas_tareas", "type": "UserScript", "id": "c7010000-0000-4000-8000-000000000003", "path": "scripts/reversar_notas_tareas.js", "settings": {}}]}}, "pathHint": ["Reversar notas de tareas"]},
     {
       "choice": {
         "id": "c6000000-0000-4000-8000-000000000001",

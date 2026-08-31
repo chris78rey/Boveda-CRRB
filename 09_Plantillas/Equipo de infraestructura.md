@@ -1,10 +1,13 @@
 <%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const estado = await tp.system.suggester(["Activo", "Mantenimiento", "Retirado", "Propuesto"], ["activo", "mantenimiento", "retirado", "propuesto"]);
 const ambiente = await tp.system.suggester(["Producción", "Pruebas", "Desarrollo", "Laboratorio"], ["produccion", "pruebas", "desarrollo", "laboratorio"]);
 const ip = await tp.system.prompt("IP o rango", "");
 %>---
 tipo: infraestructura
 subtipo: equipo
+fecha_creacion: <% tp.date.now("YYYY-MM-DD") %>
 estado: <% estado %>
 ambiente: <% ambiente %>
 hostname: "<% tp.file.title %>"
@@ -16,9 +19,7 @@ sistema_operativo: ""
 ubicacion: ""
 responsable: ""
 criticidad: media
-tags:
-  - infraestructura
-  - equipo
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>

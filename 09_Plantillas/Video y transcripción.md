@@ -1,5 +1,7 @@
 <%*
 const url = await tp.system.prompt("URL del video", "");
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const tema = await tp.system.prompt("Tema", "");
 %>---
 tipo: video
@@ -8,9 +10,7 @@ tema: "<% tema %>"
 fuente: "<% url %>"
 fecha_captura: <% tp.date.now("YYYY-MM-DD") %>
 autor: ""
-tags:
-  - video
-  - estudio
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -37,4 +37,3 @@ tags:
 | Tiempo | Tema | Nota |
 |---|---|---|
 | 00:00 |  |  |
-

@@ -1,9 +1,11 @@
----
+<%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
+%>---
 tipo: diario
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 semana: <% tp.date.now("YYYY-[W]WW") %>
-tags:
-  - diario
+tags:<% tagsYaml %>
 ---
 
 # <% tp.date.now("dddd, D [de] MMMM [de] YYYY") %>
@@ -38,4 +40,3 @@ done today
 sort by done reverse
 hide backlink
 ```
-

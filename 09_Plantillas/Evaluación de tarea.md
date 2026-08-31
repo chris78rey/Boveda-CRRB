@@ -1,6 +1,8 @@
 <%*
 const estudiante = await tp.system.prompt("Estudiante", "");
 const actividad = await tp.system.prompt("Actividad", "");
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
 tipo: evaluacion
 estado: revisada
@@ -9,9 +11,7 @@ estudiante: "<% estudiante %>"
 actividad: "<% actividad %>"
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 calificacion: 0
-tags:
-  - docencia
-  - evaluacion
+tags:<% tagsYaml %>
 ---
 
 # Evaluación — <% estudiante %>
@@ -36,4 +36,3 @@ tags:
 ## Calificación final
 
 **0/10**
-

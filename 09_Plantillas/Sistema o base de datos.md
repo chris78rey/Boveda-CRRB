@@ -1,4 +1,7 @@
----
+<%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
+%>---
 tipo: sistema
 estado: activo
 ambito: oficina
@@ -9,8 +12,7 @@ responsable: ""
 servidor: ""
 dependencias: []
 ultima_revision: <% tp.date.now("YYYY-MM-DD") %>
-tags:
-  - sistema
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
@@ -56,4 +58,3 @@ SORT file.name ASC
 
 > [!warning]
 > No almacenar contraseñas, tokens, claves privadas ni cadenas de conexión con credenciales.
-

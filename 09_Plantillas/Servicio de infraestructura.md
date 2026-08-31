@@ -1,8 +1,11 @@
 <%*
+const inheritedTags = await tp.user.heredar_tags(tp);
+const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const ambiente = await tp.system.suggester(["Producción", "Pruebas", "Desarrollo", "Laboratorio"], ["produccion", "pruebas", "desarrollo", "laboratorio"]);
 %>---
 tipo: infraestructura
 subtipo: servicio
+fecha_creacion: <% tp.date.now("YYYY-MM-DD") %>
 estado: activo
 ambiente: <% ambiente %>
 url: ""
@@ -11,9 +14,7 @@ equipo: ""
 responsable: ""
 criticidad: media
 dependencias: []
-tags:
-  - infraestructura
-  - servicio
+tags:<% tagsYaml %>
 ---
 
 # <% tp.file.title %>

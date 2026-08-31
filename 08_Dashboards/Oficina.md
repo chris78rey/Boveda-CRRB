@@ -14,6 +14,7 @@ tags:
 
 ```tasks
 not done
+description does not include #archivada
 description includes [ambito:: oficina]
 path does not include 09_Plantillas
 sort by priority reverse
@@ -48,4 +49,3 @@ WHERE tipo = "procedimiento"
 SORT file.mtime DESC
 LIMIT 10
 ```
-
