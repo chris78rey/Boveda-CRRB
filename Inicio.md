@@ -9,7 +9,7 @@ tags:
 # Centro de operaciones
 
 > [!tip] Navegación
-> [[08_Dashboards/Dashboard|Dashboard general]] · [[08_Dashboards/Tareas|Tareas]] · [[08_Dashboards/Proyectos|Proyectos]] · [[08_Dashboards/Oficina|Oficina]] · [[08_Dashboards/Estudio|Estudio]]
+> [[08_Dashboards/Dashboard|Dashboard general]] · [[08_Dashboards/Tareas|Tareas]] · [[08_Dashboards/Proyectos|Proyectos]] · [[08_Dashboards/Requisitos de software|Requisitos]] · [[08_Dashboards/Dashboard de infraestructura|Infraestructura]] · [[08_Dashboards/Prompts|Prompts]] · [[08_Dashboards/Oficina|Oficina]] · [[08_Dashboards/Estudio|Estudio]]
 
 ## Acceso rápido
 
@@ -18,6 +18,12 @@ tags:
 | [[00_Inbox/Capturas|Ideas y notas rápidas]] | [[02_Proyectos/Proyectos - Índice|Proyectos]] | [[04_Conocimiento/Conocimiento - Índice|Biblioteca]] |
 | [[00_Inbox/Tareas|Tareas centrales]] | [[05_Reuniones/Reuniones - Índice|Reuniones]] | [[04_Conocimiento/00_Mapas/MOC - Tecnología|Mapa tecnológico]] |
 | [[00_Inbox/Acuerdos|Acuerdos rápidos]] | [[03_Areas/Oficina/Oficina - Área|Área de oficina]] | [[04_Conocimiento/00_Mapas/MOC - Docencia|Mapa de docencia]] |
+
+## Control operativo
+
+| Requisitos pendientes | Infraestructura | Prompts |
+|---|---|---|
+| [[08_Dashboards/Requisitos de software|Ver requisitos]] | [[08_Dashboards/Dashboard de infraestructura|Ver activos y credenciales]] | [[08_Dashboards/Prompts|Ver biblioteca]] |
 
 ## Vencidas
 
@@ -68,4 +74,3 @@ WHERE file.name != this.file.name
 SORT file.mtime DESC
 LIMIT 8
 ```
-

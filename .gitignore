@@ -1,5 +1,9 @@
 # Graphify generates local reports, caches and visualizations.
-graphify-out/
+# Graphify caches and full graph are regenerated locally. Keep only the
+# human-readable report and manifest under version control.
+graphify-out/*
+!graphify-out/GRAPH_REPORT.md
+!graphify-out/manifest.json
 
 # Obsidian workspace state is machine-specific.
 .obsidian/workspace.json
@@ -8,3 +12,13 @@ graphify-out/
 .DS_Store
 Thumbs.db
 *.swp
+
+# Secretos y credenciales: nunca versionarlos en GitHub.
+.env
+.env.*
+*.kdbx
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/

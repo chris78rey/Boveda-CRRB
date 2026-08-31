@@ -58,6 +58,25 @@ El menú agrega:
 - Idea o nota rápida.
 - Registro en la nota diaria.
 - Creación de proyecto, reunión, incidente, nota de estudio, video, persona, sistema y correo.
+- **Nueva categoría y proyecto**, que crea la carpeta indicada dentro de `02_Proyectos` y aplica la plantilla de proyecto.
+- **CRRB - Infraestructura**, que crea equipos, máquinas virtuales, credenciales, servicios y abre su dashboard.
+- **CRRB - Prompts**, que crea prompts, detecta placeholders, los completa y copia el resultado al portapapeles.
+- **CRRB - Requisitos**, que crea requisitos jerárquicos y abre el dashboard por tema, proyecto y estado.
+
+Para usarla, abrir **QuickAdd → CRRB - Crear nota → Nueva categoría y proyecto** y escribir la categoría con el prefijo numérico, por ejemplo `05_Investigacion`, seguido del nombre del proyecto.
+
+Para infraestructura, abrir **QuickAdd → CRRB - Infraestructura**. Las notas se guardan en
+`03_Areas/Infraestructura`; las credenciales son registros separados y pueden enlazarse
+varias veces al mismo equipo.
+
+Para prompts, abrir **QuickAdd → CRRB - Prompts**. Un placeholder se escribe como
+`{{servidor}}` o `{{ambiente|produccion}}`; al elegir **Copiar prompt**, QuickAdd
+pregunta los valores y copia el texto final al portapapeles. El historial se puede
+guardar opcionalmente en `07_Recursos/Prompts/Historial`.
+
+Para requisitos, abrir **QuickAdd → CRRB - Requisitos → Nuevo requisito**. Cada nota
+solicita ID, nivel, tema, padre, orden y proyecto. El dashboard [[08_Dashboards/Requisitos de software]]
+los ordena y agrupa automáticamente.
 
 ## Tasks
 
@@ -80,3 +99,10 @@ Para exportaciones institucionales se recomienda abrir una nota, revisar que los
 ## Seguridad
 
 La bóveda no debe guardar contraseñas, tokens, API keys, claves privadas ni cadenas de conexión con credenciales. Solo deben registrarse referencias a la ubicación segura donde se administra cada secreto.
+
+## Inventario de infraestructura
+
+El inventario funciona con Markdown, propiedades YAML y Dataview; no utiliza SQLite.
+El dashboard [[08_Dashboards/Dashboard de infraestructura]] lista activos, máquinas
+virtuales, servicios y credenciales pendientes de rotación. Para secretos se recomienda
+KeePassXC, Bitwarden o 1Password; Git debe versionar únicamente documentación sin secretos.

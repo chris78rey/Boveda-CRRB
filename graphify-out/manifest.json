@@ -1,0 +1,557 @@
+{
+  ".obsidian/app.json": {
+    "mtime": 1788193939.5315268,
+    "ast_hash": "962b13d2d8bfbded8a5c3531d31fe2e4",
+    "semantic_hash": ""
+  },
+  ".obsidian/appearance.json": {
+    "mtime": 1788193939.5335267,
+    "ast_hash": "ab8fc745f10ede81ddc195c1a2367fd4",
+    "semantic_hash": "ab8fc745f10ede81ddc195c1a2367fd4"
+  },
+  ".obsidian/community-plugins.json": {
+    "mtime": 1788193939.8945293,
+    "ast_hash": "8384df3f9c1d68a465d1ab67e9547e2a",
+    "semantic_hash": ""
+  },
+  ".obsidian/core-plugins.json": {
+    "mtime": 1788193938.757521,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
+  },
+  ".obsidian/daily-notes.json": {
+    "mtime": 1788188715.0,
+    "ast_hash": "708de4e89e91174e33a2ca98437abf2c",
+    "semantic_hash": "708de4e89e91174e33a2ca98437abf2c"
+  },
+  ".obsidian/plugins/calendar/data.json": {
+    "mtime": 1788193938.348,
+    "ast_hash": "786a698c96479adab1040ea8e7c24b1b",
+    "semantic_hash": "786a698c96479adab1040ea8e7c24b1b"
+  },
+  ".obsidian/plugins/calendar/main.js": {
+    "mtime": 1788190982.6833427,
+    "ast_hash": "4517551b23878e66f0db62b76fcea325",
+    "semantic_hash": "4517551b23878e66f0db62b76fcea325"
+  },
+  ".obsidian/plugins/calendar/manifest.json": {
+    "mtime": 1788190981.3163397,
+    "ast_hash": "623db80137b4e8d56da187ff3110ddb8",
+    "semantic_hash": "623db80137b4e8d56da187ff3110ddb8"
+  },
+  ".obsidian/plugins/dataview/main.js": {
+    "mtime": 1788190945.325268,
+    "ast_hash": "8ddd18d36bfef5c241e7d147f8b31d27",
+    "semantic_hash": "8ddd18d36bfef5c241e7d147f8b31d27"
+  },
+  ".obsidian/plugins/dataview/manifest.json": {
+    "mtime": 1788190944.4012663,
+    "ast_hash": "d32e8819a2a4841067c0a4e8055cc22f",
+    "semantic_hash": "d32e8819a2a4841067c0a4e8055cc22f"
+  },
+  ".obsidian/plugins/obsidian-excalidraw-plugin/data.json": {
+    "mtime": 1788190935.759,
+    "ast_hash": "ea498de03f599c2acc6b90ad993dc746",
+    "semantic_hash": "ea498de03f599c2acc6b90ad993dc746"
+  },
+  ".obsidian/plugins/obsidian-excalidraw-plugin/main.js": {
+    "mtime": 1788190928.9952378,
+    "ast_hash": "52bd1ad06ef3efbc24db6294ae4a978a",
+    "semantic_hash": "52bd1ad06ef3efbc24db6294ae4a978a"
+  },
+  ".obsidian/plugins/obsidian-excalidraw-plugin/manifest.json": {
+    "mtime": 1788190926.7702339,
+    "ast_hash": "075501084e6ae405cf0a870dd1139e32",
+    "semantic_hash": "075501084e6ae405cf0a870dd1139e32"
+  },
+  ".obsidian/plugins/obsidian-git/main.js": {
+    "mtime": 1788190969.9153163,
+    "ast_hash": "e348f6febf003af6833e83d4e87549ca",
+    "semantic_hash": "e348f6febf003af6833e83d4e87549ca"
+  },
+  ".obsidian/plugins/obsidian-git/manifest.json": {
+    "mtime": 1788190968.6503136,
+    "ast_hash": "aff76fa2d83abb12e20b5271a98b99b0",
+    "semantic_hash": "aff76fa2d83abb12e20b5271a98b99b0"
+  },
+  ".obsidian/plugins/obsidian-kanban/main.js": {
+    "mtime": 1788190987.0083518,
+    "ast_hash": "23fdccefcb73d0be48596ee8c1ac37e9",
+    "semantic_hash": "23fdccefcb73d0be48596ee8c1ac37e9"
+  },
+  ".obsidian/plugins/obsidian-kanban/manifest.json": {
+    "mtime": 1788190986.666351,
+    "ast_hash": "cfd90fcafd2da4552a4bfa1ca7869006",
+    "semantic_hash": "cfd90fcafd2da4552a4bfa1ca7869006"
+  },
+  ".obsidian/plugins/obsidian-tasks-plugin/data.json": {
+    "mtime": 1788195989.127,
+    "ast_hash": "d8b9a34577e680211be52747cc5d8ba9",
+    "semantic_hash": "d8b9a34577e680211be52747cc5d8ba9"
+  },
+  ".obsidian/plugins/obsidian-tasks-plugin/main.js": {
+    "mtime": 1788190948.8962748,
+    "ast_hash": "269b140c0322c13cc7dd939da3b88c99",
+    "semantic_hash": "269b140c0322c13cc7dd939da3b88c99"
+  },
+  ".obsidian/plugins/obsidian-tasks-plugin/manifest.json": {
+    "mtime": 1788190948.493274,
+    "ast_hash": "0799fa57b77d7ad1c389dbc3ff49ac84",
+    "semantic_hash": "0799fa57b77d7ad1c389dbc3ff49ac84"
+  },
+  ".obsidian/plugins/quickadd/data.json": {
+    "mtime": 1788196295.5590086,
+    "ast_hash": "11c6fee3d4f2383685cbec399e2f92f9",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/templater-obsidian/data.json": {
+    "mtime": 1788190941.039999,
+    "ast_hash": "a91a151a9b829328f1641fb7df7474a4",
+    "semantic_hash": "a91a151a9b829328f1641fb7df7474a4"
+  },
+  ".obsidian/plugins/templater-obsidian/main.js": {
+    "mtime": 1788190938.4812553,
+    "ast_hash": "893e35828c41d0cbefb06d0545334107",
+    "semantic_hash": "893e35828c41d0cbefb06d0545334107"
+  },
+  ".obsidian/plugins/templater-obsidian/manifest.json": {
+    "mtime": 1788190937.1102526,
+    "ast_hash": "2c593335331763b72ca55ebc6fe3f8c8",
+    "semantic_hash": "2c593335331763b72ca55ebc6fe3f8c8"
+  },
+  ".obsidian/types.json": {
+    "mtime": 1788193938.730999,
+    "ast_hash": "ff98967538a3ef0ba5b18d57dcb644c1",
+    "semantic_hash": "ff98967538a3ef0ba5b18d57dcb644c1"
+  },
+  ".obsidian/workspace.json": {
+    "mtime": 1788192127.9866996,
+    "ast_hash": "ca78351bb3757c95a874f8ef033b09f7",
+    "semantic_hash": "ca78351bb3757c95a874f8ef033b09f7"
+  },
+  "Configuracion/QuickAdd-CRRB-v2.json": {
+    "mtime": 1788196314.1611156,
+    "ast_hash": "80628c032d71ec7964a4363b22908592",
+    "semantic_hash": ""
+  },
+  "Configuracion/QuickAdd-opciones-originales.json": {
+    "mtime": 1788188955.0,
+    "ast_hash": "ee446eb68268494eb30afcf778429237",
+    "semantic_hash": "ee446eb68268494eb30afcf778429237"
+  },
+  "00_Inbox/Acuerdos.md": {
+    "mtime": 1788184674.0,
+    "ast_hash": "a9add0c5b6ffce97a9db6d84ea9d23c4",
+    "semantic_hash": "a9add0c5b6ffce97a9db6d84ea9d23c4"
+  },
+  "00_Inbox/Capturas.md": {
+    "mtime": 1788184673.0,
+    "ast_hash": "7f004935bca18b403c7c08d6a8c5d20d",
+    "semantic_hash": "7f004935bca18b403c7c08d6a8c5d20d"
+  },
+  "00_Inbox/Incidentes r\u00e1pidos.md": {
+    "mtime": 1788184674.0,
+    "ast_hash": "526198235c63cef887a581c68881fb02",
+    "semantic_hash": "526198235c63cef887a581c68881fb02"
+  },
+  "00_Inbox/Tareas.md": {
+    "mtime": 1788193417.4433522,
+    "ast_hash": "e5d4e150ac04038d71eea4b316549fa4",
+    "semantic_hash": ""
+  },
+  "01_Diario/Diario - \u00cdndice.md": {
+    "mtime": 1788184675.0,
+    "ast_hash": "eceb0bce057136b7213203877419aae4",
+    "semantic_hash": "eceb0bce057136b7213203877419aae4"
+  },
+  "02_Proyectos/01_Oficina/Oficina - Proyectos.md": {
+    "mtime": 1788184808.0,
+    "ast_hash": "5063be1e422314f45f2e3b720e191ae8",
+    "semantic_hash": "5063be1e422314f45f2e3b720e191ae8"
+  },
+  "02_Proyectos/02_Externos/Externos - Proyectos.md": {
+    "mtime": 1788184808.0,
+    "ast_hash": "39d052e16aa8e9901a55473b25797b35",
+    "semantic_hash": "39d052e16aa8e9901a55473b25797b35"
+  },
+  "02_Proyectos/03_Docencia/Docencia - Proyectos.md": {
+    "mtime": 1788184809.0,
+    "ast_hash": "6102fd2c2b06a76a28e61d3e396b6679",
+    "semantic_hash": "6102fd2c2b06a76a28e61d3e396b6679"
+  },
+  "02_Proyectos/04_Personales/Personales - Proyectos.md": {
+    "mtime": 1788184809.0,
+    "ast_hash": "10b8e17da02f5b51809e9e2e1c18fc3a",
+    "semantic_hash": "10b8e17da02f5b51809e9e2e1c18fc3a"
+  },
+  "02_Proyectos/99_Cerrados/Cerrados - \u00cdndice.md": {
+    "mtime": 1788184810.0,
+    "ast_hash": "15e7b5d52365b47bef84f64f2fe40013",
+    "semantic_hash": "15e7b5d52365b47bef84f64f2fe40013"
+  },
+  "02_Proyectos/Proyectos - \u00cdndice.md": {
+    "mtime": 1788184807.0,
+    "ast_hash": "f7fc043feb496845502a1ccaf4008b7a",
+    "semantic_hash": "f7fc043feb496845502a1ccaf4008b7a"
+  },
+  "02_Proyectos/Tablero de proyectos.md": {
+    "mtime": 1788184807.0,
+    "ast_hash": "355c7cce256992bef3714fe8f631d357",
+    "semantic_hash": "355c7cce256992bef3714fe8f631d357"
+  },
+  "03_Areas/DBA y Oracle/DBA y Oracle - \u00c1rea.md": {
+    "mtime": 1788184811.0,
+    "ast_hash": "3619b345de20f7e08fa335ac99f185ac",
+    "semantic_hash": "3619b345de20f7e08fa335ac99f185ac"
+  },
+  "03_Areas/Docencia/Docencia - \u00c1rea.md": {
+    "mtime": 1788184811.0,
+    "ast_hash": "6b6e4bd35c29beab52d2ff8e3b0b8a0e",
+    "semantic_hash": "6b6e4bd35c29beab52d2ff8e3b0b8a0e"
+  },
+  "03_Areas/Oficina/Oficina - \u00c1rea.md": {
+    "mtime": 1788184810.0,
+    "ast_hash": "5f18a7a5fac309501dd8fe0979dc5dd2",
+    "semantic_hash": "5f18a7a5fac309501dd8fe0979dc5dd2"
+  },
+  "03_Areas/Personal/Personal - \u00c1rea.md": {
+    "mtime": 1788184812.0,
+    "ast_hash": "95462747eb5bdde92721d928082380d1",
+    "semantic_hash": "95462747eb5bdde92721d928082380d1"
+  },
+  "04_Conocimiento/00_Mapas/MOC - Docencia.md": {
+    "mtime": 1788184813.0,
+    "ast_hash": "f08a7213ce40171a1b3733f2cd7f94f9",
+    "semantic_hash": "f08a7213ce40171a1b3733f2cd7f94f9"
+  },
+  "04_Conocimiento/00_Mapas/MOC - Tecnolog\u00eda.md": {
+    "mtime": 1788184813.0,
+    "ast_hash": "83d9c5528d2a2bc460a268fcfb0f6e75",
+    "semantic_hash": "83d9c5528d2a2bc460a268fcfb0f6e75"
+  },
+  "04_Conocimiento/Conocimiento - \u00cdndice.md": {
+    "mtime": 1788184812.0,
+    "ast_hash": "0aa171e0267434af9f75992a4bf1b52c",
+    "semantic_hash": "0aa171e0267434af9f75992a4bf1b52c"
+  },
+  "05_Reuniones/Reuniones - \u00cdndice.md": {
+    "mtime": 1788184814.0,
+    "ast_hash": "ffd39402a02a406d09b3c40c404bf7cf",
+    "semantic_hash": "ffd39402a02a406d09b3c40c404bf7cf"
+  },
+  "06_Personas/Personas - \u00cdndice.md": {
+    "mtime": 1788184814.0,
+    "ast_hash": "97f3eef27e119fee520b722228beac30",
+    "semantic_hash": "97f3eef27e119fee520b722228beac30"
+  },
+  "07_Recursos/Recursos - \u00cdndice.md": {
+    "mtime": 1788184815.0,
+    "ast_hash": "4e0b40a17c67b827bc79187c35a2f4e4",
+    "semantic_hash": "4e0b40a17c67b827bc79187c35a2f4e4"
+  },
+  "08_Dashboards/Dashboard.md": {
+    "mtime": 1788184675.0,
+    "ast_hash": "c473e2703a667d25cc2c91f59c55d142",
+    "semantic_hash": "c473e2703a667d25cc2c91f59c55d142"
+  },
+  "08_Dashboards/Estudio.md": {
+    "mtime": 1788184677.0,
+    "ast_hash": "b84f45930eb76cb3b0298a867d064fe0",
+    "semantic_hash": "b84f45930eb76cb3b0298a867d064fe0"
+  },
+  "08_Dashboards/Oficina.md": {
+    "mtime": 1788184677.0,
+    "ast_hash": "f02554a15afb0a3a16c3aede87c9b0e5",
+    "semantic_hash": "f02554a15afb0a3a16c3aede87c9b0e5"
+  },
+  "08_Dashboards/Proyectos.md": {
+    "mtime": 1788185694.0,
+    "ast_hash": "9edfbb06526edd17b7bc5f711712a52a",
+    "semantic_hash": "9edfbb06526edd17b7bc5f711712a52a"
+  },
+  "08_Dashboards/Tareas.md": {
+    "mtime": 1788184676.0,
+    "ast_hash": "5fce8a452bc6a571fe03dc0af868f302",
+    "semantic_hash": "5fce8a452bc6a571fe03dc0af868f302"
+  },
+  "09_Plantillas/Concepto.md": {
+    "mtime": 1788185038.0,
+    "ast_hash": "5d21dfbe80bba81709dc36563201d5af",
+    "semantic_hash": "5d21dfbe80bba81709dc36563201d5af"
+  },
+  "09_Plantillas/Correo institucional.md": {
+    "mtime": 1788185041.0,
+    "ast_hash": "44982f1bb1c0558259eb2ae6055bbc88",
+    "semantic_hash": "44982f1bb1c0558259eb2ae6055bbc88"
+  },
+  "09_Plantillas/Curso.md": {
+    "mtime": 1788185037.0,
+    "ast_hash": "c4dc95dfd29c23e8c132d34d81cb5b50",
+    "semantic_hash": "c4dc95dfd29c23e8c132d34d81cb5b50"
+  },
+  "09_Plantillas/Decisi\u00f3n.md": {
+    "mtime": 1788185036.0,
+    "ast_hash": "49f47b9d12d3a7f5b9430a302e463827",
+    "semantic_hash": "49f47b9d12d3a7f5b9430a302e463827"
+  },
+  "09_Plantillas/Evaluaci\u00f3n de tarea.md": {
+    "mtime": 1788185040.0,
+    "ast_hash": "ab8c116fa01d393c66b7c30d4845d9bb",
+    "semantic_hash": "ab8c116fa01d393c66b7c30d4845d9bb"
+  },
+  "09_Plantillas/Incidente t\u00e9cnico.md": {
+    "mtime": 1788185034.0,
+    "ast_hash": "64daeff8a934e904a7ad011b30cc2a50",
+    "semantic_hash": "64daeff8a934e904a7ad011b30cc2a50"
+  },
+  "09_Plantillas/Lugar.md": {
+    "mtime": 1788185039.0,
+    "ast_hash": "2a061cc46820887a1e14440a14b1b7f1",
+    "semantic_hash": "2a061cc46820887a1e14440a14b1b7f1"
+  },
+  "09_Plantillas/Nota de estudio.md": {
+    "mtime": 1788185037.0,
+    "ast_hash": "22416b3d6cc074a00ead61b9f6c12b3a",
+    "semantic_hash": "22416b3d6cc074a00ead61b9f6c12b3a"
+  },
+  "09_Plantillas/Nota diaria.md": {
+    "mtime": 1788185036.0,
+    "ast_hash": "3a30578b69ae6ed91f981d2296c0836c",
+    "semantic_hash": "3a30578b69ae6ed91f981d2296c0836c"
+  },
+  "09_Plantillas/Persona.md": {
+    "mtime": 1788185038.0,
+    "ast_hash": "092545ffd97a5a42e759590069a1bd9b",
+    "semantic_hash": "092545ffd97a5a42e759590069a1bd9b"
+  },
+  "09_Plantillas/Plan de clase.md": {
+    "mtime": 1788185040.0,
+    "ast_hash": "07b229889e921d2f6d7d8865a1a7c9cd",
+    "semantic_hash": "07b229889e921d2f6d7d8865a1a7c9cd"
+  },
+  "09_Plantillas/Procedimiento t\u00e9cnico.md": {
+    "mtime": 1788185035.0,
+    "ast_hash": "4c19deae7088fa6cf09e1903eeeef1a6",
+    "semantic_hash": "4c19deae7088fa6cf09e1903eeeef1a6"
+  },
+  "09_Plantillas/Proyecto.md": {
+    "mtime": 1788185034.0,
+    "ast_hash": "a6e2e8c8344396a1a76611d315b5fd41",
+    "semantic_hash": "a6e2e8c8344396a1a76611d315b5fd41"
+  },
+  "09_Plantillas/Reuni\u00f3n.md": {
+    "mtime": 1788185034.0,
+    "ast_hash": "94a87cd2afd5aff339cbe480656f7d50",
+    "semantic_hash": "94a87cd2afd5aff339cbe480656f7d50"
+  },
+  "09_Plantillas/Revisi\u00f3n semanal.md": {
+    "mtime": 1788185041.0,
+    "ast_hash": "cf0f0c21a8b082f262aa31bc167445e8",
+    "semantic_hash": "cf0f0c21a8b082f262aa31bc167445e8"
+  },
+  "09_Plantillas/Sistema o base de datos.md": {
+    "mtime": 1788185039.0,
+    "ast_hash": "96f2d98da33045017e47d12c8c7b809d",
+    "semantic_hash": "96f2d98da33045017e47d12c8c7b809d"
+  },
+  "09_Plantillas/Video y transcripci\u00f3n.md": {
+    "mtime": 1788185038.0,
+    "ast_hash": "3be06f23a19a688ec83a67a6778abccd",
+    "semantic_hash": "3be06f23a19a688ec83a67a6778abccd"
+  },
+  "99_Archivo/Archivo - \u00cdndice.md": {
+    "mtime": 1788184815.0,
+    "ast_hash": "b4e76e41b10e2e179ea36ec47bdbabe7",
+    "semantic_hash": "b4e76e41b10e2e179ea36ec47bdbabe7"
+  },
+  "99_Archivo/Respaldo - Tareas del Dashboard original.md": {
+    "mtime": 1788185615.0,
+    "ast_hash": "22f58b444ebc89504b4bf24992da6bd0",
+    "semantic_hash": "22f58b444ebc89504b4bf24992da6bd0"
+  },
+  "Configuracion/Ajustes y complementos.md": {
+    "mtime": 1788196322.570164,
+    "ast_hash": "2cc337e4172267b7de5e4305a58cabe6",
+    "semantic_hash": ""
+  },
+  "Configuracion/Complementos incluidos.md": {
+    "mtime": 1788189029.0,
+    "ast_hash": "d01038e4394b7338d77ba6d13e97154e",
+    "semantic_hash": "d01038e4394b7338d77ba6d13e97154e"
+  },
+  "Configuracion/Contenido del paquete.md": {
+    "mtime": 1788189029.0,
+    "ast_hash": "03d1dd87f4449dac9863a76c669da248",
+    "semantic_hash": "03d1dd87f4449dac9863a76c669da248"
+  },
+  "Configuracion/Migraci\u00f3n de la ra\u00edz.md": {
+    "mtime": 1788185614.0,
+    "ast_hash": "7b7dd2a65ed5aa8ed16e15c73f901abc",
+    "semantic_hash": "7b7dd2a65ed5aa8ed16e15c73f901abc"
+  },
+  "INSTALACION-LIGERA.md": {
+    "mtime": 1788189605.0,
+    "ast_hash": "6238e9055bf291d63b0f1538280d1b75",
+    "semantic_hash": "6238e9055bf291d63b0f1538280d1b75"
+  },
+  "Inicio.md": {
+    "mtime": 1788196537.8134103,
+    "ast_hash": "bdbaafc46f44461d65493675a8ef715f",
+    "semantic_hash": ""
+  },
+  "LEEME - INSTALACION.md": {
+    "mtime": 1788188716.0,
+    "ast_hash": "e3241f29403189068dc9e84b09b21443",
+    "semantic_hash": "e3241f29403189068dc9e84b09b21443"
+  },
+  ".obsidian/graph.json": {
+    "mtime": 1788194278.819999,
+    "ast_hash": "96f8e0752e2db4aa000132a52d3f100f",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/buttons/main.js": {
+    "mtime": 1788193732.2219608,
+    "ast_hash": "cc6c2f8c5e55255a37c86cb18a11a292",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/buttons/manifest.json": {
+    "mtime": 1788193731.9059582,
+    "ast_hash": "7df1c4bc180a5748f49ccee2eaf6ad04",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/cmdr/main.js": {
+    "mtime": 1788193822.0736506,
+    "ast_hash": "43073b61a6b45ba4bf75417424a76681",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/cmdr/manifest.json": {
+    "mtime": 1788193821.8816493,
+    "ast_hash": "dcc8b2d4b41d35ee338fdfb4c15e3510",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/obsidian-git/obsidian_askpass.sh": {
+    "mtime": 1788193939.7325282,
+    "ast_hash": "f662d5f216d371e86d1b108ba5d22a5f",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/obsidian-meta-bind-plugin/data.json": {
+    "mtime": 1788193839.737999,
+    "ast_hash": "0b50c6cf044fd5baaef1994c44545bbd",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/obsidian-meta-bind-plugin/main.js": {
+    "mtime": 1788193838.778777,
+    "ast_hash": "354c4c623befd18264c5d7600e77d4be",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/obsidian-meta-bind-plugin/manifest.json": {
+    "mtime": 1788193838.4557743,
+    "ast_hash": "43ff49718c48e2286ba10f56f364186d",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/quickadd/main.js": {
+    "mtime": 1788192550.6216974,
+    "ast_hash": "cdc65b4e1c85cc7f9e0861ef442c7dd4",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/quickadd/manifest.json": {
+    "mtime": 1788192550.340696,
+    "ast_hash": "aa2839a2ecccfc1a946ed9c640ac0171",
+    "semantic_hash": ""
+  },
+  "03_Areas/DBA y Oracle/2026-08-31 - INC - se cayo la caida.md": {
+    "mtime": 1788193319.6024573,
+    "ast_hash": "afd782568e771aaf28e61f6d8ba2cda7",
+    "semantic_hash": ""
+  },
+  "scripts/restaurar_estructura.js": {
+    "mtime": 1788195951.9370575,
+    "ast_hash": "a142acec0b75094c97a5180e119d9d31",
+    "semantic_hash": ""
+  },
+  "Configuracion/Restaurar estructura.md": {
+    "mtime": 1788196322.5711641,
+    "ast_hash": "406a6adbdce3243bc269e8880cf0b377",
+    "semantic_hash": ""
+  },
+  "03_Areas/Infraestructura/README.md": {
+    "mtime": 1788195492.4005861,
+    "ast_hash": "3fe1cccedbd498c5c55ef2eb458c0c63",
+    "semantic_hash": ""
+  },
+  "08_Dashboards/Dashboard de infraestructura.md": {
+    "mtime": 1788195492.401586,
+    "ast_hash": "ff6ef88b19ba26078f0ba801b71b617f",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Credencial de infraestructura.md": {
+    "mtime": 1788195492.4005861,
+    "ast_hash": "2c14e4137d0b151fcc3516adce2fe979",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Equipo de infraestructura.md": {
+    "mtime": 1788195492.4005861,
+    "ast_hash": "253586ea8995447006a75443821400f3",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Maquina virtual.md": {
+    "mtime": 1788195492.4005861,
+    "ast_hash": "ef07ddb70e72d4c73f8ce1903f005f0f",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Servicio de infraestructura.md": {
+    "mtime": 1788195492.401586,
+    "ast_hash": "f42143e2eac8ff8b1f8792188db3a968",
+    "semantic_hash": ""
+  },
+  ".obsidian/plugins/dataview/data.json": {
+    "mtime": 1788195985.196,
+    "ast_hash": "2330fdf671a464c5c1dd559c92202b24",
+    "semantic_hash": ""
+  },
+  "scripts/copiar_prompt.js": {
+    "mtime": 1788196107.3279328,
+    "ast_hash": "f4fc6d971caf91b6e6c59826a1c5ee73",
+    "semantic_hash": ""
+  },
+  "07_Recursos/Prompts/README.md": {
+    "mtime": 1788195945.8180234,
+    "ast_hash": "f9133b8207f621441b4439e449d2c93f",
+    "semantic_hash": ""
+  },
+  "08_Dashboards/Prompts.md": {
+    "mtime": 1788195945.8180234,
+    "ast_hash": "f9ae07c25779419ac004fbd8163b8e5f",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Prompt.md": {
+    "mtime": 1788195945.8180234,
+    "ast_hash": "e7e8eb75a2ef3f03abeca4e6218451d0",
+    "semantic_hash": ""
+  },
+  "02_Proyectos/Requisitos de software - Gu\u00eda.md": {
+    "mtime": 1788196281.5979283,
+    "ast_hash": "39b1762f6490fe12f6126daf85081ab3",
+    "semantic_hash": ""
+  },
+  "08_Dashboards/Requisitos de software.md": {
+    "mtime": 1788196281.5979283,
+    "ast_hash": "a955e23fde3aac521316844417a02521",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/Requisito de software.md": {
+    "mtime": 1788196537.8144102,
+    "ast_hash": "f2993daa789772ea8b90d56228ea83d3",
+    "semantic_hash": ""
+  },
+  "Configuracion/Catalogos.md": {
+    "mtime": 1788196537.8144102,
+    "ast_hash": "3709ce3a3d7f5c760252c77293c8f43d",
+    "semantic_hash": ""
+  },
+  "Configuracion/Seguridad y respaldos.md": {
+    "mtime": 1788196537.8144102,
+    "ast_hash": "6f734281b352bf53b48f5fbfc8b0b346",
+    "semantic_hash": ""
+  }
+}

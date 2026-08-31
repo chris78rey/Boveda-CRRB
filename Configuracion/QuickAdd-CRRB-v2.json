@@ -8,9 +8,82 @@
     "15d289e7-fe69-4a85-8160-a585edcd2070",
     "9196ddf6-259c-47f8-9dfa-bea1abd2b3af",
     "c1000000-0000-4000-8000-000000000001",
-    "c2000000-0000-4000-8000-000000000001"
+    "c2000000-0000-4000-8000-000000000001",
+    "c3000000-0000-4000-8000-000000000001",
+    "c4000000-0000-4000-8000-000000000001",
+    "c5000000-0000-4000-8000-000000000001",
+    "c6000000-0000-4000-8000-000000000001"
   ],
   "choices": [
+    {
+      "choice": {
+        "id": "c6000000-0000-4000-8000-000000000001",
+        "name": "CRRB - Requisitos",
+        "type": "Multi",
+        "command": true,
+        "choices": [
+          {"id": "c6010000-0000-4000-8000-000000000001", "name": "Nuevo requisito", "type": "Capture", "command": true, "appendLink": false, "captureTo": "02_Proyectos/{{VALUE:Proyecto}}/Requisitos/{{VALUE:ID del requisito}} - {{VALUE:Título}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Requisito de software.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c6020000-0000-4000-8000-000000000001", "name": "Abrir dashboard de requisitos", "type": "Template", "command": true, "template": "08_Dashboards/Requisitos de software.md", "fileName": "08_Dashboards/Requisitos de software.md", "openFile": true}
+        ],
+        "collapsed": false
+      },
+      "pathHint": ["CRRB - Requisitos"]
+    },
+    {
+      "choice": {
+        "id": "c5000000-0000-4000-8000-000000000001",
+        "name": "CRRB - Prompts",
+        "type": "Multi",
+        "command": true,
+        "choices": [
+          {"id": "c5010000-0000-4000-8000-000000000001", "name": "Nuevo prompt", "type": "Capture", "command": true, "appendLink": false, "captureTo": "07_Recursos/Prompts/{{VALUE:Categoria}}/{{VALUE:Nombre del prompt}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Prompt.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c5020000-0000-4000-8000-000000000001", "name": "Copiar prompt", "type": "Macro", "command": true, "runOnStartup": false, "macro": {"name": "Copiar prompt", "id": "c5020000-0000-4000-8000-000000000002", "commands": [{"name": "copiar_prompt", "type": "UserScript", "id": "c5020000-0000-4000-8000-000000000003", "path": "scripts/copiar_prompt.js", "settings": {}}]}},
+          {"id": "c5030000-0000-4000-8000-000000000001", "name": "Abrir dashboard de prompts", "type": "Template", "command": true, "template": "08_Dashboards/Prompts.md", "fileName": "08_Dashboards/Prompts.md", "openFile": true}
+        ],
+        "collapsed": false
+      },
+      "pathHint": ["CRRB - Prompts"]
+    },
+    {
+      "choice": {
+        "id": "c4000000-0000-4000-8000-000000000001",
+        "name": "CRRB - Infraestructura",
+        "type": "Multi",
+        "command": true,
+        "choices": [
+          {"id": "c4010000-0000-4000-8000-000000000001", "name": "Equipo", "type": "Capture", "command": true, "appendLink": false, "captureTo": "03_Areas/Infraestructura/Equipos/{{VALUE:Nombre o hostname}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Equipo de infraestructura.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c4020000-0000-4000-8000-000000000001", "name": "Máquina virtual", "type": "Capture", "command": true, "appendLink": false, "captureTo": "03_Areas/Infraestructura/Maquinas virtuales/{{VALUE:Nombre o hostname}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Maquina virtual.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c4030000-0000-4000-8000-000000000001", "name": "Credencial", "type": "Capture", "command": true, "appendLink": false, "captureTo": "03_Areas/Infraestructura/Credenciales/{{VALUE:Nombre descriptivo}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Credencial de infraestructura.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c4040000-0000-4000-8000-000000000001", "name": "Servicio", "type": "Capture", "command": true, "appendLink": false, "captureTo": "03_Areas/Infraestructura/Servicios/{{VALUE:Nombre del servicio}}.md", "captureToActiveFile": false, "activeFileWritePosition": "bottom", "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Servicio de infraestructura.md"}, "format": {"enabled": false, "format": ""}, "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"}, "newLineCapture": {"enabled": false, "direction": "below"}, "prepend": false, "task": false, "openFile": true, "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}},
+          {"id": "c4050000-0000-4000-8000-000000000001", "name": "Dashboard de infraestructura", "type": "Template", "command": true, "template": "08_Dashboards/Dashboard de infraestructura.md", "fileName": "08_Dashboards/Dashboard de infraestructura.md", "openFile": true}
+        ],
+        "collapsed": false
+      },
+      "pathHint": ["CRRB - Infraestructura"]
+    },
+    {
+      "choice": {
+        "id": "c3000000-0000-4000-8000-000000000001",
+        "name": "Restaurar estructura",
+        "type": "Macro",
+        "command": true,
+        "runOnStartup": false,
+        "macro": {
+          "name": "Restaurar estructura",
+          "id": "c3000000-0000-4000-8000-000000000002",
+          "commands": [
+            {
+              "name": "restaurar_estructura",
+              "type": "UserScript",
+              "id": "c3000000-0000-4000-8000-000000000003",
+              "path": "scripts/restaurar_estructura.js",
+              "settings": {}
+            }
+          ]
+        }
+      },
+      "pathHint": ["Restaurar estructura"]
+    },
     {
       "choice": {
         "id": "76c281f1-777e-4ade-b09e-9146f00b927f",
@@ -1465,6 +1538,53 @@
       "pathHint": [
         "CRRB - Crear nota",
         "Correo institucional"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2090000-0000-4000-8000-000000000001",
+        "name": "Nueva categoría y proyecto",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "02_Proyectos/{{VALUE:Nombre de la categoría (ej. 05_Investigacion)}}/{{VALUE:Nombre del proyecto}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Proyecto.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Nueva categoría y proyecto"
       ],
       "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
     }
