@@ -1,0 +1,29 @@
+/* Paneles CRRB: fragmento opcional para Obsidian */
+
+.crrb-dashboard .markdown-preview-section,
+.crrb-dashboard .cm-contentContainer {
+  max-width: 1400px;
+}
+
+.crrb-dashboard h1 {
+  border-bottom: 2px solid var(--interactive-accent);
+  padding-bottom: 0.35rem;
+}
+
+.crrb-dashboard h2 {
+  margin-top: 1.6rem;
+}
+
+.crrb-dashboard .callout {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+}
+
+.crrb-dashboard table {
+  width: 100%;
+}
+
+.crrb-dashboard .task-list-item {
+  padding-block: 0.12rem;
+}
+

@@ -1,0 +1,10 @@
+# Graphify generates local reports, caches and visualizations.
+graphify-out/
+
+# Obsidian workspace state is machine-specific.
+.obsidian/workspace.json
+
+# OS/editor noise.
+.DS_Store
+Thumbs.db
+*.swp

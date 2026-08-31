@@ -1,0 +1,1473 @@
+{
+  "schemaVersion": 1,
+  "quickAddVersion": "2.23.0",
+  "createdAt": "2026-08-31T11:00:00.000Z",
+  "rootChoiceIds": [
+    "76c281f1-777e-4ade-b09e-9146f00b927f",
+    "b0855326-b808-419c-8191-0e2192bd01dd",
+    "15d289e7-fe69-4a85-8160-a585edcd2070",
+    "9196ddf6-259c-47f8-9dfa-bea1abd2b3af",
+    "c1000000-0000-4000-8000-000000000001",
+    "c2000000-0000-4000-8000-000000000001"
+  ],
+  "choices": [
+    {
+      "choice": {
+        "id": "76c281f1-777e-4ade-b09e-9146f00b927f",
+        "name": "00 Tareas",
+        "type": "Capture",
+        "command": false,
+        "appendLink": false,
+        "captureTo": "00_Inbox/Tareas.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "[[ {{VALUE:Nombre de la Tarea}} ]][prioridad:: {{VALUE:descendente}}] ➕ {{DATE:YYYY-MM-DD}} \n"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": true,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "00 Tareas"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "b0855326-b808-419c-8191-0e2192bd01dd",
+        "name": "01 Tags",
+        "type": "Capture",
+        "command": false,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "---\ntags:\n  - tag1\n  - tag2\n  - tag3\n---"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "01 Tags"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "15d289e7-fe69-4a85-8160-a585edcd2070",
+        "name": "Menu Tareas",
+        "type": "Multi",
+        "command": false,
+        "choices": [
+          {
+            "id": "400e3b07-f53d-4260-95af-26d4f0e20d83",
+            "name": "crrb Task",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "activeFileWritePosition": "cursor",
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[orden :: {{VALUE:numero}}]  [[{{VALUE:Nombre de la Tarea}}]] {{VALUE:🔺,⏫,🔽,⏬,}} "
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": true,
+            "task": true,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "fc9ccb11-695b-439c-9605-8b11dfdddcd9",
+            "name": "crrb Task Dashboard",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "activeFileWritePosition": "cursor",
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "# 🚀 Tablero de Control (Ordenado por Descendente)\n\n> [!DANGER] 🔥 Urgencia Máxima\n> ```tasks\n> not done\n> path does not include Templates\n> priority is highest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!WARNING] ⏫ Alta Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is high\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!INFO] 🔽 Baja Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is low\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!QUOTE] ⏬ Muy Baja\n> ```tasks\n> not done\n> path does not include Templates\n> priority is lowest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!SUCCESS] ✅ Tareas Completadas (Recientes)\n> Aquí verás lo último que has terminado.\n> ```tasks\n> done\n> path does not include Templates\n> sort by done reverse\n> limit 150\n> hide backlink\n> ```\n\n\n"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          }
+        ],
+        "collapsed": false
+      },
+      "pathHint": [
+        "Menu Tareas"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "400e3b07-f53d-4260-95af-26d4f0e20d83",
+        "name": "crrb Task",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "[orden :: {{VALUE:numero}}]  [[{{VALUE:Nombre de la Tarea}}]] {{VALUE:🔺,⏫,🔽,⏬,}} "
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": true,
+        "task": true,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "Menu Tareas",
+        "crrb Task"
+      ],
+      "parentChoiceId": "15d289e7-fe69-4a85-8160-a585edcd2070"
+    },
+    {
+      "choice": {
+        "id": "fc9ccb11-695b-439c-9605-8b11dfdddcd9",
+        "name": "crrb Task Dashboard",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "# 🚀 Tablero de Control (Ordenado por Descendente)\n\n> [!DANGER] 🔥 Urgencia Máxima\n> ```tasks\n> not done\n> path does not include Templates\n> priority is highest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!WARNING] ⏫ Alta Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is high\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!INFO] 🔽 Baja Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is low\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!QUOTE] ⏬ Muy Baja\n> ```tasks\n> not done\n> path does not include Templates\n> priority is lowest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!SUCCESS] ✅ Tareas Completadas (Recientes)\n> Aquí verás lo último que has terminado.\n> ```tasks\n> done\n> path does not include Templates\n> sort by done reverse\n> limit 150\n> hide backlink\n> ```\n\n\n"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "Menu Tareas",
+        "crrb Task Dashboard"
+      ],
+      "parentChoiceId": "15d289e7-fe69-4a85-8160-a585edcd2070"
+    },
+    {
+      "choice": {
+        "id": "9196ddf6-259c-47f8-9dfa-bea1abd2b3af",
+        "name": "Menu Tags",
+        "type": "Multi",
+        "command": false,
+        "choices": [
+          {
+            "id": "dee94833-bb7d-4e96-a5ae-96b322977bad",
+            "name": "crrb Tags",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "activeFileWritePosition": "top",
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "---\ntags:\n- \n---\n\n"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          }
+        ],
+        "collapsed": false
+      },
+      "pathHint": [
+        "Menu Tags"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "dee94833-bb7d-4e96-a5ae-96b322977bad",
+        "name": "crrb Tags",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "---\ntags:\n- \n---\n\n"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "Menu Tags",
+        "crrb Tags"
+      ],
+      "parentChoiceId": "9196ddf6-259c-47f8-9dfa-bea1abd2b3af"
+    },
+    {
+      "choice": {
+        "id": "c1000000-0000-4000-8000-000000000001",
+        "name": "CRRB - Capturar",
+        "type": "Multi",
+        "command": false,
+        "choices": [
+          {
+            "id": "c1010000-0000-4000-8000-000000000001",
+            "name": "Tarea con fecha",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "00_Inbox/Tareas.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "top",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{{VALUE:Nombre de la tarea}}]] {{VALUE:🔺,⏫,🔼,🔽,⏬}} 📅 {{VALUE:Fecha límite AAAA-MM-DD}} [orden:: {{VALUE:Orden numérico}}] [ambito:: {{VALUE:oficina,externo,docencia,personal}}] ➕ {{DATE:YYYY-MM-DD}}\n"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Pendientes",
+              "insertAtEnd": true,
+              "considerSubsections": false,
+              "createIfNotFound": true,
+              "createIfNotFoundLocation": "bottom"
+            },
+            "newLineCapture": {
+              "enabled": true,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": true,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c1020000-0000-4000-8000-000000000001",
+            "name": "Tarea sin fecha",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "00_Inbox/Tareas.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "top",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{{VALUE:Nombre de la tarea}}]] {{VALUE:🔺,⏫,🔼,🔽,⏬}} [orden:: {{VALUE:Orden numérico}}] [ambito:: {{VALUE:oficina,externo,docencia,personal}}] ➕ {{DATE:YYYY-MM-DD}}\n"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Pendientes",
+              "insertAtEnd": true,
+              "considerSubsections": false,
+              "createIfNotFound": true,
+              "createIfNotFoundLocation": "bottom"
+            },
+            "newLineCapture": {
+              "enabled": true,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": true,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c1030000-0000-4000-8000-000000000001",
+            "name": "Idea o nota rápida",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "00_Inbox/Capturas.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "- {{DATE:YYYY-MM-DD HH:mm}} — {{VALUE:Idea o nota}} #captura\n"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Pendientes de procesar",
+              "insertAtEnd": true,
+              "considerSubsections": false,
+              "createIfNotFound": true,
+              "createIfNotFoundLocation": "bottom"
+            },
+            "newLineCapture": {
+              "enabled": true,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c1040000-0000-4000-8000-000000000001",
+            "name": "Registro en nota diaria",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "01_Diario/{{DATE:YYYY-MM-DD}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Nota diaria.md"
+            },
+            "format": {
+              "enabled": true,
+              "format": "- {{DATE:HH:mm}} — {{VALUE:Registro}}\n"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Registro",
+              "insertAtEnd": true,
+              "considerSubsections": false,
+              "createIfNotFound": true,
+              "createIfNotFoundLocation": "bottom"
+            },
+            "newLineCapture": {
+              "enabled": true,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": false,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          }
+        ],
+        "collapsed": false
+      },
+      "pathHint": [
+        "CRRB - Capturar"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "c1010000-0000-4000-8000-000000000001",
+        "name": "Tarea con fecha",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "00_Inbox/Tareas.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "[[{{VALUE:Nombre de la tarea}}]] {{VALUE:🔺,⏫,🔼,🔽,⏬}} 📅 {{VALUE:Fecha límite AAAA-MM-DD}} [orden:: {{VALUE:Orden numérico}}] [ambito:: {{VALUE:oficina,externo,docencia,personal}}] ➕ {{DATE:YYYY-MM-DD}}\n"
+        },
+        "insertAfter": {
+          "enabled": true,
+          "after": "## Pendientes",
+          "insertAtEnd": true,
+          "considerSubsections": false,
+          "createIfNotFound": true,
+          "createIfNotFoundLocation": "bottom"
+        },
+        "newLineCapture": {
+          "enabled": true,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": true,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Capturar",
+        "Tarea con fecha"
+      ],
+      "parentChoiceId": "c1000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c1020000-0000-4000-8000-000000000001",
+        "name": "Tarea sin fecha",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "00_Inbox/Tareas.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "[[{{VALUE:Nombre de la tarea}}]] {{VALUE:🔺,⏫,🔼,🔽,⏬}} [orden:: {{VALUE:Orden numérico}}] [ambito:: {{VALUE:oficina,externo,docencia,personal}}] ➕ {{DATE:YYYY-MM-DD}}\n"
+        },
+        "insertAfter": {
+          "enabled": true,
+          "after": "## Pendientes",
+          "insertAtEnd": true,
+          "considerSubsections": false,
+          "createIfNotFound": true,
+          "createIfNotFoundLocation": "bottom"
+        },
+        "newLineCapture": {
+          "enabled": true,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": true,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Capturar",
+        "Tarea sin fecha"
+      ],
+      "parentChoiceId": "c1000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c1030000-0000-4000-8000-000000000001",
+        "name": "Idea o nota rápida",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "00_Inbox/Capturas.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "- {{DATE:YYYY-MM-DD HH:mm}} — {{VALUE:Idea o nota}} #captura\n"
+        },
+        "insertAfter": {
+          "enabled": true,
+          "after": "## Pendientes de procesar",
+          "insertAtEnd": true,
+          "considerSubsections": false,
+          "createIfNotFound": true,
+          "createIfNotFoundLocation": "bottom"
+        },
+        "newLineCapture": {
+          "enabled": true,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Capturar",
+        "Idea o nota rápida"
+      ],
+      "parentChoiceId": "c1000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c1040000-0000-4000-8000-000000000001",
+        "name": "Registro en nota diaria",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "01_Diario/{{DATE:YYYY-MM-DD}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Nota diaria.md"
+        },
+        "format": {
+          "enabled": true,
+          "format": "- {{DATE:HH:mm}} — {{VALUE:Registro}}\n"
+        },
+        "insertAfter": {
+          "enabled": true,
+          "after": "## Registro",
+          "insertAtEnd": true,
+          "considerSubsections": false,
+          "createIfNotFound": true,
+          "createIfNotFoundLocation": "bottom"
+        },
+        "newLineCapture": {
+          "enabled": true,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Capturar",
+        "Registro en nota diaria"
+      ],
+      "parentChoiceId": "c1000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2000000-0000-4000-8000-000000000001",
+        "name": "CRRB - Crear nota",
+        "type": "Multi",
+        "command": false,
+        "choices": [
+          {
+            "id": "c2010000-0000-4000-8000-000000000001",
+            "name": "Proyecto",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "02_Proyectos/{{VALUE:01_Oficina,02_Externos,03_Docencia,04_Personales}}/{{VALUE:Nombre del proyecto}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Proyecto.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2020000-0000-4000-8000-000000000001",
+            "name": "Reunión",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "05_Reuniones/{{DATE:YYYY-MM-DD}} - {{VALUE:Título de la reunión}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Reunión.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2030000-0000-4000-8000-000000000001",
+            "name": "Incidente técnico",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "03_Areas/DBA y Oracle/{{DATE:YYYY-MM-DD}} - INC - {{VALUE:Título del incidente}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Incidente técnico.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2040000-0000-4000-8000-000000000001",
+            "name": "Nota de estudio",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "04_Conocimiento/01_Conceptos/{{VALUE:Título de la nota}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Nota de estudio.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2050000-0000-4000-8000-000000000001",
+            "name": "Video y transcripción",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "04_Conocimiento/04_Videos/{{VALUE:Título del video}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Video y transcripción.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2060000-0000-4000-8000-000000000001",
+            "name": "Persona",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "06_Personas/{{VALUE:Nombre de la persona}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Persona.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2070000-0000-4000-8000-000000000001",
+            "name": "Sistema o base de datos",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "03_Areas/DBA y Oracle/{{VALUE:Nombre del sistema}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Sistema o base de datos.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          },
+          {
+            "id": "c2080000-0000-4000-8000-000000000001",
+            "name": "Correo institucional",
+            "type": "Capture",
+            "command": true,
+            "appendLink": false,
+            "captureTo": "00_Inbox/{{DATE:YYYY-MM-DD}} - Correo - {{VALUE:Asunto corto}}.md",
+            "captureToActiveFile": false,
+            "activeFileWritePosition": "bottom",
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "09_Plantillas/Correo institucional.md"
+            },
+            "format": {
+              "enabled": false,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "newLineCapture": {
+              "enabled": false,
+              "direction": "below"
+            },
+            "prepend": false,
+            "task": false,
+            "openFile": true,
+            "fileOpening": {
+              "location": "tab",
+              "direction": "vertical",
+              "mode": "default",
+              "focus": true
+            }
+          }
+        ],
+        "collapsed": false
+      },
+      "pathHint": [
+        "CRRB - Crear nota"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "c2010000-0000-4000-8000-000000000001",
+        "name": "Proyecto",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "02_Proyectos/{{VALUE:01_Oficina,02_Externos,03_Docencia,04_Personales}}/{{VALUE:Nombre del proyecto}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Proyecto.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Proyecto"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2020000-0000-4000-8000-000000000001",
+        "name": "Reunión",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "05_Reuniones/{{DATE:YYYY-MM-DD}} - {{VALUE:Título de la reunión}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Reunión.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Reunión"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2030000-0000-4000-8000-000000000001",
+        "name": "Incidente técnico",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "03_Areas/DBA y Oracle/{{DATE:YYYY-MM-DD}} - INC - {{VALUE:Título del incidente}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Incidente técnico.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Incidente técnico"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2040000-0000-4000-8000-000000000001",
+        "name": "Nota de estudio",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "04_Conocimiento/01_Conceptos/{{VALUE:Título de la nota}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Nota de estudio.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Nota de estudio"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2050000-0000-4000-8000-000000000001",
+        "name": "Video y transcripción",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "04_Conocimiento/04_Videos/{{VALUE:Título del video}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Video y transcripción.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Video y transcripción"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2060000-0000-4000-8000-000000000001",
+        "name": "Persona",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "06_Personas/{{VALUE:Nombre de la persona}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Persona.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Persona"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2070000-0000-4000-8000-000000000001",
+        "name": "Sistema o base de datos",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "03_Areas/DBA y Oracle/{{VALUE:Nombre del sistema}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Sistema o base de datos.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Sistema o base de datos"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    },
+    {
+      "choice": {
+        "id": "c2080000-0000-4000-8000-000000000001",
+        "name": "Correo institucional",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "00_Inbox/{{DATE:YYYY-MM-DD}} - Correo - {{VALUE:Asunto corto}}.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "bottom",
+        "createFileIfItDoesntExist": {
+          "enabled": true,
+          "createWithTemplate": true,
+          "template": "09_Plantillas/Correo institucional.md"
+        },
+        "format": {
+          "enabled": false,
+          "format": ""
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      "pathHint": [
+        "CRRB - Crear nota",
+        "Correo institucional"
+      ],
+      "parentChoiceId": "c2000000-0000-4000-8000-000000000001"
+    }
+  ],
+  "assets": []
+}

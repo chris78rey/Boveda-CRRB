@@ -1,0 +1,220 @@
+[
+  {
+    "id": "76c281f1-777e-4ade-b09e-9146f00b927f",
+    "name": "00 Tareas",
+    "type": "Capture",
+    "command": false,
+    "appendLink": false,
+    "captureTo": "00_Inbox/Tareas.md",
+    "captureToActiveFile": false,
+    "activeFileWritePosition": "top",
+    "createFileIfItDoesntExist": {
+      "enabled": true,
+      "createWithTemplate": false,
+      "template": ""
+    },
+    "format": {
+      "enabled": true,
+      "format": "[[ {{VALUE:Nombre de la Tarea}} ]][prioridad:: {{VALUE:descendente}}] ➕ {{DATE:YYYY-MM-DD}} \n"
+    },
+    "insertAfter": {
+      "enabled": false,
+      "after": "",
+      "insertAtEnd": false,
+      "considerSubsections": false,
+      "createIfNotFound": false,
+      "createIfNotFoundLocation": "top"
+    },
+    "newLineCapture": {
+      "enabled": false,
+      "direction": "below"
+    },
+    "prepend": false,
+    "task": true,
+    "openFile": false,
+    "fileOpening": {
+      "location": "tab",
+      "direction": "vertical",
+      "mode": "default",
+      "focus": true
+    }
+  },
+  {
+    "id": "b0855326-b808-419c-8191-0e2192bd01dd",
+    "name": "01 Tags",
+    "type": "Capture",
+    "command": false,
+    "appendLink": false,
+    "captureTo": "",
+    "captureToActiveFile": true,
+    "activeFileWritePosition": "top",
+    "createFileIfItDoesntExist": {
+      "enabled": false,
+      "createWithTemplate": false,
+      "template": ""
+    },
+    "format": {
+      "enabled": true,
+      "format": "---\ntags:\n  - tag1\n  - tag2\n  - tag3\n---"
+    },
+    "insertAfter": {
+      "enabled": false,
+      "after": "",
+      "insertAtEnd": false,
+      "considerSubsections": false,
+      "createIfNotFound": false,
+      "createIfNotFoundLocation": "top"
+    },
+    "newLineCapture": {
+      "enabled": false,
+      "direction": "below"
+    },
+    "prepend": false,
+    "task": false,
+    "openFile": false,
+    "fileOpening": {
+      "location": "tab",
+      "direction": "vertical",
+      "mode": "default",
+      "focus": true
+    }
+  },
+  {
+    "id": "15d289e7-fe69-4a85-8160-a585edcd2070",
+    "name": "Menu Tareas",
+    "type": "Multi",
+    "command": false,
+    "choices": [
+      {
+        "id": "400e3b07-f53d-4260-95af-26d4f0e20d83",
+        "name": "crrb Task",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "[orden :: {{VALUE:numero}}]  [[{{VALUE:Nombre de la Tarea}}]] {{VALUE:🔺,⏫,🔽,⏬,}} "
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": true,
+        "task": true,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      },
+      {
+        "id": "fc9ccb11-695b-439c-9605-8b11dfdddcd9",
+        "name": "crrb Task Dashboard",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "# 🚀 Tablero de Control (Ordenado por Descendente)\n\n> [!DANGER] 🔥 Urgencia Máxima\n> ```tasks\n> not done\n> path does not include Templates\n> priority is highest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!WARNING] ⏫ Alta Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is high\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!INFO] 🔽 Baja Prioridad\n> ```tasks\n> not done\n> path does not include Templates\n> priority is low\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!QUOTE] ⏬ Muy Baja\n> ```tasks\n> not done\n> path does not include Templates\n> priority is lowest\n> sort by description reverse\n> limit 10\n> hide backlink\n> ```\n\n> [!SUCCESS] ✅ Tareas Completadas (Recientes)\n> Aquí verás lo último que has terminado.\n> ```tasks\n> done\n> path does not include Templates\n> sort by done reverse\n> limit 150\n> hide backlink\n> ```\n\n\n"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "id": "9196ddf6-259c-47f8-9dfa-bea1abd2b3af",
+    "name": "Menu Tags",
+    "type": "Multi",
+    "command": false,
+    "choices": [
+      {
+        "id": "dee94833-bb7d-4e96-a5ae-96b322977bad",
+        "name": "crrb Tags",
+        "type": "Capture",
+        "command": true,
+        "appendLink": false,
+        "captureTo": "",
+        "captureToActiveFile": true,
+        "activeFileWritePosition": "top",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "---\ntags:\n- \n---\n\n"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": false,
+        "task": false,
+        "openFile": false,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        }
+      }
+    ],
+    "collapsed": false
+  }
+]
