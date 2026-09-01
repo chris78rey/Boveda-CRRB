@@ -955,6 +955,26 @@
       "command": true,
       "runOnStartup": false,
       "macro": {"name": "Reversar notas de tareas", "id": "c7010000-0000-4000-8000-000000000002", "commands": [{"name": "reversar_notas_tareas", "type": "UserScript", "id": "c7010000-0000-4000-8000-000000000003", "path": "scripts/reversar_notas_tareas.js", "settings": {}}]}
+    },
+    {
+      "id": "c3000000-0000-4000-8000-000000000001", "name": "crrb Task + Nota", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c3000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createTaskNote.js", "path": "09_Plantillas/scripts/createTaskNote.js", "settings": {}}]}
+    },
+    {
+      "id": "c4000000-0000-4000-8000-000000000001", "name": "Procesar nota", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c4000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/processNote.js", "path": "09_Plantillas/scripts/processNote.js", "settings": {}}]}
+    },
+    {
+      "id": "c5000000-0000-4000-8000-000000000001", "name": "Nuevo proyecto", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c5000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createProject.js", "path": "09_Plantillas/scripts/createProject.js", "settings": {}}]}
+    },
+    {
+      "id": "c6000000-0000-4000-8000-000000000001", "name": "Nuevo prompt", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createPrompt.js", "path": "09_Plantillas/scripts/createPrompt.js", "settings": {}}]}
+    },
+    {
+      "id": "c6100000-0000-4000-8000-000000000001", "name": "Usar prompt", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6100000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/usePrompt.js", "path": "09_Plantillas/scripts/usePrompt.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",
