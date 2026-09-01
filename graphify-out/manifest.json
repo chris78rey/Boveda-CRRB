@@ -608,5 +608,15 @@
     "mtime": 1788227877.2272,
     "ast_hash": "ac78101a0f64d03492741c21e410e247",
     "semantic_hash": ""
+  },
+  "graphify-out/memory/critical_review_daily_use_2026-08-31.md": {
+    "mtime": 1788229526.7474744,
+    "ast_hash": "8b92b86d1cc30c6637f55c6e860ec9d6",
+    "semantic_hash": ""
+  },
+  "lessons_learned.md": {
+    "mtime": 1788229526.7474744,
+    "ast_hash": "ee5468d818f3e13bae90d23035448282",
+    "semantic_hash": ""
   }
 }
