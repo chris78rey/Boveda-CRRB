@@ -749,6 +749,43 @@
           }
         ]
       }
+    },
+    {
+      "id": "c5000000-0000-4000-8000-000000000001",
+      "name": "Nuevo proyecto",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "c5000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/createProject.js",
+            "path": "09_Plantillas/scripts/createProject.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "c6000000-0000-4000-8000-000000000001",
+      "name": "Nuevo prompt",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "c6000000-0000-4000-8000-000000000002",
+        "commands": [{"type":"UserScript","name":"09_Plantillas/scripts/createPrompt.js","path":"09_Plantillas/scripts/createPrompt.js","settings":{}}]
+      }
+    },
+    {
+      "id": "c6100000-0000-4000-8000-000000000001",
+      "name": "Usar prompt",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "c6100000-0000-4000-8000-000000000002",
+        "commands": [{"type":"UserScript","name":"09_Plantillas/scripts/usePrompt.js","path":"09_Plantillas/scripts/usePrompt.js","settings":{}}]
+      }
     }
   ],
   "inputPrompt": "single-line",
