@@ -1,199 +1,202 @@
 # Graph Report - Boveda-CRRB  (2026-08-31)
 
 ## Corpus Check
-- 122 files · ~352,308 words
+- 121 files · ~353,393 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 12869 nodes · 33666 edges · 294 communities (244 shown, 50 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 539 edges (avg confidence: 0.8)
+- 12822 nodes · 33555 edges · 261 communities (234 shown, 27 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 399 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `da4938f4`
+- Built from commit: `7ad66834`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Knowledge|Knowledge]]
-- [[_COMMUNITY_Knowledge|Knowledge]]
-- [[_COMMUNITY_Knowledge|Knowledge]]
-- [[_COMMUNITY_Knowledge|Knowledge]]
-- [[_COMMUNITY_Knowledge|Knowledge]]
-- [[_COMMUNITY_DateTime Knowledge|DateTime Knowledge]]
-- [[_COMMUNITY_t d|t d]]
-- [[_COMMUNITY_forEach Knowledge|forEach Knowledge]]
-- [[_COMMUNITY_ExcalidrawView Knowledge|ExcalidrawView Knowledge]]
-- [[_COMMUNITY_push Knowledge|push Knowledge]]
-- [[_COMMUNITY_from Knowledge|from Knowledge]]
-- [[_COMMUNITY_stringify Knowledge|stringify Knowledge]]
-- [[_COMMUNITY_DataviewInlineApi Knowledge|DataviewInlineApi Knowledge]]
-- [[_COMMUNITY_create Knowledge|create Knowledge]]
-- [[_COMMUNITY_DataArrayImpl Knowledge|DataArrayImpl Knowledge]]
-- [[_COMMUNITY_clear Knowledge|clear Knowledge]]
-- [[_COMMUNITY_ExcalidrawAutomate Knowledge|ExcalidrawAutomate Knowledge]]
-- [[_COMMUNITY_get Knowledge|get Knowledge]]
-- [[_COMMUNITY_push Knowledge|push Knowledge]]
-- [[_COMMUNITY_fromObject Knowledge|fromObject Knowledge]]
-- [[_COMMUNITY_main js|main js]]
-- [[_COMMUNITY_MarkdownImageEditorController Knowledge|MarkdownImageEditorController Knowledge]]
-- [[_COMMUNITY_main js|main js]]
-- [[_COMMUNITY_push Knowledge|push Knowledge]]
-- [[_COMMUNITY_a Knowledge|a Knowledge]]
-- [[_COMMUNITY_isValid Knowledge|isValid Knowledge]]
-- [[_COMMUNITY_getBoundingClientRect Knowledge|getBoundingClientRect Knowledge]]
-- [[_COMMUNITY_handleImageRequest Knowledge|handleImageRequest Knowledge]]
-- [[_COMMUNITY_moment Knowledge|moment Knowledge]]
-- [[_COMMUNITY_y 1|y 1]]
-- [[_COMMUNITY_then Knowledge|then Knowledge]]
-- [[_COMMUNITY_destroy Knowledge|destroy Knowledge]]
-- [[_COMMUNITY_values Knowledge|values Knowledge]]
-- [[_COMMUNITY_slice Knowledge|slice Knowledge]]
-- [[_COMMUNITY_get Knowledge|get Knowledge]]
-- [[_COMMUNITY_i Knowledge|i Knowledge]]
-- [[_COMMUNITY_warn Knowledge|warn Knowledge]]
-- [[_COMMUNITY_fe Knowledge|fe Knowledge]]
-- [[_COMMUNITY_ExcalidrawData Knowledge|ExcalidrawData Knowledge]]
-- [[_COMMUNITY_get Knowledge|get Knowledge]]
-- [[_COMMUNITY_get Knowledge|get Knowledge]]
-- [[_COMMUNITY_add Knowledge|add Knowledge]]
-- [[_COMMUNITY_constructor Knowledge|constructor Knowledge]]
-- [[_COMMUNITY_getSetting Knowledge|getSetting Knowledge]]
-- [[_COMMUNITY_create Knowledge|create Knowledge]]
-- [[_COMMUNITY_constructor Knowledge|constructor Knowledge]]
-- [[_COMMUNITY_debug Knowledge|debug Knowledge]]
-- [[_COMMUNITY_ToolsPanel Knowledge|ToolsPanel Knowledge]]
-- [[_COMMUNITY_rgb2css Knowledge|rgb2css Knowledge]]
-- [[_COMMUNITY_errorlog Knowledge|errorlog Knowledge]]
-- [[_COMMUNITY_d Knowledge|d Knowledge]]
-- [[_COMMUNITY_join Knowledge|join Knowledge]]
-- [[_COMMUNITY_constructor Knowledge|constructor Knowledge]]
-- [[_COMMUNITY_Duration Knowledge|Duration Knowledge]]
-- [[_COMMUNITY_linkClick Knowledge|linkClick Knowledge]]
-- [[_COMMUNITY_xr Knowledge|xr Knowledge]]
-- [[_COMMUNITY_t Knowledge|t Knowledge]]
-- [[_COMMUNITY_M Knowledge|M Knowledge]]
-- [[_COMMUNITY_ExcalidrawSidepanelView Knowledge|ExcalidrawSidepanelView Knowledge]]
-- [[_COMMUNITY_m 1|m 1]]
-- [[_COMMUNITY_slice Knowledge|slice Knowledge]]
-- [[_COMMUNITY_t Knowledge|t Knowledge]]
-- [[_COMMUNITY_init Knowledge|init Knowledge]]
-- [[_COMMUNITY_now Knowledge|now Knowledge]]
-- [[_COMMUNITY_r Knowledge|r Knowledge]]
-- [[_COMMUNITY_indexOf Knowledge|indexOf Knowledge]]
-- [[_COMMUNITY_get Knowledge|get Knowledge]]
-- [[_COMMUNITY_fj Knowledge|fj Knowledge]]
-- [[_COMMUNITY_from Knowledge|from Knowledge]]
-- [[_COMMUNITY_convertMarkdownToSVG Knowledge|convertMarkdownToSVG Knowledge]]
-- [[_COMMUNITY_InlineLinkSuggester Knowledge|InlineLinkSuggester Knowledge]]
-- [[_COMMUNITY_createFilterOrErrorMessage Knowledge|createFilterOrErrorMessage Knowledge]]
-- [[_COMMUNITY_argument Knowledge|argument Knowledge]]
-- [[_COMMUNITY_fromLine Knowledge|fromLine Knowledge]]
-- [[_COMMUNITY_assign Knowledge|assign Knowledge]]
-- [[_COMMUNITY_src git js|src git js]]
-- [[_COMMUNITY_parse Knowledge|parse Knowledge]]
-- [[_COMMUNITY_fn Knowledge|fn Knowledge]]
-- [[_COMMUNITY_init Knowledge|init Knowledge]]
-- [[_COMMUNITY_onClose Knowledge|onClose Knowledge]]
-- [[_COMMUNITY_StencilLibraryManager Knowledge|StencilLibraryManager Knowledge]]
-- [[_COMMUNITY_ExcalidrawSidepanelTab Knowledge|ExcalidrawSidepanelTab Knowledge]]
-- [[_COMMUNITY_F Knowledge|F Knowledge]]
-- [[_COMMUNITY_de Knowledge|de Knowledge]]
-- [[_COMMUNITY_Lexer Knowledge|Lexer Knowledge]]
-- [[_COMMUNITY_applyQueryToTasks Knowledge|applyQueryToTasks Knowledge]]
-- [[_COMMUNITY_grabSuggestions Knowledge|grabSuggestions Knowledge]]
-- [[_COMMUNITY_CalendarView Knowledge|CalendarView Knowledge]]
-- [[_COMMUNITY_GenericInputPrompt Knowledge|GenericInputPrompt Knowledge]]
-- [[_COMMUNITY_Ajustes y complementos|Ajustes y complementos]]
-- [[_COMMUNITY_ExcalidrawExtrasGateway Knowledge|ExcalidrawExtrasGateway Knowledge]]
-- [[_COMMUNITY_close Knowledge|close Knowledge]]
-- [[_COMMUNITY_activateFeature Knowledge|activateFeature Knowledge]]
-- [[_COMMUNITY_ue Knowledge|ue Knowledge]]
-- [[_COMMUNITY_xi Knowledge|xi Knowledge]]
-- [[_COMMUNITY_InsertLinkDialog Knowledge|InsertLinkDialog Knowledge]]
-- [[_COMMUNITY_mc Knowledge|mc Knowledge]]
-- [[_COMMUNITY_assign Knowledge|assign Knowledge]]
-- [[_COMMUNITY_parseCFFTable Knowledge|parseCFFTable Knowledge]]
-- [[_COMMUNITY_setup Knowledge|setup Knowledge]]
-- [[_COMMUNITY_Y Knowledge|Y Knowledge]]
-- [[_COMMUNITY_DropManager Knowledge|DropManager Knowledge]]
-- [[_COMMUNITY_cm Knowledge|cm Knowledge]]
-- [[_COMMUNITY_init 1|init 1]]
-- [[_COMMUNITY_update Knowledge|update Knowledge]]
-- [[_COMMUNITY_parseDocument Knowledge|parseDocument Knowledge]]
-- [[_COMMUNITY_handleError Knowledge|handleError Knowledge]]
-- [[_COMMUNITY_FileSuggestionModal Knowledge|FileSuggestionModal Knowledge]]
-- [[_COMMUNITY_explainQuery Knowledge|explainQuery Knowledge]]
-- [[_COMMUNITY_lc Knowledge|lc Knowledge]]
-- [[_COMMUNITY_CalendarSettingsTab Knowledge|CalendarSettingsTab Knowledge]]
-- [[_COMMUNITY_FixedOffsetZone Knowledge|FixedOffsetZone Knowledge]]
-- [[_COMMUNITY_eof Knowledge|eof Knowledge]]
-- [[_COMMUNITY_renderSuggestion Knowledge|renderSuggestion Knowledge]]
-- [[_COMMUNITY_join Knowledge|join Knowledge]]
-- [[_COMMUNITY_sanitizeSvgTree Knowledge|sanitizeSvgTree Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_GenericSuggester Knowledge|GenericSuggester Knowledge]]
-- [[_COMMUNITY_fL Knowledge|fL Knowledge]]
-- [[_COMMUNITY_generate object|generate object]]
-- [[_COMMUNITY_nextAfter Knowledge|nextAfter Knowledge]]
-- [[_COMMUNITY_QuickAdd CRRB v2 Configuration|QuickAdd CRRB v2 Configuration]]
-- [[_COMMUNITY_diagramToHTML Knowledge|diagramToHTML Knowledge]]
-- [[_COMMUNITY_SelectedElementActionsMenu Knowledge|SelectedElementActionsMenu Knowledge]]
-- [[_COMMUNITY_Suggester Knowledge|Suggester Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_tR Knowledge|tR Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_run all|run all]]
-- [[_COMMUNITY_Zone Knowledge|Zone Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_blockString Knowledge|blockString Knowledge]]
-- [[_COMMUNITY_ContentSearcher Knowledge|ContentSearcher Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_commitControlValue Knowledge|commitControlValue Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_toMessage Knowledge|toMessage Knowledge]]
-- [[_COMMUNITY_InvalidZone Knowledge|InvalidZone Knowledge]]
-- [[_COMMUNITY_manifest json|manifest json]]
-- [[_COMMUNITY_FunctionBuilder Knowledge|FunctionBuilder Knowledge]]
-- [[_COMMUNITY_app json|app json]]
-- [[_COMMUNITY_MonkeyPatchManager Knowledge|MonkeyPatchManager Knowledge]]
-- [[_COMMUNITY_tinf uncompress|tinf uncompress]]
-- [[_COMMUNITY_Proyectos Índice|Proyectos Índice]]
-- [[_COMMUNITY_eN Knowledge|eN Knowledge]]
-- [[_COMMUNITY_create slot|create slot]]
-- [[_COMMUNITY_changeThemeOfExcalidrawMD Knowledge|changeThemeOfExcalidrawMD Knowledge]]
-- [[_COMMUNITY_parseGlyfTableAll Knowledge|parseGlyfTableAll Knowledge]]
-- [[_COMMUNITY_Dashboard general|Dashboard general]]
-- [[_COMMUNITY_CSSCodeEditor Knowledge|CSSCodeEditor Knowledge]]
-- [[_COMMUNITY_DBA y Oracle Área|DBA y Oracle Área]]
-- [[_COMMUNITY_Docencia Knowledge|Docencia Knowledge]]
-- [[_COMMUNITY_Mapa de conocimiento Docencia|Mapa de conocimiento Docencia]]
-- [[_COMMUNITY_ActionButton Knowledge|ActionButton Knowledge]]
-- [[_COMMUNITY_addName Knowledge|addName Knowledge]]
-- [[_COMMUNITY_Plantilla de evaluación de tarea|Plantilla de evaluación de tarea]]
-- [[_COMMUNITY_getDateFromFile Knowledge|getDateFromFile Knowledge]]
-- [[_COMMUNITY_ExcalidrawConfig Knowledge|ExcalidrawConfig Knowledge]]
-- [[_COMMUNITY_ExcalidrawScene Knowledge|ExcalidrawScene Knowledge]]
-- [[_COMMUNITY_Random Knowledge|Random Knowledge]]
-- [[_COMMUNITY_Diario Índice|Diario Índice]]
-- [[_COMMUNITY_Personal Área|Personal Área]]
-- [[_COMMUNITY_Decisión adoptada|Decisión adoptada]]
-- [[_COMMUNITY_ConfirmationModal Knowledge|ConfirmationModal Knowledge]]
-- [[_COMMUNITY_Cerrados Índice|Cerrados Índice]]
-- [[_COMMUNITY_Planificación de clases|Planificación de clases]]
-- [[_COMMUNITY_Programación estructurada y funcional|Programación estructurada y funcional]]
-- [[_COMMUNITY_Git y automatización|Git y automatización]]
-- [[_COMMUNITY_HL7 interoperabilidad e integración|HL7 interoperabilidad e integración]]
-- [[_COMMUNITY_Inteligencia artificial y agentes|Inteligencia artificial y agentes]]
-- [[_COMMUNITY_Tecnología Knowledge|Tecnología Knowledge]]
-- [[_COMMUNITY_Personas Knowledge|Personas Knowledge]]
-- [[_COMMUNITY_Recursos Knowledge|Recursos Knowledge]]
-- [[_COMMUNITY_Portafolio de proyectos|Portafolio de proyectos]]
-- [[_COMMUNITY_Plantilla de concepto|Plantilla de concepto]]
-- [[_COMMUNITY_Plantilla de correo institucional|Plantilla de correo institucional]]
-- [[_COMMUNITY_Archivo Índice|Archivo Índice]]
-- [[_COMMUNITY_Project Index|Project Index]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
+- [[_COMMUNITY_Community 103|Community 103]]
+- [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 106|Community 106]]
+- [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
+- [[_COMMUNITY_Community 109|Community 109]]
+- [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 112|Community 112]]
+- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Community 114|Community 114]]
+- [[_COMMUNITY_Community 115|Community 115]]
+- [[_COMMUNITY_Community 116|Community 116]]
+- [[_COMMUNITY_Community 117|Community 117]]
+- [[_COMMUNITY_Community 118|Community 118]]
+- [[_COMMUNITY_Community 119|Community 119]]
+- [[_COMMUNITY_Community 120|Community 120]]
+- [[_COMMUNITY_Community 121|Community 121]]
+- [[_COMMUNITY_Community 122|Community 122]]
+- [[_COMMUNITY_Community 123|Community 123]]
+- [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 126|Community 126]]
+- [[_COMMUNITY_Community 127|Community 127]]
+- [[_COMMUNITY_Community 128|Community 128]]
+- [[_COMMUNITY_Community 129|Community 129]]
+- [[_COMMUNITY_Community 130|Community 130]]
+- [[_COMMUNITY_Community 131|Community 131]]
+- [[_COMMUNITY_Community 132|Community 132]]
+- [[_COMMUNITY_Community 133|Community 133]]
+- [[_COMMUNITY_Community 134|Community 134]]
+- [[_COMMUNITY_Community 135|Community 135]]
+- [[_COMMUNITY_Community 136|Community 136]]
+- [[_COMMUNITY_Community 137|Community 137]]
+- [[_COMMUNITY_Community 138|Community 138]]
+- [[_COMMUNITY_Community 139|Community 139]]
+- [[_COMMUNITY_Community 140|Community 140]]
+- [[_COMMUNITY_Community 141|Community 141]]
+- [[_COMMUNITY_Community 142|Community 142]]
+- [[_COMMUNITY_Community 143|Community 143]]
+- [[_COMMUNITY_Community 144|Community 144]]
+- [[_COMMUNITY_Community 145|Community 145]]
+- [[_COMMUNITY_Community 146|Community 146]]
+- [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Community 148|Community 148]]
+- [[_COMMUNITY_Community 149|Community 149]]
+- [[_COMMUNITY_Community 150|Community 150]]
+- [[_COMMUNITY_Community 151|Community 151]]
+- [[_COMMUNITY_Community 152|Community 152]]
+- [[_COMMUNITY_Community 153|Community 153]]
+- [[_COMMUNITY_Community 154|Community 154]]
+- [[_COMMUNITY_Community 155|Community 155]]
+- [[_COMMUNITY_Community 156|Community 156]]
+- [[_COMMUNITY_Community 157|Community 157]]
+- [[_COMMUNITY_Community 158|Community 158]]
+- [[_COMMUNITY_Community 159|Community 159]]
+- [[_COMMUNITY_Community 160|Community 160]]
+- [[_COMMUNITY_Community 161|Community 161]]
+- [[_COMMUNITY_Community 162|Community 162]]
+- [[_COMMUNITY_Community 163|Community 163]]
+- [[_COMMUNITY_Community 164|Community 164]]
+- [[_COMMUNITY_Community 165|Community 165]]
+- [[_COMMUNITY_Community 166|Community 166]]
+- [[_COMMUNITY_Community 167|Community 167]]
+- [[_COMMUNITY_Community 168|Community 168]]
+- [[_COMMUNITY_Community 169|Community 169]]
+- [[_COMMUNITY_Community 170|Community 170]]
+- [[_COMMUNITY_Community 171|Community 171]]
+- [[_COMMUNITY_Community 172|Community 172]]
+- [[_COMMUNITY_Community 173|Community 173]]
+- [[_COMMUNITY_Community 174|Community 174]]
+- [[_COMMUNITY_Community 175|Community 175]]
+- [[_COMMUNITY_Community 176|Community 176]]
+- [[_COMMUNITY_Community 177|Community 177]]
+- [[_COMMUNITY_Community 178|Community 178]]
+- [[_COMMUNITY_Community 179|Community 179]]
+- [[_COMMUNITY_Community 180|Community 180]]
+- [[_COMMUNITY_Community 181|Community 181]]
 - [[_COMMUNITY_Community 182|Community 182]]
+- [[_COMMUNITY_Community 183|Community 183]]
 - [[_COMMUNITY_Community 184|Community 184]]
 - [[_COMMUNITY_Community 185|Community 185]]
 - [[_COMMUNITY_Community 186|Community 186]]
@@ -222,9 +225,9 @@
 - [[_COMMUNITY_Community 209|Community 209]]
 - [[_COMMUNITY_Community 210|Community 210]]
 - [[_COMMUNITY_Community 211|Community 211]]
+- [[_COMMUNITY_Community 212|Community 212]]
 - [[_COMMUNITY_Community 213|Community 213]]
 - [[_COMMUNITY_Community 214|Community 214]]
-- [[_COMMUNITY_Community 215|Community 215]]
 - [[_COMMUNITY_Community 216|Community 216]]
 - [[_COMMUNITY_Community 217|Community 217]]
 - [[_COMMUNITY_Community 218|Community 218]]
@@ -241,1055 +244,953 @@
 - [[_COMMUNITY_Community 229|Community 229]]
 - [[_COMMUNITY_Community 230|Community 230]]
 - [[_COMMUNITY_Community 231|Community 231]]
-- [[_COMMUNITY_Community 232|Community 232]]
 - [[_COMMUNITY_Community 233|Community 233]]
 - [[_COMMUNITY_Community 234|Community 234]]
 - [[_COMMUNITY_Community 235|Community 235]]
+- [[_COMMUNITY_Community 236|Community 236]]
+- [[_COMMUNITY_Community 237|Community 237]]
 - [[_COMMUNITY_Community 238|Community 238]]
 - [[_COMMUNITY_Community 239|Community 239]]
 - [[_COMMUNITY_Community 240|Community 240]]
 - [[_COMMUNITY_Community 241|Community 241]]
 - [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
 - [[_COMMUNITY_Community 244|Community 244]]
 - [[_COMMUNITY_Community 245|Community 245]]
-- [[_COMMUNITY_Community 246|Community 246]]
 - [[_COMMUNITY_Community 247|Community 247]]
-- [[_COMMUNITY_Community 248|Community 248]]
-- [[_COMMUNITY_Community 249|Community 249]]
-- [[_COMMUNITY_Community 250|Community 250]]
 - [[_COMMUNITY_Community 251|Community 251]]
 - [[_COMMUNITY_Community 252|Community 252]]
-- [[_COMMUNITY_Community 254|Community 254]]
+- [[_COMMUNITY_Community 253|Community 253]]
 - [[_COMMUNITY_Community 255|Community 255]]
-- [[_COMMUNITY_Community 256|Community 256]]
-- [[_COMMUNITY_Community 257|Community 257]]
-- [[_COMMUNITY_Community 258|Community 258]]
-- [[_COMMUNITY_Community 259|Community 259]]
-- [[_COMMUNITY_Community 261|Community 261]]
-- [[_COMMUNITY_Community 262|Community 262]]
-- [[_COMMUNITY_Community 263|Community 263]]
-- [[_COMMUNITY_Community 264|Community 264]]
-- [[_COMMUNITY_Community 265|Community 265]]
-- [[_COMMUNITY_Community 266|Community 266]]
-- [[_COMMUNITY_Community 267|Community 267]]
-- [[_COMMUNITY_Community 268|Community 268]]
-- [[_COMMUNITY_Community 269|Community 269]]
-- [[_COMMUNITY_Community 270|Community 270]]
-- [[_COMMUNITY_Community 272|Community 272]]
-- [[_COMMUNITY_Community 273|Community 273]]
-- [[_COMMUNITY_Community 274|Community 274]]
-- [[_COMMUNITY_Community 275|Community 275]]
-- [[_COMMUNITY_Community 276|Community 276]]
-- [[_COMMUNITY_Community 277|Community 277]]
-- [[_COMMUNITY_Community 278|Community 278]]
-- [[_COMMUNITY_Community 279|Community 279]]
-- [[_COMMUNITY_Community 280|Community 280]]
-- [[_COMMUNITY_Community 281|Community 281]]
-- [[_COMMUNITY_Community 282|Community 282]]
-- [[_COMMUNITY_Community 283|Community 283]]
-- [[_COMMUNITY_Community 284|Community 284]]
-- [[_COMMUNITY_Community 285|Community 285]]
-- [[_COMMUNITY_Community 286|Community 286]]
-- [[_COMMUNITY_Community 287|Community 287]]
-- [[_COMMUNITY_Community 288|Community 288]]
-- [[_COMMUNITY_Community 289|Community 289]]
-- [[_COMMUNITY_Community 290|Community 290]]
-- [[_COMMUNITY_Community 291|Community 291]]
-- [[_COMMUNITY_Community 292|Community 292]]
-- [[_COMMUNITY_Community 293|Community 293]]
-- [[_COMMUNITY_Community 294|Community 294]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `__()` - 2203 edges
-2. `$()` - 1760 edges
-3. `_()` - 1180 edges
-4. `$()` - 1131 edges
-5. `#_()` - 1066 edges
-6. `$()` - 1033 edges
-7. `_()` - 748 edges
-8. `ExcalidrawView` - 197 edges
-9. `push()` - 173 edges
-10. `ExcalidrawAutomate` - 151 edges
+1. `ExcalidrawView` - 197 edges
+2. `push()` - 174 edges
+3. `ExcalidrawAutomate` - 151 edges
+4. `push()` - 151 edges
+5. `get()` - 146 edges
+6. `t$d()` - 126 edges
+7. `DateTime` - 119 edges
+8. `add()` - 107 edges
+9. `run()` - 97 edges
+10. `pop()` - 95 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `QuickAdd CRRB v2 Configuration` --references--> `Tareas centrales`  [EXTRACTED]
-  Configuracion/QuickAdd-CRRB-v2.json → 00_Inbox/Tareas.md
-- `Original QuickAdd Options` --references--> `Tareas centrales`  [EXTRACTED]
-  Configuracion/QuickAdd-opciones-originales.json → 00_Inbox/Tareas.md
-- `Oficina - Área` --conceptually_related_to--> `Oficina`  [INFERRED]
-  03_Areas/Oficina/Oficina - Área.md → 08_Dashboards/Oficina.md
-- `Oficina` --references--> `DBA y Oracle - Área`  [INFERRED]
-  08_Dashboards/Oficina.md → 03_Areas/DBA y Oracle/DBA y Oracle - Área.md
-- `Personal - Área` --conceptually_related_to--> `Gestión de tareas`  [INFERRED]
-  03_Areas/Personal/Personal - Área.md → 08_Dashboards/Tareas.md
+- `setRootElementSize()` --calls--> `getComputedStyle()`  [INFERRED]
+  .obsidian/plugins/obsidian-excalidraw-plugin/main.js → .obsidian/plugins/buttons/main.js
+- `uN()` --calls--> `getComputedStyle()`  [INFERRED]
+  .obsidian/plugins/obsidian-git/main.js → .obsidian/plugins/buttons/main.js
+- `dragStart()` --calls--> `getComputedStyle()`  [INFERRED]
+  .obsidian/plugins/obsidian-kanban/main.js → .obsidian/plugins/buttons/main.js
+- `rn()` --calls--> `getComputedStyle()`  [INFERRED]
+  .obsidian/plugins/obsidian-kanban/main.js → .obsidian/plugins/buttons/main.js
+- `GE()` --calls--> `getComputedStyle()`  [INFERRED]
+  .obsidian/plugins/obsidian-tasks-plugin/main.js → .obsidian/plugins/buttons/main.js
 
 ## Import Cycles
 - None detected.
 
-## Hyperedges (group relationships)
-- **QuickAdd capture workflow** — configuracion_quickadd_crrb_v2_file, configuracion_quickadd_opciones_originales_file, 00_inbox_tareas_file [EXTRACTED 1.00]
-- **Project index views** — 02_proyectos_01_oficina_oficina_proyectos_file, 02_proyectos_02_externos_externos_proyectos_file, 02_proyectos_03_docencia_docencia_proyectos_file, 02_proyectos_04_personales_personales_proyectos_file [INFERRED 0.85]
-- **Inbox workflow** — 00_inbox_acuerdos_file, 00_inbox_capturas_file, 00_inbox_incidentes_rapidos_file, 00_inbox_tareas_file [INFERRED 0.75]
-- **Navegación del dashboard general** — 08_dashboards_dashboard_documento, 08_dashboards_dashboard_tareas, 08_dashboards_dashboard_proyectos, 08_dashboards_dashboard_oficina, 08_dashboards_dashboard_estudio [EXTRACTED 1.00]
-- **Núcleos del mapa de docencia** — 04_conocimiento_00_mapas_moc_docencia_planificacion_de_clases, 04_conocimiento_00_mapas_moc_docencia_programacion_estructurada_y_funcional, 04_conocimiento_00_mapas_moc_docencia_evaluaciones_y_rubricas [EXTRACTED 1.00]
-- **Núcleos del mapa de tecnología** — 04_conocimiento_00_mapas_moc_tecnologia_oracle_y_administracion_de_bases_de_datos, 04_conocimiento_00_mapas_moc_tecnologia_git_y_automatizacion, 04_conocimiento_00_mapas_moc_tecnologia_hl7_interoperabilidad_e_integracion, 04_conocimiento_00_mapas_moc_tecnologia_inteligencia_artificial_y_agentes [EXTRACTED 1.00]
-- **Complementos comunitarios incluidos en la bóveda** — configuracion_complementos_incluidos, configuracion_ajustes_y_complementos, configuracion_contenido_del_paquete [EXTRACTED 1.00]
-- **Centro de operaciones y dashboards** — inicio, inicio_dashboard_general, inicio_tareas, inicio_proyectos [EXTRACTED 1.00]
-- **Estructura operativa de la bóveda** — configuracion_migracion_de_la_raiz, leeme_instalacion_cuatro_niveles, configuracion_migracion_de_la_raiz_clasificacion [EXTRACTED 1.00]
+## Communities (261 total, 27 thin omitted)
 
-## Communities (294 total, 50 thin omitted)
-
-### Community 0 - "Knowledge"
+### Community 0 - "Community 0"
 Cohesion: 0.00
-Nodes (355): $(), AI_BASE_URL_SUFFIXES, allwaysPassedUseAttrs, ANIMATED_IMAGE_TYPES, anyModifierKeysPressed(), applyArabicPresentationForms(), applyArabicRequireLigatures(), applyLatinLigatures() (+347 more)
+Nodes (362): $(), a$7(), addName(), addStringToPool(), AI_BASE_URL_SUFFIXES, allwaysPassedUseAttrs, alpha(), ANIMATED_IMAGE_TYPES (+354 more)
 
-### Community 1 - "Knowledge"
+### Community 1 - "Community 1"
 Cohesion: 0.01
-Nodes (190): _(), _0(), a0(), A6(), A8(), aA(), activate(), ar() (+182 more)
+Nodes (312): a1(), abe(), abortSession(), Ace(), addAIAssistantCommandButton(), addChoiceButton(), addCommandEditor(), addConditionalCommandButton() (+304 more)
 
-### Community 2 - "Knowledge"
+### Community 2 - "Community 2"
 Cohesion: 0.01
-Nodes (240): _(), A$2(), accurateMatrix, allowedOperators, an(), assertValidOperator(), attr(), bind() (+232 more)
+Nodes (175): _0(), $4(), a0(), A6(), aA(), activate(), addEventListener(), addLineAuthorInfoSettings() (+167 more)
 
-### Community 3 - "Knowledge"
+### Community 3 - "Community 3"
 Cohesion: 0.01
-Nodes (146): $(), $1(), aC(), acquire(), aD(), addDefaultStatusTypes(), addPreset(), addRow() (+138 more)
+Nodes (234): A$2(), accurateMatrix, add_css(), add_css$1(), add_css$2(), add_css$3(), add_css$4(), add_css$5() (+226 more)
 
-### Community 4 - "Knowledge"
+### Community 4 - "Community 4"
 Cohesion: 0.01
-Nodes (135): "src/lib/parsers/parse-branch.ts"(), $(), aN(), aO(), Ax(), bindScrollHandlers(), block(), boardToMd() (+127 more)
+Nodes (127): aC(), acquire(), aD(), addPreset(), addRow(), addRowIfNew(), allPropertyNames(), allPropertyNamesSorted() (+119 more)
 
-### Community 5 - "DateTime Knowledge"
+### Community 5 - "Community 5"
+Cohesion: 0.01
+Nodes (130): aC(), aN(), Ax(), bindScrollHandlers(), block(), boardToMd(), CB(), cleanUp() (+122 more)
+
+### Community 6 - "Community 6"
+Cohesion: 0.01
+Nodes (72): adjustTime(), asNumber(), clone$1(), computeOrdinal(), DateTime, dateTimeFromMatches(), dayDiff(), dayOfWeek() (+64 more)
+
+### Community 7 - "Community 7"
 Cohesion: 0.02
-Nodes (51): adjustTime(), computeOrdinal(), DateTime, dayOfWeek(), daysInYear(), diff(), diffRelative(), fixOffset() (+43 more)
+Nodes (252): _7(), a2(), A5(), addChoices(), addMessageToErrorLog(), Ah(), announceUpdate(), ap() (+244 more)
 
-### Community 6 - "t d"
-Cohesion: 0.04
-Nodes (84): a2(), applyPickerSelection(), calculateScore(), calculateSimilarity(), clearPickerSelection(), close(), contains(), $ee() (+76 more)
-
-### Community 7 - "forEach Knowledge"
+### Community 8 - "Community 8"
 Cohesion: 0.02
-Nodes (23): createLeaf(), deliberateCreateElement(), emulateCTRLClickForLinks(), EventManager, ExcalidrawLoading, ExcalidrawPlugin, fileShouldDefaultAsExcalidraw(), foldExcalidrawSection() (+15 more)
+Nodes (35): addYouTubeThumbnail(), AIProviderProfileModal, AIUsageModal, CommandLinkOptInPrompt, confirmAndCreateFolder(), copyLinkToSelectedElementToClipboard(), createSliderWithText(), EmbeddableSettings (+27 more)
 
-### Community 8 - "ExcalidrawView Knowledge"
+### Community 9 - "Community 9"
 Cohesion: 0.02
-Nodes (28): c$6(), d(), deleteAppStateKeys(), ExcalidrawView, exportImageToFile(), exportToPDF(), getAppStateStrokeWidthEntry(), getExcalidraAndMarkdowViewsForFile() (+20 more)
+Nodes (157): "src/lib/tasks/clean.ts"(), a8(), aD(), af(), after(), ahe(), appendChangeRange(), B1() (+149 more)
 
-### Community 9 - "push Knowledge"
-Cohesion: 0.01
-Nodes (323): nullable(), __(), _1(), _2(), a1(), abe(), abortSession(), Ace() (+315 more)
+### Community 10 - "Community 10"
+Cohesion: 0.02
+Nodes (22): calculateUIModeValue(), deleteAppStateKeys(), excalidrawSword(), ExcalidrawView, getBoundTextElementId(), getExcalidraAndMarkdowViewsForFile(), getExportInternalLinks(), getExportPadding() (+14 more)
 
-### Community 10 - "from Knowledge"
-Cohesion: 0.16
-Nodes (14): addAskPassScriptToExclude(), calcSigns(), changeEnd(), error(), FP(), getHunkHeader(), i5(), j2() (+6 more)
-
-### Community 11 - "stringify Knowledge"
+### Community 11 - "Community 11"
 Cohesion: 0.03
-Nodes (74): addCommentBefore(), addFiles(), addMergeToJSMap(), addPairToJSMap(), ALIAS, all(), anchorIsValid(), anchorNames() (+66 more)
+Nodes (11): EditorHandler, EventManager, ExcalidrawPlugin, fileShouldDefaultAsExcalidraw(), foldExcalidrawSection(), initExcalidrawAutomate(), initializeMarkdownPostProcessor(), ObserverManager (+3 more)
 
-### Community 12 - "DataviewInlineApi Knowledge"
-Cohesion: 0.04
-Nodes (91): $3(), $4(), _accumulate(), advance(), aL(), Bb(), byte(), c() (+83 more)
-
-### Community 13 - "create Knowledge"
+### Community 12 - "Community 12"
 Cohesion: 0.02
-Nodes (31): blank_object(), create_fragment$2(), eraForDateTime(), extractIANAZone(), FixedOffsetZone, formatOffset(), formatRelativeTime(), Formatter (+23 more)
+Nodes (154): ABS(), absolutize(), ADD(), addSegment(), addTerminatorSegment(), ALIGNRP(), AND(), arrayPushArray() (+146 more)
 
-### Community 14 - "DataArrayImpl Knowledge"
-Cohesion: 0.04
-Nodes (67): a(), A$1(), add_render_callback(), b(), b$1(), bestBy(), c(), C$1() (+59 more)
+### Community 13 - "Community 13"
+Cohesion: 0.11
+Nodes (27): _accumulate(), Bb(), byte(), CE(), chunk(), eof(), fromBuffer(), fromIdx() (+19 more)
 
-### Community 15 - "clear Knowledge"
+### Community 14 - "Community 14"
 Cohesion: 0.03
-Nodes (92): accumulateLines(), applyExclusionFilters(), applyInclusionFilters(), _assocRange(), cge(), clone(), collectValuesManually(), _conflictRange() (+84 more)
+Nodes (85): addApiKeySetting(), addAutoSyncSetting(), addButtonBar(), addCenteredHeader(), addConfirmToolCallsSetting(), addDefaultModelSetting(), addDefaultSystemPromptSetting(), addDirectionSetting() (+77 more)
 
-### Community 16 - "ExcalidrawAutomate Knowledge"
-Cohesion: 0.04
-Nodes (77): B_(), bbe(), Bh(), c7(), Cbe(), cpe(), createButton(), createButtonBar() (+69 more)
+### Community 15 - "Community 15"
+Cohesion: 0.11
+Nodes (18): commitElements(), containsReservedMarkdownImageMarker(), convertEmbeddableElementToMarkdownImage(), convertMarkdownImageElementToEmbeddable(), deleteMarkdownImageSource(), duplicateLocalMarkdownImageElement(), fileid, getMarkdownImageCustomData() (+10 more)
 
-### Community 17 - "get Knowledge"
+### Community 16 - "Community 16"
 Cohesion: 0.05
-Nodes (73): By(), getNewItem(), newItem(), readonly(), aa(), Ask(), assertInteractivePrompt(), buildInputPromptOptions() (+65 more)
+Nodes (33): applyDefaultSvgTheme(), checkExcalidrawVersion(), checkScriptUpdates(), consoleLog, ContentSearcher, createTreeWalker(), diagramToHTML(), domNodeToReact() (+25 more)
 
-### Community 18 - "push Knowledge"
-Cohesion: 0.05
-Nodes (115): A(), addTask(), aN(), applyLineGroupping(), askpass(), b6(), Be(), branchInfo() (+107 more)
+### Community 17 - "Community 17"
+Cohesion: 0.03
+Nodes (55): bindAll(), compareValue(), Context, createFixedTaskView(), currentLocale(), DataviewApi, DataviewInlineApi, DataviewInlineIOApi (+47 more)
 
-### Community 19 - "fromObject Knowledge"
+### Community 18 - "Community 18"
+Cohesion: 0.03
+Nodes (52): addFiles(), arabicPresentationForms(), arabicSentenceEndCheck(), arabicSentenceStartCheck(), arabicWordEndCheck(), arabicWordStartCheck(), arrayToMap$1(), average() (+44 more)
+
+### Community 19 - "Community 19"
 Cohesion: 0.04
-Nodes (90): _0(), after(), b0(), B1(), ba(), bc(), before(), c2() (+82 more)
+Nodes (73): _1(), applyDefaultValues(), create(), d9(), deduplicate(), deduplicateCaseInsensitive(), deduplicateCaseSensitive(), deduplicateExact() (+65 more)
 
-### Community 20 - "main js"
+### Community 20 - "Community 20"
+Cohesion: 0.02
+Nodes (107): _5(), $9(), a4(), a7(), accumulateLines(), addChoice(), addFile(), AL() (+99 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.04
+Nodes (72): _(), a(), A$1(), add_render_callback(), b(), b$1(), bestBy(), c() (+64 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.02
+Nodes (41): B$2(), BinaryOpHandler, blank_object(), buildRegex(), create_fragment$2(), createBinaryOps(), eraForDateTime(), expandMacroTokens() (+33 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.03
+Nodes (154): readonly(), aa(), analyzeVariations(), applyCaseOption(), applyOptionFields(), applyValueTextOptions(), applyValueTokenOptions(), Ask() (+146 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.05
+Nodes (89): $1(), a(), aa(), B(), be(), cc(), cD(), Cf() (+81 more)
+
+### Community 25 - "Community 25"
+Cohesion: 0.05
+Nodes (33): Ah(), bi(), bN(), cO(), De(), Dg(), dO(), en() (+25 more)
+
+### Community 26 - "Community 26"
+Cohesion: 0.01
+Nodes (244): addButtonTemplateFromClipboard(), addError(), advanceTo(), ah(), Am(), ao(), Ap(), atMost() (+236 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.05
+Nodes (99): add(), ae(), Am(), At(), bM(), c1(), clone(), cm() (+91 more)
+
+### Community 28 - "Community 28"
 Cohesion: 0.02
 Nodes (49): activeFile, attr(), binding_callbacks, binding_callbacks$1, classList(), configureGlobalMomentLocale(), customTagsSource, dailyNotes (+41 more)
 
-### Community 21 - "MarkdownImageEditorController Knowledge"
+### Community 29 - "Community 29"
+Cohesion: 0.04
+Nodes (106): X4(), _0(), $2(), after(), aS(), b0(), B1(), ba() (+98 more)
+
+### Community 30 - "Community 30"
 Cohesion: 0.05
-Nodes (7): deleteMarkdownImageSource(), MarkdownFragmentView, MarkdownImageEditorController, openLeaf(), openMarkdownImageEditor(), patchMobileView(), setMarkdownImageSource()
+Nodes (45): addItemForInstruction(), addItemsForInstructions(), addTaskGroup(), addTaskGroups(), addTitleRow(), bf(), constructor(), create() (+37 more)
 
-### Community 22 - "main js"
-Cohesion: 0.03
-Nodes (59): ik(), as(), $c(), create_static_templates(), __destroy_into_raw(), Ds(), enterCallback(), es() (+51 more)
+### Community 31 - "Community 31"
+Cohesion: 0.05
+Nodes (116): A8(), addAskPassScriptToExclude(), addTask(), applyLineGroupping(), askpass(), blame(), branchInfo(), branchIsMerged() (+108 more)
 
-### Community 23 - "push Knowledge"
-Cohesion: 0.03
-Nodes (27): arrayToMap(), captureScreenshot(), checkVersionMismatch(), DropManager, executeCommandLinkWithConfirmation(), _getContainerElement(), getElementsAtPointer(), getElementWithLinkAtPointer() (+19 more)
+### Community 32 - "Community 32"
+Cohesion: 0.02
+Nodes (69): addFilterToForeignObjects(), applyArabicPresentationForms(), applyArabicRequireLigatures(), applyLatinLigatures(), applySubstitution(), arabicRequiredLigatures(), around(), chainingSubstitutionFormat3$1() (+61 more)
 
-### Community 24 - "a Knowledge"
-Cohesion: 0.03
-Nodes (79): activate(), applyLegacyFromLocation(), attachSuggesters(), autoSyncOnOpen(), bp(), cancel(), canReturnNow(), cloneSettings() (+71 more)
-
-### Community 25 - "isValid Knowledge"
-Cohesion: 0.03
-Nodes (107): applyCaseOption(), applyOptionFields(), applyValueTextOptions(), applyValueTokenOptions(), B1(), b4(), BL(), bue() (+99 more)
-
-### Community 26 - "getBoundingClientRect Knowledge"
-Cohesion: 0.06
-Nodes (68): applyStyles(), arrow(), clamp(), computeAutoPlacement(), computeOffsets(), computeStyles(), detectOverflow(), distanceAndSkiddingToXY() (+60 more)
-
-### Community 27 - "handleImageRequest Knowledge"
-Cohesion: 0.04
-Nodes (71): nonoptional(), AL(), Au(), Bk(), bq(), Bu(), C_(), cde() (+63 more)
-
-### Community 28 - "moment Knowledge"
-Cohesion: 0.03
-Nodes (81): addTimezone(), applyEdits(), Ax(), Ba(), buildExplanation(), buildInvalid(), buildRelative(), _c() (+73 more)
-
-### Community 29 - "y 1"
-Cohesion: 0.04
-Nodes (68): addItemForInstruction(), addItemsForInstructions(), addTaskGroup(), addTaskGroups(), addTitleRow(), allSupportedDelimiters(), applyFilter(), b1() (+60 more)
-
-### Community 30 - "then Knowledge"
+### Community 33 - "Community 33"
 Cohesion: 0.08
-Nodes (68): _advanceReadiness(), all(), _binStringToArrayBuffer(), callWhenReady(), _checkBlobSupport(), _checkBlobSupportWithoutCaching(), checkIfLocalStorageThrows(), _classCallCheck() (+60 more)
+Nodes (33): buildFolderSelectionContext(), buildFolderSuggestions(), calculateSimilarity(), ensureFolderExists(), getAttachmentSuggestions(), getBlockIds(), getBlockSuggestions(), getFile() (+25 more)
 
-### Community 31 - "destroy Knowledge"
-Cohesion: 0.01
-Nodes (235): #_(), ad(), addButtonTemplateFromClipboard(), ah(), ak(), Am(), Ap(), array() (+227 more)
-
-### Community 32 - "values Knowledge"
-Cohesion: 0.10
-Nodes (34): m$1(), a$c(), alphaBy(), alphaTo(), applyToolsPanelStyle(), b$5(), constructor(), d$2() (+26 more)
-
-### Community 33 - "slice Knowledge"
-Cohesion: 0.05
-Nodes (66): add(), _addPattern(), AT(), B5(), bP(), cn(), defer_effect(), delim() (+58 more)
-
-### Community 34 - "get Knowledge"
+### Community 34 - "Community 34"
 Cohesion: 0.02
-Nodes (219): _7(), a4(), addChoices(), addCommand(), addMessageToErrorLog(), Ah(), ahe(), announceUpdate() (+211 more)
+Nodes (182): $e(), "src/lib/tasks/config.ts"(), By(), _4(), _A(), addCommand(), addCommandForChoice(), addCommandsForChoices() (+174 more)
 
-### Community 35 - "i Knowledge"
+### Community 35 - "Community 35"
 Cohesion: 0.04
-Nodes (64): apply(), b(), cancel(), cO(), createAddNewPresetButton(), $D(), display(), dragged() (+56 more)
+Nodes (89): analyzeAIImage(), applyOutgoingTokenBudget(), buildGenerateAIImageResult(), buildMultipartFormBody(), buildNormalizedMessages(), concatUint8Arrays(), createSyntheticResponse(), debugValueLine() (+81 more)
 
-### Community 36 - "warn Knowledge"
-Cohesion: 0.05
-Nodes (69): addNamespaces(), _addQueryRenderChild(), addResource(), addResourceBundle(), addResources(), changeLanguage(), cloneInstance(), debugWithId() (+61 more)
-
-### Community 37 - "fe Knowledge"
-Cohesion: 0.05
-Nodes (28): "src/lib/tasks/push.ts"(), Ah(), bi(), dO(), EO(), fe(), fO(), Ga() (+20 more)
-
-### Community 38 - "ExcalidrawData Knowledge"
+### Community 36 - "Community 36"
 Cohesion: 0.04
-Nodes (26): arrayToMap$1(), cloneElement(), cloneElement$1(), editorInsertText(), encodeBase64(), ExcalidrawData, getExcalidrawMarkdownHeader(), getExcalidrawMarkdownHeaderSection() (+18 more)
+Nodes (116): A3(), addDurationAsImplied(), addTag(), addTags(), assign(), bA(), bse(), checkAndReturnWithFollowingPattern() (+108 more)
 
-### Community 39 - "get Knowledge"
+### Community 37 - "Community 37"
 Cohesion: 0.03
-Nodes (36): addFields(), bindAll(), bufferToString(), Context, DataviewApi, DataviewInlineApi, defaultLinkHandler(), executeCalendar() (+28 more)
+Nodes (61): ik(), ac(), as(), $c(), create_static_templates(), __destroy_into_raw(), Ds(), enterCallback() (+53 more)
 
-### Community 40 - "get Knowledge"
+### Community 38 - "Community 38"
+Cohesion: 0.03
+Nodes (86): _(), A(), Ac(), aF(), am(), apply(), b6(), Be() (+78 more)
+
+### Community 39 - "Community 39"
+Cohesion: 0.05
+Nodes (7): checkVersionMismatch(), clsx(), insertLaTeXToView(), ObsidianMenu, r$d(), resetStrokeOptions(), ToolsPanel
+
+### Community 40 - "Community 40"
 Cohesion: 0.07
-Nodes (63): assign(), B0(), cancelledDate(), cC(), checkAndReturnWithFollowingPattern(), checkAndReturnWithoutFollowingPattern(), clone(), createdDate() (+55 more)
+Nodes (73): _advanceReadiness(), all(), _binStringToArrayBuffer(), bufferToString(), callWhenReady(), _checkBlobSupport(), _checkBlobSupportWithoutCaching(), checkIfLocalStorageThrows() (+65 more)
 
-### Community 41 - "add Knowledge"
-Cohesion: 0.04
-Nodes (79): a1(), add(), addAllTaskGroups(), addBacklinks(), addChildren(), addClassName(), addDataAttribute(), addEditButton() (+71 more)
-
-### Community 42 - "constructor Knowledge"
+### Community 41 - "Community 41"
 Cohesion: 0.03
-Nodes (165): _8(), aB(), acquire(), _addEntry(), AE(), AO(), append(), AS() (+157 more)
+Nodes (82): addEdgeIfNotToInternal(), addFilter(), addPostProcessor(), addStatus(), aO(), AU(), beginTaskList(), booleanAnd() (+74 more)
 
-### Community 43 - "getSetting Knowledge"
-Cohesion: 0.04
-Nodes (63): "src/lib/parsers/parse-remote-messages.ts"(), "src/lib/tasks/branch.ts"(), a0(), aD(), aP(), aS(), bg(), _c() (+55 more)
-
-### Community 44 - "create Knowledge"
-Cohesion: 0.06
-Nodes (52): al(), bl(), bS(), create(), dtFormatter(), e0(), extract(), fastNumbers() (+44 more)
-
-### Community 45 - "constructor Knowledge"
-Cohesion: 0.07
-Nodes (13): assign(), create_default_slot$1(), create_each_block$2(), extractSubtags(), get_each_context$2(), getExtension(), getFileTitle(), InlineWidget (+5 more)
-
-### Community 46 - "debug Knowledge"
-Cohesion: 0.05
-Nodes (61): cleanDescription(), compareTaskSortKeys(), compareTaskSortKeysIfEitherIsNull(), compareTaskSortKeysIfOptionalMoment(), configure(), createNextOccurrence(), debug(), destinationPath() (+53 more)
-
-### Community 47 - "ToolsPanel Knowledge"
-Cohesion: 0.29
-Nodes (8): decodeBase64(), decodeObfuscatedAPIKeyPayload(), encryptPersistedAPIKeys(), encryptProviderProfiles(), encryptStoredAPIKey(), isEncryptedStoredAPIKey(), isObfuscatedAPIKey(), xorWithSecret()
-
-### Community 48 - "rgb2css Knowledge"
-Cohesion: 0.24
-Nodes (12): explainDebugSettings(), explainError(), explainFilters(), explainGroups(), explainIgnoreGlobalQuery(), explainLayout(), explainQuery(), explainQueryLimits() (+4 more)
-
-### Community 49 - "errorlog Knowledge"
-Cohesion: 0.03
-Nodes (95): AIModelConfigModal, analyzeAIImage(), applyOutgoingTokenBudget(), buildGenerateAIImageResult(), buildMultipartFormBody(), buildNormalizedMessages(), concatUint8Arrays(), createSyntheticResponse() (+87 more)
-
-### Community 50 - "d Knowledge"
-Cohesion: 0.06
-Nodes (57): ae(), ao(), ar(), B(), Bt(), Ci(), co(), Cr() (+49 more)
-
-### Community 51 - "join Knowledge"
-Cohesion: 0.05
-Nodes (59): _2(), a2(), b2(), build(), C2(), c4(), constructor(), createNewRepo() (+51 more)
-
-### Community 52 - "constructor Knowledge"
-Cohesion: 0.03
-Nodes (95): KA(), addEdgeIfNotToInternal(), addFilter(), addPostProcessor(), addStatus(), aO(), AU(), beginTaskList() (+87 more)
-
-### Community 53 - "Duration Knowledge"
-Cohesion: 0.02
-Nodes (116): a7(), addApiKeySetting(), addAutoSyncSetting(), addButtonBar(), addCenteredHeader(), addCommandEditor(), addConfirmToolCallsSetting(), addDefaultModelSetting() (+108 more)
-
-### Community 54 - "linkClick Knowledge"
-Cohesion: 0.02
-Nodes (170): A(), aa(), activate(), addError(), aE(), aF(), and(), apply() (+162 more)
-
-### Community 55 - "xr Knowledge"
-Cohesion: 0.02
-Nodes (160): ABS(), absolutize(), ADD(), addSegment(), addTerminatorSegment(), ALIGNRP(), AND(), arcToCubicCurves() (+152 more)
-
-### Community 56 - "t Knowledge"
-Cohesion: 0.05
-Nodes (38): a2(), aB(), activatePlaceholder(), BD(), CH(), constructor(), deactivatePlaceholder(), features() (+30 more)
-
-### Community 57 - "M Knowledge"
-Cohesion: 0.05
-Nodes (20): bO(), compare(), computeStagedHunks(), filterCommon(), Gb(), iM(), jt(), M$() (+12 more)
-
-### Community 58 - "ExcalidrawSidepanelView Knowledge"
+### Community 42 - "Community 42"
 Cohesion: 0.07
 Nodes (66): aJ(), Ate(), ay(), bi(), bJ(), bm(), Bn(), BV() (+58 more)
 
-### Community 59 - "m 1"
-Cohesion: 0.02
-Nodes (144): "src/lib/tasks/clean.ts"(), a8(), aD(), af(), after(), appendChangeRange(), b8(), b9() (+136 more)
-
-### Community 60 - "slice Knowledge"
-Cohesion: 0.04
-Nodes (49): asyncEvalInContext(), count(), createFixedListView(), createFixedTableView(), createFixedTaskView(), createListView(), createTableView(), createTaskView() (+41 more)
-
-### Community 61 - "t Knowledge"
+### Community 43 - "Community 43"
 Cohesion: 0.06
-Nodes (27): cleanBlockRef(), cleanSectionHeading(), EmbeddedFile, EmbeddedFilesLoader, errorlog(), generateIdFromFile(), getBinaryFileFromDataURL(), getBinaryFileFromDataURL$1() (+19 more)
+Nodes (5): MarkdownFragmentView, MarkdownImageEditorController, openLeaf(), openMarkdownImageEditor(), patchMobileView()
 
-### Community 62 - "init Knowledge"
-Cohesion: 0.07
-Nodes (33): ag(), Av(), bimap(), bO(), ec(), flatMap(), formatDateTimeFromString(), Fv() (+25 more)
+### Community 44 - "Community 44"
+Cohesion: 0.03
+Nodes (89): $(), apply(), applyEdits(), Ax(), b1(), Ba(), buildExplanation(), buildInvalid() (+81 more)
 
-### Community 63 - "now Knowledge"
-Cohesion: 0.26
-Nodes (3): isEmpty(), Lexer, peek()
-
-### Community 64 - "r Knowledge"
+### Community 45 - "Community 45"
 Cohesion: 0.08
-Nodes (39): Ac(), am(), cm(), copy(), eD(), eM(), fn(), Fx() (+31 more)
+Nodes (28): addCopyButton(), _addQueryRenderChild(), addSearchBox(), addToolbar(), adjustRelativeLinksInDescription(), Al(), applySearchBoxFilterAndRerender(), filterResults() (+20 more)
 
-### Community 65 - "indexOf Knowledge"
-Cohesion: 0.04
-Nodes (104): $1(), a(), aa(), B(), be(), bf(), c1(), cc() (+96 more)
-
-### Community 66 - "get Knowledge"
+### Community 46 - "Community 46"
 Cohesion: 0.07
-Nodes (36): f3(), bb(), calculateDragIntersect(), clear(), contains(), dragEnd(), dragEndHTML(), dragMove() (+28 more)
+Nodes (36): aN(), B5(), bP(), d6(), defer_effect(), DP(), ensure(), eP() (+28 more)
 
-### Community 67 - "fj Knowledge"
+### Community 47 - "Community 47"
+Cohesion: 0.07
+Nodes (63): applyStyles(), arrow(), computeAutoPlacement(), computeOffsets(), computeStyles(), detectOverflow(), distanceAndSkiddingToXY(), effect() (+55 more)
+
+### Community 48 - "Community 48"
+Cohesion: 0.05
+Nodes (48): $1(), allStatuses(), applyToStatusRegistry(), b(), createAddNewPresetButton(), display(), eO(), eR() (+40 more)
+
+### Community 49 - "Community 49"
+Cohesion: 0.04
+Nodes (74): a1(), add(), addAllTaskGroups(), addBacklinks(), addChildren(), addClassName(), addDataAttribute(), addEditButton() (+66 more)
+
+### Community 50 - "Community 50"
+Cohesion: 0.04
+Nodes (74): $(), a0(), aD(), bg(), bh(), Br(), Bx(), Ca() (+66 more)
+
+### Community 51 - "Community 51"
+Cohesion: 0.05
+Nodes (3): ExcalidrawSidepanelTab, ExcalidrawSidepanelView, stripYamlFrontmatter()
+
+### Community 52 - "Community 52"
+Cohesion: 0.05
+Nodes (64): Ac(), applyExclusionFilters(), applyInclusionFilters(), b7(), be(), bf(), buildConditionalUserScript(), captureTargetAlreadyExists() (+56 more)
+
+### Community 53 - "Community 53"
+Cohesion: 0.06
+Nodes (17): buildInlineFields(), CsvCache, extractInlineFields(), extractSpecialTaskFields(), findClosing(), findSeparator(), findSpecificInlineField(), FullIndex (+9 more)
+
+### Community 54 - "Community 54"
+Cohesion: 0.06
+Nodes (13): addFields(), FileImporter, flatMap2(), getParentFolder(), IndexMap, ListItem$1, map2(), matchingSourcePaths() (+5 more)
+
+### Community 55 - "Community 55"
+Cohesion: 0.17
+Nodes (25): ai(), bf(), cr(), createFilter(), ct(), eF(), F(), filter() (+17 more)
+
+### Community 56 - "Community 56"
+Cohesion: 0.05
+Nodes (65): addNamespaces(), addResource(), addResourceBundle(), addResources(), changeLanguage(), cloneInstance(), debugWithId(), deprecate() (+57 more)
+
+### Community 57 - "Community 57"
+Cohesion: 0.11
+Nodes (23): CP(), ES(), Ew(), expandFormat(), formatDateTimeFromString(), formatDurationFromString(), g0(), gI() (+15 more)
+
+### Community 58 - "Community 58"
+Cohesion: 0.03
+Nodes (187): _8(), aB(), acquire(), add(), _addEntry(), _addPattern(), AE(), aL() (+179 more)
+
+### Community 59 - "Community 59"
+Cohesion: 0.06
+Nodes (50): buildSeedMessages(), considerSubsectionsForAnchor(), createInlineInsertAfterIfNotFound(), createInsertAfterIfNotFound(), createInsertAfterOrdered(), createInsertBeforeIfNotFound(), dbe(), expandFormatTemplateEscapes() (+42 more)
+
+### Community 60 - "Community 60"
+Cohesion: 0.04
+Nodes (61): a4(), absPluginConfigPath(), adaptTextForFakeCommit(), ak(), applyPatch(), bShouldBeEditable(), c4(), c5() (+53 more)
+
+### Community 61 - "Community 61"
+Cohesion: 0.06
+Nodes (56): ae(), ao(), ar(), B(), Bt(), Ci(), co(), Cr() (+48 more)
+
+### Community 62 - "Community 62"
+Cohesion: 0.07
+Nodes (59): assign(), B0(), buildGroupingTree(), cancelledDate(), cC(), checkAndReturnWithFollowingPattern(), checkAndReturnWithoutFollowingPattern(), clone() (+51 more)
+
+### Community 63 - "Community 63"
+Cohesion: 0.09
+Nodes (31): count(), createFixedListView(), createFixedTableView(), enumerateChildren(), ErrorMessage(), ErrorPre(), isElementGroup(), isGrouping() (+23 more)
+
+### Community 64 - "Community 64"
+Cohesion: 0.02
+Nodes (141): addCloseFooter(), addFormatInput(), addHoverTooltip(), applyLegacyFromLocation(), applyPickerSelection(), attachSuggesters(), autoSyncOnOpen(), Bk() (+133 more)
+
+### Community 65 - "Community 65"
+Cohesion: 0.05
+Nodes (47): Color, compand(), css2rgb(), gammaAdjustSRGB(), getLabWhitePoint(), hcl2rgb(), hsl2css(), hsl2rgb() (+39 more)
+
+### Community 66 - "Community 66"
+Cohesion: 0.05
+Nodes (38): a2(), activatePlaceholder(), archiveCompletedCards(), bk(), compileSettings(), constructor(), deactivatePlaceholder(), features() (+30 more)
+
+### Community 67 - "Community 67"
+Cohesion: 0.05
+Nodes (7): clamp(), createLeaf(), FloatingModal, GenericInputPrompt, getAudioElementHeight(), InsertPDFModal, LaTexPrompt
+
+### Community 68 - "Community 68"
+Cohesion: 0.10
+Nodes (6): FieldSuggester, GenericSuggester, isEmpty(), Lexer, peek(), Suggester
+
+### Community 69 - "Community 69"
+Cohesion: 0.04
+Nodes (33): _2(), b2(), compare(), computeStagedHunks(), E3(), filterCommon(), Gb(), Hb() (+25 more)
+
+### Community 70 - "Community 70"
+Cohesion: 0.05
+Nodes (45): ag(), Av(), bimap(), bO(), cS(), cT(), Ds(), e() (+37 more)
+
+### Community 71 - "Community 71"
+Cohesion: 0.06
+Nodes (49): al(), bl(), create(), Df(), dtFormatter(), e0(), extract(), fastNumbers() (+41 more)
+
+### Community 72 - "Community 72"
+Cohesion: 0.04
+Nodes (75): cleanDescription(), compareTaskSortKeys(), compareTaskSortKeysIfEitherIsNull(), compareTaskSortKeysIfOptionalMoment(), configure(), debouncedRender(), debug(), destinationPath() (+67 more)
+
+### Community 73 - "Community 73"
+Cohesion: 0.05
+Nodes (58): a2(), build(), C2(), changeToNewFilepath(), computeSigns(), constructor(), createNewRepo(), dispatch() (+50 more)
+
+### Community 74 - "Community 74"
 Cohesion: 0.11
 Nodes (46): As(), Bs(), bx(), Cj(), cr(), Cx(), dx(), fj() (+38 more)
 
-### Community 68 - "from Knowledge"
+### Community 75 - "Community 75"
+Cohesion: 0.17
+Nodes (16): addGlyphNames(), addGlyphNamesAll(), addGlyphNamesToUnicodeMap(), getTag(), getULong(), getUShort(), loadFromFile(), loadSync() (+8 more)
+
+### Community 76 - "Community 76"
+Cohesion: 0.09
+Nodes (27): activate(), buildResultQueue(), chooseSide(), collapseDifferences(), decideAction(), dequeue(), determineDifference(), diffableEndpoints() (+19 more)
+
+### Community 77 - "Community 77"
 Cohesion: 0.04
-Nodes (92): addClass(), addClasses(), addColumn(), addCommands(), addModalButtons(), addPostProcessors(), addShowcase(), addStatusBarBuildIndicator() (+84 more)
+Nodes (71): a$3(), a$9(), analyze(), b$2(), b$4(), c$2(), c$5(), c$6() (+63 more)
 
-### Community 69 - "convertMarkdownToSVG Knowledge"
-Cohesion: 0.05
-Nodes (70): addButton(), addQuickAccessButtons(), ao(), bs(), capture(), co(), decrement(), delete() (+62 more)
+### Community 78 - "Community 78"
+Cohesion: 0.12
+Nodes (22): eD(), Es(), fu(), gO(), gx(), Hx(), I1(), iD() (+14 more)
 
-### Community 70 - "InlineLinkSuggester Knowledge"
-Cohesion: 0.11
-Nodes (17): checkExcalidrawVersion(), checkScriptUpdates(), contains(), getGlobalTaskQueue(), getParentOfClass(), haveLinkedFilesChanged(), isInstanceOfHTMLElement(), isTextOnlyEmbed() (+9 more)
-
-### Community 71 - "createFilterOrErrorMessage Knowledge"
-Cohesion: 0.08
-Nodes (43): buildFilterFunction(), buildGroupingTree(), canCreateFilterForLine(), checkForUnexpandedTemplateText(), comparator(), createFilterOrErrorMessage(), createGrouper(), createGrouperFromLine() (+35 more)
-
-### Community 72 - "argument Knowledge"
+### Community 79 - "Community 79"
 Cohesion: 0.14
-Nodes (16): Ale(), Bx(), e4(), existsInVault(), Fq(), Ik(), Ix(), kle() (+8 more)
+Nodes (13): createFileAndAwaitMetacacheUpdate(), createOrOverwriteFile(), download(), errorlog(), exportImageToFile(), exportSVG(), getAnnotationFileNameAndFolder(), getAttachmentsFolderAndFilePath() (+5 more)
 
-### Community 73 - "fromLine Knowledge"
-Cohesion: 0.07
-Nodes (34): allLinesIdentical(), applyQueryToTasks(), applyTaskLimit(), asString(), by(), canSaveEdits(), createNormalSorter(), debouncedRender() (+26 more)
+### Community 80 - "Community 80"
+Cohesion: 0.06
+Nodes (32): aB(), aO(), BD(), CH(), Eb(), fileName(), FP(), gL() (+24 more)
 
-### Community 74 - "assign Knowledge"
+### Community 81 - "Community 81"
+Cohesion: 0.05
+Nodes (47): addFileToGitignore(), append(), ar(), b8(), Bv(), capture(), cH(), ck() (+39 more)
+
+### Community 82 - "Community 82"
 Cohesion: 0.04
-Nodes (19): B$2(), BinaryOpHandler, buildInlineFields(), createBinaryOps(), CsvCache, DataviewPlugin, empty(), FileImporter (+11 more)
+Nodes (78): allLinesIdentical(), allSupportedDelimiters(), applyFilter(), applyQueryToTasks(), applyTaskLimit(), asString(), bO(), buildFilterFunction() (+70 more)
 
-### Community 75 - "src git js"
+### Community 83 - "Community 83"
+Cohesion: 0.07
+Nodes (37): Bu(), bySymbol(), bySymbolOrCreate(), canApplyFallback(), createNextOccurrence(), createUnknownStatus(), deserialize(), extractDateField() (+29 more)
+
+### Community 84 - "Community 84"
 Cohesion: 0.08
-Nodes (94): "src/lib/task-callback.ts"(), "src/lib/tasks/merge.ts"(), "src/lib/tasks/pull.ts"(), ianaName(), ac(), ai(), Al(), as() (+86 more)
+Nodes (40): m$1(), a$c(), alphaBy(), alphaTo(), applyToolsPanelStyle(), arcToCubicCurves(), b$5(), clearToolsPanelDynamicStyle() (+32 more)
 
-### Community 76 - "parse Knowledge"
+### Community 85 - "Community 85"
+Cohesion: 0.03
+Nodes (78): addCommentBefore(), addMergeToJSMap(), addPairToJSMap(), ALIAS, all(), anchorIsValid(), anchorNames(), applyReviver() (+70 more)
+
+### Community 86 - "Community 86"
+Cohesion: 0.03
+Nodes (45): addBackOfTheNoteCard(), addTextWithOEmbed(), captureScreenshot(), carveOutImage(), carveOutPDF(), createImageCropperFile(), CropImage, ensureActiveScriptSettingsObject() (+37 more)
+
+### Community 87 - "Community 87"
+Cohesion: 0.02
+Nodes (70): addSVGToImgSrc(), appendMarkdownBottomSpacer(), b(), blobToBase64(), cleanBlockRef(), cleanSectionHeading(), convertSVGStringToElement(), createPNG() (+62 more)
+
+### Community 88 - "Community 88"
+Cohesion: 0.03
+Nodes (132): #_(), A(), ab(), aE(), aF(), and(), apply(), Ar() (+124 more)
+
+### Community 89 - "Community 89"
 Cohesion: 0.15
-Nodes (11): aA(), AI(), Bb(), bn(), GL(), hN(), L2(), lP() (+3 more)
+Nodes (18): beginRender(), explainDebugSettings(), explainError(), explainFilters(), explainGroups(), explainIgnoreGlobalQuery(), explainLayout(), explainQuery() (+10 more)
 
-### Community 77 - "fn Knowledge"
-Cohesion: 0.10
-Nodes (30): aj(), cb(), db(), delete(), disconnectedCallback(), Dn(), Dt(), ej() (+22 more)
-
-### Community 78 - "init Knowledge"
+### Community 90 - "Community 90"
 Cohesion: 0.08
 Nodes (23): add_css(), add_css$1(), add_css$2(), add_css$3(), add_css$4(), add_css$5(), add_render_callback(), append() (+15 more)
 
-### Community 79 - "onClose Knowledge"
-Cohesion: 0.04
-Nodes (97): A3(), addDurationAsImplied(), addTag(), addTags(), assign(), bA(), bse(), checkAndReturnWithFollowingPattern() (+89 more)
+### Community 91 - "Community 91"
+Cohesion: 0.03
+Nodes (112): addClass(), addClasses(), addCommands(), addModalButtons(), addPostProcessors(), addShowcase(), applyButtonTemplates(), applyExcludedFolders() (+104 more)
 
-### Community 80 - "StencilLibraryManager Knowledge"
-Cohesion: 0.07
-Nodes (10): CommandManager, createFileAndAwaitMetacacheUpdate(), createOrOverwriteFile(), download(), getAnnotationFileNameAndFolder(), getAttachmentsFolderAndFilePath(), getCropFileNameAndFolder(), getYouTubeStartAt() (+2 more)
-
-### Community 82 - "F Knowledge"
-Cohesion: 0.06
-Nodes (55): aF(), ai(), apply(), bf(), castInput(), cr(), createFilter(), ct() (+47 more)
-
-### Community 83 - "de Knowledge"
+### Community 92 - "Community 92"
 Cohesion: 0.15
-Nodes (30): append_template_to_active_file(), create_new_note_from_template(), create_running_config(), de(), dr(), e(), Ea(), end_templater_task() (+22 more)
+Nodes (3): getLibraryItems(), normalizeLibraryFileName(), StencilLibraryManager
 
-### Community 84 - "Lexer Knowledge"
-Cohesion: 0.09
-Nodes (4): getLinkSuggestionsFiltered(), InlineLinkSuggester, renderHeadingSuggestionRow(), renderParagraphSuggestionRow()
+### Community 93 - "Community 93"
+Cohesion: 0.03
+Nodes (103): __(), d1(), ey(), nullable(), nullish(), prefault(), add(), Awe() (+95 more)
 
-### Community 85 - "applyQueryToTasks Knowledge"
+### Community 94 - "Community 94"
+Cohesion: 0.08
+Nodes (97): "src/lib/task-callback.ts"(), "src/lib/tasks/branch.ts"(), "src/lib/tasks/merge.ts"(), "src/lib/tasks/pull.ts"(), ianaName(), ac(), ai(), Al() (+89 more)
+
+### Community 95 - "Community 95"
+Cohesion: 0.15
+Nodes (16): addDefaultStatusTypes(), canSaveEdits(), clearStatuses(), EW(), fromAllTasks(), getMarkdownFileInfo(), getSuggestions(), getTasks() (+8 more)
+
+### Community 96 - "Community 96"
 Cohesion: 0.10
-Nodes (24): addCopyButton(), addSearchBox(), addToolbar(), adjustRelativeLinksInDescription(), Al(), applySearchBoxFilterAndRerender(), filterResults(), finish() (+16 more)
+Nodes (31): aj(), cb(), db(), delete(), disconnectedCallback(), Dn(), Dt(), ej() (+23 more)
 
-### Community 86 - "grabSuggestions Knowledge"
+### Community 97 - "Community 97"
 Cohesion: 0.05
-Nodes (44): Color, compand(), css2rgb(), gammaAdjustSRGB(), getLabWhitePoint(), hcl2rgb(), hsl2css(), hsl2rgb() (+36 more)
+Nodes (34): Alternativas, Consecuencias, Contexto, Decisión adoptada, Motivo, <% tp.file.title %>, Alcance, Bitácora (+26 more)
 
-### Community 87 - "CalendarView Knowledge"
+### Community 98 - "Community 98"
+Cohesion: 0.11
+Nodes (18): aA(), AI(), Bb(), bn(), cO(), $D(), GL(), hN() (+10 more)
+
+### Community 99 - "Community 99"
 Cohesion: 0.11
 Nodes (10): CalendarView, clamp(), createConfirmationDialog(), get_store_value(), getDotsForDailyNote(), getWordCount(), getWordLengthAsDots(), showFileMenu() (+2 more)
 
-### Community 88 - "GenericInputPrompt Knowledge"
-Cohesion: 0.02
-Nodes (41): addYouTubeThumbnail(), AIProviderProfileModal, AIUsageModal, clearDisplayClasses(), CommandLinkOptInPrompt, copyLinkToSelectedElementToClipboard(), EmbeddableSettings, ExportDialog (+33 more)
+### Community 100 - "Community 100"
+Cohesion: 0.07
+Nodes (14): assign(), create_default_slot$1(), create_each_block$2(), extractSubtags(), get_each_context$2(), getExtension(), getFileTitle(), InlineWidget (+6 more)
 
-### Community 89 - "Ajustes y complementos"
-Cohesion: 0.17
-Nodes (14): Video y transcripción, Ajustes y complementos, Dataview, Inventario de infraestructura, Pandoc, QuickAdd, Seguridad, Tasks (+6 more)
-
-### Community 90 - "ExcalidrawExtrasGateway Knowledge"
-Cohesion: 0.15
-Nodes (4): ExcalidrawExtrasGateway, ExtrasActivationModal, printPdf(), readLocalFileBinary()
-
-### Community 91 - "close Knowledge"
-Cohesion: 0.05
-Nodes (45): addGlyphNames(), addGlyphNamesAll(), addGlyphNamesToUnicodeMap(), argument(), average(), buildPath(), computeCheckSum(), fail() (+37 more)
-
-### Community 92 - "activateFeature Knowledge"
-Cohesion: 0.09
-Nodes (32): alpha(), analyze(), b(), b$4(), chroma(), css(), cubehelix(), f() (+24 more)
-
-### Community 93 - "ue Knowledge"
-Cohesion: 0.10
-Nodes (24): ac(), bi(), Ca(), cu(), get_all_functions_documentation(), get_all_modules_documentation(), get_app_functions_documentation(), get_error_msg() (+16 more)
-
-### Community 94 - "xi Knowledge"
+### Community 101 - "Community 101"
 Cohesion: 0.04
-Nodes (118): add(), ae(), Am(), At(), bM(), bw(), clone(), cm() (+110 more)
+Nodes (98): aa(), activate(), add(), addButton(), addQuickAccessButtons(), bs(), capture(), clear() (+90 more)
 
-### Community 95 - "InsertLinkDialog Knowledge"
-Cohesion: 0.03
-Nodes (45): addBackOfTheNoteCard(), addTextWithOEmbed(), appendMarkdownBottomSpacer(), carveOutImage(), carveOutPDF(), commitElements(), containsReservedMarkdownImageMarker(), convertEmbeddableElementToMarkdownImage() (+37 more)
+### Community 102 - "Community 102"
+Cohesion: 0.07
+Nodes (39): Ak(), Ale(), Di(), epe(), existsInVault(), ffe(), Fq(), fS() (+31 more)
 
-### Community 96 - "mc Knowledge"
+### Community 103 - "Community 103"
+Cohesion: 0.14
+Nodes (4): ExcalidrawExtrasGateway, ExtrasActivationModal, tex2dataURL(), updateEquation()
+
+### Community 104 - "Community 104"
+Cohesion: 0.05
+Nodes (47): addView(), bb(), calculateDragIntersect(), clear(), dragEnd(), dragEndHTML(), dragMove(), dragMoveHTML() (+39 more)
+
+### Community 105 - "Community 105"
+Cohesion: 0.14
+Nodes (32): append_template_to_active_file(), create_new_note_from_template(), create_running_config(), de(), dr(), e(), Ea(), end_templater_task() (+24 more)
+
+### Community 106 - "Community 106"
+Cohesion: 0.13
+Nodes (19): bi(), Ca(), cu(), get_all_functions_documentation(), get_all_modules_documentation(), get_app_functions_documentation(), get_error_msg(), getSuggestions() (+11 more)
+
+### Community 107 - "Community 107"
+Cohesion: 0.04
+Nodes (25): asyncEvalInContext(), asyncTryOrPropagate(), createListView(), createTableView(), createTaskView(), DataviewCalendarRenderer, DataviewInlineJSRenderer, DataviewInlineRenderer (+17 more)
+
+### Community 108 - "Community 108"
 Cohesion: 0.13
 Nodes (23): closing_tag(), dc(), dt(), En(), gc(), global_var(), gt(), hc() (+15 more)
 
-### Community 97 - "assign Knowledge"
+### Community 109 - "Community 109"
 Cohesion: 0.11
 Nodes (22): assign(), create_default_slot(), create_default_slot$1(), create_each_block(), create_each_block$1(), create_each_block$2(), create_each_block_3(), create_fragment$7() (+14 more)
 
-### Community 98 - "parseCFFTable Knowledge"
-Cohesion: 0.02
-Nodes (199): d1(), exactOptional(), prefault(), _4(), $9(), add(), addChoice(), addCommandForChoice() (+191 more)
-
-### Community 99 - "setup Knowledge"
-Cohesion: 0.11
-Nodes (22): add_template_hotkey(), constructor(), desktopShouldHighlight(), disable_highlighter(), enable_highlighter(), Et(), fc(), init() (+14 more)
-
-### Community 100 - "Y Knowledge"
-Cohesion: 0.13
-Nodes (11): F(), handle_create_from_template(), P(), pt(), Re(), resolve_template_file(), xe(), Xr() (+3 more)
-
-### Community 101 - "DropManager Knowledge"
-Cohesion: 0.05
-Nodes (39): asItemIndex(), composeAlias(), composeDoc(), composeEmptyNode(), composeNode(), Composer, composeScalar(), containsNewline() (+31 more)
-
-### Community 102 - "cm Knowledge"
-Cohesion: 0.03
-Nodes (84): Ac(), b7(), Bc(), bf(), buildConditionalUserScript(), buildFolderSelectionContext(), buildFolderSuggestions(), captureTargetAlreadyExists() (+76 more)
-
-### Community 103 - "init 1"
-Cohesion: 0.12
-Nodes (15): add_render_callback$1(), blank_object$1(), Calendar, children$1(), create_fragment(), destroy_component$1(), flush$1(), init$1() (+7 more)
-
-### Community 104 - "update Knowledge"
-Cohesion: 0.14
-Nodes (12): bind(), CalendarPlugin, component_subscribe(), create_if_block$1(), get_current_component(), get_current_component$1(), handle_promise(), instance() (+4 more)
-
-### Community 105 - "parseDocument Knowledge"
-Cohesion: 0.05
-Nodes (44): a$3(), a$7(), a$9(), b$2(), c$2(), c$3(), c$4(), c$5() (+36 more)
-
-### Community 106 - "handleError Knowledge"
-Cohesion: 0.06
-Nodes (30): a(), changeThemeOfExcalidrawMD(), compress(), debounce(), deltaE(), Directives, e(), ErrorHandler (+22 more)
-
-### Community 107 - "FileSuggestionModal Knowledge"
-Cohesion: 0.08
-Nodes (32): activateCodeMirrorExtensions(), activateFeature(), activateLineAuthoring(), aP(), beforeSaveSettings(), clear(), conditionallyActivateBySettings(), configureLineAuthorShowStatus() (+24 more)
-
-### Community 108 - "explainQuery Knowledge"
-Cohesion: 0.05
-Nodes (15): asNumber(), clone$1(), dayDiff(), Duration, durationToMillis(), getCachedINF(), hasOwnProperty(), isTruthy() (+7 more)
-
-### Community 109 - "lc Knowledge"
-Cohesion: 0.17
-Nodes (12): X4(), $2(), hw(), IL(), instance(), parseSpecifier(), QD(), Tc() (+4 more)
-
-### Community 110 - "CalendarSettingsTab Knowledge"
-Cohesion: 0.19
-Nodes (6): appHasPeriodicNotesPluginLoaded(), CalendarSettingsTab, empty(), space(), text(), weekdays
-
-### Community 111 - "FixedOffsetZone Knowledge"
-Cohesion: 0.16
-Nodes (15): _5(), che(), fhe(), l1(), lhe(), M5(), mhe(), P5() (+7 more)
-
-### Community 112 - "eof Knowledge"
-Cohesion: 0.08
-Nodes (25): cH(), e6(), eH(), Ei(), ET(), Eu(), g6(), gC() (+17 more)
-
-### Community 113 - "renderSuggestion Knowledge"
-Cohesion: 0.13
-Nodes (16): aa(), createForm(), Da(), display(), getItemText(), getNumberOfArguments(), Ie(), Ji() (+8 more)
-
-### Community 114 - "join Knowledge"
-Cohesion: 0.16
-Nodes (15): createDailyNote(), createWeeklyNote(), ensureFolderExists(), getAllDailyNotes(), getAllWeeklyNotes(), getDailyNoteSettings(), getFormattedTagAttributes(), getMonthlyNoteSettings() (+7 more)
-
-### Community 115 - "sanitizeSvgTree Knowledge"
-Cohesion: 0.05
-Nodes (75): advanceTo(), atEOF(), atLeast(), binaryLeft(), binaryLeftRange(), binaryRight(), binaryRightRange(), box() (+67 more)
-
-### Community 116 - "manifest json"
-Cohesion: 0.13
-Nodes (14): author, authorUrl, description, fundingUrl, GitHub Sponser (SilentVoid13, creator), GitHub Sponser (Zachatoo, maintainer), Ko-fi (Zachatoo, maintainer), Paypal (SilentVoid13, creator) (+6 more)
-
-### Community 117 - "GenericSuggester Knowledge"
-Cohesion: 0.03
-Nodes (111): $e(), "src/lib/tasks/config.ts"(), _A(), A5(), Ak(), ao(), as(), assertAssignableName() (+103 more)
-
-### Community 118 - "fL Knowledge"
-Cohesion: 0.10
-Nodes (42): ab(), constructMDRCWidget(), createBindTarget(), createButtonGroupMountable(), createButtonMountable(), createEmbedMountable(), createExcludedMountable(), createField() (+34 more)
-
-### Community 119 - "generate object"
-Cohesion: 0.03
-Nodes (17): clearToolsPanelDynamicStyle(), css$1(), CSSCodeEditor, ExcalidrawSettingTab, FileSuggestionModal, FloatingModal, FontPickerComponent, GenericInputPrompt (+9 more)
-
-### Community 120 - "nextAfter Knowledge"
-Cohesion: 0.17
-Nodes (13): cS(), cT(), Ds(), e(), hh(), Kv(), l2(), LA() (+5 more)
-
-### Community 121 - "QuickAdd CRRB v2 Configuration"
-Cohesion: 0.28
-Nodes (8): Pendientes, Tareas centrales, QuickAdd CRRB v2 Configuration, Original QuickAdd Options, QuickAdd, Tag Capture, Task Capture, Task Dashboard
-
-### Community 122 - "diagramToHTML Knowledge"
-Cohesion: 0.09
-Nodes (5): getLibraryItems(), InsertPDFModal, normalizeLibraryFileName(), StencilLibraryManager, stripLegacyAISettings()
-
-### Community 123 - "SelectedElementActionsMenu Knowledge"
-Cohesion: 0.24
-Nodes (3): renderChainActions(), getSingleSelectedElementId(), SelectedElementActionsMenu
-
-### Community 124 - "Suggester Knowledge"
-Cohesion: 0.04
-Nodes (25): close(), contains(), destroy(), distanceAndSkiddingToXY(), effect2(), getSideOffsets(), getSuggestions(), handleButtonClick() (+17 more)
-
-### Community 125 - "manifest json"
-Cohesion: 0.18
-Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
-
-### Community 126 - "tR Knowledge"
-Cohesion: 0.04
-Nodes (15): _(), c(), Do(), Fa(), getCommands(), getCommandsWithoutIcons(), hn(), listActiveToolbarCommands() (+7 more)
-
-### Community 127 - "manifest json"
-Cohesion: 0.18
-Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
-
-### Community 128 - "run all"
-Cohesion: 0.20
-Nodes (5): check_outros(), destroy_component(), is_empty(), run_all(), SvelteComponent
-
-### Community 130 - "manifest json"
-Cohesion: 0.20
-Nodes (9): author, authorUrl, description, helpUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
-
-### Community 131 - "blockString Knowledge"
-Cohesion: 0.04
-Nodes (77): add(), applyButtonTemplates(), applyExcludedFolders(), applyInputFieldTemplates(), applyTemplate(), checkForDeprecation(), checkRenderChildTypeAllowed(), concat() (+69 more)
-
-### Community 132 - "ContentSearcher Knowledge"
-Cohesion: 0.10
-Nodes (31): currentLocale(), DataviewInlineIOApi, DataviewIOApi, extractImageDimensions(), isBoolean(), isBuiltin(), isDate(), isDuration() (+23 more)
-
-### Community 133 - "manifest json"
-Cohesion: 0.20
-Nodes (9): author, authorUrl, description, helpUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
-
-### Community 134 - "commitControlValue Knowledge"
-Cohesion: 0.22
-Nodes (10): Ba(), commitControlValue(), Fa(), getControlValue(), isLocalSettingsKey(), Ma(), save_settings(), setControlValue() (+2 more)
-
-### Community 135 - "manifest json"
-Cohesion: 0.22
-Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
-
-### Community 136 - "toMessage Knowledge"
-Cohesion: 0.10
-Nodes (25): Bu(), bySymbol(), bySymbolOrCreate(), canApplyFallback(), createUnknownStatus(), deserialize(), extractDateField(), extractField() (+17 more)
-
-### Community 137 - "InvalidZone Knowledge"
-Cohesion: 0.07
-Nodes (45): considerSubsectionsForAnchor(), createInlineInsertAfterIfNotFound(), createInsertAfterIfNotFound(), createInsertAfterOrdered(), createInsertBeforeIfNotFound(), expandFormatTemplateEscapes(), expandLinebreakEscapesOutsideTokens(), expandTemplateLinebreaksOnce() (+37 more)
-
-### Community 138 - "manifest json"
-Cohesion: 0.22
-Nodes (8): author, authorUrl, description, fundingUrl, id, isDesktopOnly, name, version
-
-### Community 140 - "app json"
-Cohesion: 0.25
-Nodes (7): alwaysUpdateLinks, attachmentFolderPath, newFileFolderPath, newFileLocation, promptDelete, showLineNumber, spellcheck
-
-### Community 141 - "MonkeyPatchManager Knowledge"
-Cohesion: 0.08
-Nodes (35): "src/lib/tasks/log.ts"(), "src/lib/tasks/stash-list.ts"(), aI(), aw(), CP(), ES(), Ew(), expandFormat() (+27 more)
-
-### Community 142 - "tinf uncompress"
-Cohesion: 0.06
-Nodes (26): add_css(), add_css$1(), add_css$2(), add_css$3(), add_css$4(), add_css$5(), append(), Arrow (+18 more)
-
-### Community 143 - "Proyectos Índice"
-Cohesion: 0.57
-Nodes (7): Oficina - Proyectos, Externos - Proyectos, Docencia - Proyectos, Personales - Proyectos, Proyectos - Índice, Tablero de proyectos, Kanban Project Board
-
-### Community 144 - "eN Knowledge"
-Cohesion: 0.50
-Nodes (3): Prompt, Propósito, <% tp.file.title %>
-
-### Community 145 - "create slot"
-Cohesion: 0.33
-Nodes (6): create_else_block(), create_slot(), create_then_block(), get_slot_changes(), get_slot_context(), update_slot()
-
-### Community 146 - "changeThemeOfExcalidrawMD Knowledge"
-Cohesion: 0.14
-Nodes (31): ae(), at(), awaitSelection(), Bt(), en(), Ft(), Go(), Ht() (+23 more)
-
-### Community 147 - "parseGlyfTableAll Knowledge"
-Cohesion: 0.06
-Nodes (40): addView(), archiveCompletedCards(), bk(), bN(), compileSettings(), en(), forceRefresh(), get() (+32 more)
-
-### Community 148 - "Dashboard general"
-Cohesion: 0.18
-Nodes (10): Compromisos de los próximos siete días, Dashboard general, Decisiones abiertas, En foco, Estudio, Mantenimientos pendientes, Oficina, Proyectos (+2 more)
-
-### Community 149 - "CSSCodeEditor Knowledge"
-Cohesion: 0.16
-Nodes (20): addButtonsToAllLeaves(), addCommand(), applyEditorMenuCommands(), applyFileMenuCommands(), applyOrder(), constructor(), findItem(), init() (+12 more)
-
-### Community 150 - "DBA y Oracle Área"
-Cohesion: 0.22
-Nodes (8): DBA y Oracle - Área, Oficina - Área, Oracle y administración de bases de datos, Incidentes abiertos, Oficina, Procedimientos actualizados recientemente, Proyectos de oficina, Tareas pendientes
-
-### Community 151 - "Docencia Knowledge"
-Cohesion: 0.20
-Nodes (9): Docencia - Área, Docencia, Plantilla de curso, Evidencia de dominio, Objetivo de aprendizaje, Programa, Próxima acción, Sesiones (+1 more)
-
-### Community 152 - "Mapa de conocimiento Docencia"
-Cohesion: 0.10
-Nodes (15): applyDefaultSvgTheme(), ContentSearcher, convertSVGStringToElement(), createTreeWalker(), domNodeToReact(), getIconAsJSX(), isInstanceOfSVGSVGElement(), makeEntitiesXmlSafe() (+7 more)
-
-### Community 154 - "addName Knowledge"
-Cohesion: 0.25
-Nodes (19): applyStyles(), computeStyles(), effect(), effect3(), getClippingParents(), getComputedStyle(), getContainingBlock(), getNodeName() (+11 more)
-
-### Community 155 - "Plantilla de evaluación de tarea"
-Cohesion: 0.22
-Nodes (8): Evaluaciones y rúbricas, Plantilla de evaluación de tarea, Aspectos por mejorar, Calificación final, Evaluación — <% estudiante %>, Fortalezas, Retroalimentación para el estudiante, Verificación de entregables
-
-### Community 156 - "getDateFromFile Knowledge"
-Cohesion: 1.00
-Nodes (3): getDateFromFile(), isFormatAmbiguous(), removeEscapedCharacters()
-
-### Community 158 - "ExcalidrawScene Knowledge"
-Cohesion: 0.15
-Nodes (9): Flujo visual, Proyectos, Todos los proyectos abiertos, Compromisos abiertos nacidos en reuniones, Reuniones, Biblioteca de prompts, Categorías, Dashboard general (+1 more)
-
-### Community 159 - "Random Knowledge"
-Cohesion: 0.19
-Nodes (17): arrow(), computeAutoPlacement(), computeOffsets(), flip(), getAltAxis(), getBasePlacement(), getExpandedFallbackPlacements(), getFreshSideObject() (+9 more)
-
-### Community 161 - "Personal Área"
-Cohesion: 0.33
-Nodes (5): Personal - Área, Backlog según orden personal, Completadas recientemente, Gestión de tareas, Sin fecha límite
-
-### Community 162 - "Decisión adoptada"
-Cohesion: 0.05
-Nodes (35): Plantilla de decisión, Alternativas, Consecuencias, Contexto, Decisión adoptada, Motivo, <% tp.file.title %>, Alcance (+27 more)
-
-### Community 172 - "Personas Knowledge"
-Cohesion: 0.23
-Nodes (16): detectOverflow(), expandToHashMap(), getBoundingClientRect(), getClientRectFromMixedType(), getClippingRect(), getCompositeRect(), getDocumentElement(), getDocumentRect() (+8 more)
-
-### Community 173 - "Recursos Knowledge"
-Cohesion: 0.20
-Nodes (14): _a(), Bo(), Ca(), de(), Fo(), Ge(), Ho(), Mt() (+6 more)
-
-### Community 174 - "Portafolio de proyectos"
-Cohesion: 0.17
-Nodes (10): Respaldo de tareas del Dashboard original, Clasificación de notas, Raíz limpia, Antes de mover, Clasificación de notas existentes, Criterio de finalización, Dashboard anterior, Migración ordenada de la raíz (+2 more)
-
-### Community 184 - "Community 184"
-Cohesion: 0.15
-Nodes (17): "src/lib/tasks/task.ts"(), aC(), getState(), gL(), kC(), lc(), LL(), newKanban() (+9 more)
-
-### Community 185 - "Community 185"
-Cohesion: 0.18
-Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
-
-### Community 186 - "Community 186"
-Cohesion: 0.18
-Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
-
-### Community 187 - "Community 187"
-Cohesion: 0.20
-Nodes (7): Acuerdos rápidos, Pendientes de formalizar, Capturas, Pendientes de procesar, Incidentes rápidos, Registro, Inbox Processing
-
-### Community 188 - "Community 188"
-Cohesion: 0.20
-Nodes (8): Mapa de conocimiento: Docencia, Notas vinculadas, Núcleos, Conceptos recientes, Cursos activos, Estudio y conocimiento, Material pendiente de procesar, Videos con transcripción
-
-### Community 189 - "Community 189"
-Cohesion: 0.20
-Nodes (9): Cuándo utilizarlo, Historial de cambios, Plan de reversa, Procedimiento, Propósito, Requisitos previos, Riesgos y controles, <% tp.file.title %> (+1 more)
-
-### Community 190 - "Community 190"
-Cohesion: 0.22
-Nodes (9): Arquitectura, Componentes, Dependencias, Monitoreo, Procedimientos relacionados, Propósito, Respaldo y recuperación, Seguridad (+1 more)
-
-### Community 191 - "Community 191"
-Cohesion: 0.20
-Nodes (9): author, authorUrl, description, fundingUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
-
-### Community 192 - "Community 192"
-Cohesion: 0.22
-Nodes (8): Diagnóstico, Evidencias, Impacto, Línea de tiempo, Prevención, Solución aplicada, <% tp.file.title %>, Validación
-
-### Community 193 - "Community 193"
-Cohesion: 0.22
-Nodes (8): Aplicación, Dudas abiertas, Ejemplo práctico, Enlaces relacionados, Explicación con palabras propias, Ideas principales, Pregunta que responde, <% tp.file.title %>
-
-### Community 194 - "Community 194"
-Cohesion: 0.22
-Nodes (8): Actividad práctica, Conocimientos previos, Ejemplo o demostración, Evaluación rápida, Materiales, Resultado de aprendizaje, Secuencia, <% tp.file.title %>
-
-### Community 195 - "Community 195"
-Cohesion: 0.22
-Nodes (9): areValidElements(), debounce(), format(), mergeByName(), order(), orderModifiers(), popperGenerator(), uniqueBy() (+1 more)
-
-### Community 196 - "Community 196"
-Cohesion: 0.22
-Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
-
-### Community 197 - "Community 197"
-Cohesion: 0.04
-Nodes (61): a4(), absPluginConfigPath(), adaptTextForFakeCommit(), ak(), applyPatch(), c5(), Ci(), computeDom() (+53 more)
-
-### Community 198 - "Community 198"
-Cohesion: 0.22
-Nodes (8): 2026-08-31 - INC - se cayo la caida, Diagnóstico, Evidencias, Impacto, Línea de tiempo, Prevención, Solución aplicada, Validación
-
-### Community 199 - "Community 199"
+### Community 111 - "Community 111"
 Cohesion: 0.13
 Nodes (22): calcCFFSubroutineBias(), cffGlyphLoader(), entriesToObject(), gatherCFFTopDicts(), getByte(), getBytes(), getCffIndexObject(), getCFFString() (+14 more)
 
-### Community 200 - "Community 200"
-Cohesion: 0.25
-Nodes (6): Mapa de conocimiento: Tecnología, Notas vinculadas, Núcleos, Biblioteca de conocimiento, Contenido por tipo, Mapas principales
+### Community 112 - "Community 112"
+Cohesion: 0.05
+Nodes (11): fuzzyMatchParagraphsWithId(), fuzzyMatchTextItems(), getLinkSuggestionsFiltered(), getSortedLinkMatches(), InlineLinkSuggester, InsertLinkDialog, InsertMDDialog, renderHeadingSuggestionRow() (+3 more)
 
-### Community 201 - "Community 201"
-Cohesion: 0.25
-Nodes (7): Cuándo utilizarlo, Cómo funciona, Definición sencilla, Ejemplo, Fuente, Relación con otros conceptos, <% tp.file.title %>
+### Community 113 - "Community 113"
+Cohesion: 0.22
+Nodes (10): Ba(), commitControlValue(), Fa(), getControlValue(), isLocalSettingsKey(), Ma(), save_settings(), setControlValue() (+2 more)
 
-### Community 202 - "Community 202"
-Cohesion: 0.25
-Nodes (7): Agenda y compromisos, Cierre del día, Notas e ideas, Registro, Tareas completadas hoy, <% tp.date.now("dddd, D [de] MMMM [de] YYYY") %>, Tres prioridades
-
-### Community 203 - "Community 203"
-Cohesion: 0.25
-Nodes (7): Bandeja de entrada, Bloqueos, Logros de la semana, Proyectos, Revisión semanal — <% tp.date.now("YYYY-[W]WW") %>, Tareas vencidas, Tres prioridades de la próxima semana
-
-### Community 204 - "Community 204"
-Cohesion: 0.36
-Nodes (8): addAction(), addAdderButton(), addButtonsToLeaf(), addPageHeaderButton(), buttonExists(), buttonsFor(), removeButtonsFromLeaf(), s()
-
-### Community 205 - "Community 205"
-Cohesion: 0.29
-Nodes (6): Ideas aplicables, Marcas de tiempo, Síntesis, <% tp.file.title %>, Transcripción, Video
-
-### Community 206 - "Community 206"
+### Community 114 - "Community 114"
 Cohesion: 0.13
-Nodes (18): addEventListener(), buildValues(), capture(), d0(), deactivate(), diffWithOptionsObj(), e0(), eN() (+10 more)
+Nodes (11): F(), handle_create_from_template(), P(), pt(), Re(), resolve_template_file(), xe(), Xr() (+3 more)
 
-### Community 207 - "Community 207"
-Cohesion: 0.33
-Nodes (5): Cerrados, En ejecución, En espera, Ideas, Planificados
+### Community 115 - "Community 115"
+Cohesion: 0.11
+Nodes (22): add_template_hotkey(), constructor(), desktopShouldHighlight(), disable_highlighter(), enable_highlighter(), Et(), fc(), init() (+14 more)
 
-### Community 208 - "Community 208"
-Cohesion: 0.33
-Nodes (5): Activos, En espera o pausados, Portafolio de proyectos, Sin actualización durante treinta días, Tareas agrupadas por proyecto
+### Community 116 - "Community 116"
+Cohesion: 0.12
+Nodes (15): add_render_callback$1(), blank_object$1(), Calendar, children$1(), create_fragment(), destroy_component$1(), flush$1(), init$1() (+7 more)
 
-### Community 209 - "Community 209"
-Cohesion: 0.33
-Nodes (5): Compromisos, Contexto, Reuniones, Temas relacionados, <% tp.file.title %>
+### Community 117 - "Community 117"
+Cohesion: 0.14
+Nodes (12): bind(), CalendarPlugin, component_subscribe(), create_if_block$1(), get_current_component(), get_current_component$1(), handle_promise(), instance() (+4 more)
 
-### Community 210 - "Community 210"
-Cohesion: 0.29
-Nodes (7): Acceso rápido, Centro de operaciones, Control operativo, Notas modificadas recientemente, Para hoy, Proyectos activos, Vencidas
+### Community 118 - "Community 118"
+Cohesion: 0.17
+Nodes (6): ErrorHandler, loadLocale(), PackageManager, unpackBase64Deflate(), unpackExcalidraw(), updateExcalidrawLib()
 
-### Community 211 - "Community 211"
-Cohesion: 0.40
-Nodes (4): Descripción, Información útil, <% tp.file.title %>, Visitas o eventos relacionados
+### Community 119 - "Community 119"
+Cohesion: 0.05
+Nodes (39): clearDisplayClasses(), contains(), createImageDiv(), createImgElement(), effect$1(), emulateKeysForLinkClick(), ExcalidrawLoading, getDefaultHeight() (+31 more)
 
-### Community 213 - "Community 213"
+### Community 120 - "Community 120"
+Cohesion: 0.13
+Nodes (16): aa(), createForm(), Da(), display(), getItemText(), getNumberOfArguments(), Ie(), Ji() (+8 more)
+
+### Community 121 - "Community 121"
+Cohesion: 0.19
+Nodes (6): appHasPeriodicNotesPluginLoaded(), CalendarSettingsTab, empty(), space(), text(), weekdays
+
+### Community 122 - "Community 122"
+Cohesion: 0.04
+Nodes (67): _3(), aI(), au(), aw(), bf(), bw(), day(), e1() (+59 more)
+
+### Community 123 - "Community 123"
+Cohesion: 0.16
+Nodes (15): createDailyNote(), createWeeklyNote(), ensureFolderExists(), getAllDailyNotes(), getAllWeeklyNotes(), getDailyNoteSettings(), getFormattedTagAttributes(), getMonthlyNoteSettings() (+7 more)
+
+### Community 124 - "Community 124"
+Cohesion: 0.13
+Nodes (14): author, authorUrl, description, fundingUrl, GitHub Sponser (SilentVoid13, creator), GitHub Sponser (Zachatoo, maintainer), Ko-fi (Zachatoo, maintainer), Paypal (SilentVoid13, creator) (+6 more)
+
+### Community 126 - "Community 126"
+Cohesion: 0.12
+Nodes (33): AS(), c3(), content(), create(), createStashReflogEntry(), cu(), dL(), exec() (+25 more)
+
+### Community 127 - "Community 127"
+Cohesion: 0.05
+Nodes (65): addColumn(), buildMathJSContext(), computeValue(), createDate(), dE(), filterValue(), fromDate(), fromUrl() (+57 more)
+
+### Community 128 - "Community 128"
+Cohesion: 0.06
+Nodes (60): atEOF(), atLeast(), binaryLeft(), binaryLeftRange(), binaryRight(), binaryRightRange(), box(), cr() (+52 more)
+
+### Community 129 - "Community 129"
+Cohesion: 0.17
+Nodes (13): cL(), dL(), fL(), hw(), JD(), KD(), QD(), ti() (+5 more)
+
+### Community 130 - "Community 130"
+Cohesion: 0.04
+Nodes (16): b(), c(), Do(), g(), getCommands(), getCommandsWithoutIcons(), h(), hn() (+8 more)
+
+### Community 131 - "Community 131"
+Cohesion: 0.04
+Nodes (21): close(), destroy(), distanceAndSkiddingToXY(), getSideOffsets(), getSuggestions(), handleButtonClick(), hide(), isAnySideFullyClipped() (+13 more)
+
+### Community 132 - "Community 132"
+Cohesion: 0.05
+Nodes (56): ad(), applyTemplate(), bd(), cd(), checkForDeprecation(), clone(), createInputFieldArgument(), createViewFieldArgument() (+48 more)
+
+### Community 133 - "Community 133"
+Cohesion: 0.25
+Nodes (3): renderChainActions(), getSingleSelectedElementId(), SelectedElementActionsMenu
+
+### Community 134 - "Community 134"
+Cohesion: 0.04
+Nodes (55): exactOptional(), _2(), aie(), aV(), boe(), cA(), capture(), CL() (+47 more)
+
+### Community 135 - "Community 135"
+Cohesion: 0.18
+Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
+
+### Community 136 - "Community 136"
+Cohesion: 0.18
+Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
+
+### Community 137 - "Community 137"
+Cohesion: 0.18
+Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
+
+### Community 138 - "Community 138"
 Cohesion: 0.17
 Nodes (13): additional_functions(), create_dynamic_templates(), generate_content(), generate_object(), generate_system_functions(), generate_tags(), generate_title(), generate_user_script_functions() (+5 more)
 
-### Community 214 - "Community 214"
+### Community 139 - "Community 139"
+Cohesion: 0.15
+Nodes (8): Acuerdos rápidos, Pendientes de formalizar, Capturas, Pendientes de procesar, Compromisos abiertos nacidos en reuniones, Reuniones, Biblioteca de prompts, Categorías
+
+### Community 140 - "Community 140"
+Cohesion: 0.20
+Nodes (9): Cuándo utilizarlo, Historial de cambios, Plan de reversa, Procedimiento, Propósito, Requisitos previos, Riesgos y controles, <% tp.file.title %> (+1 more)
+
+### Community 141 - "Community 141"
+Cohesion: 0.20
+Nodes (9): Arquitectura, Componentes, Dependencias, Monitoreo, Procedimientos relacionados, Propósito, Respaldo y recuperación, Seguridad (+1 more)
+
+### Community 142 - "Community 142"
+Cohesion: 0.20
+Nodes (5): check_outros(), destroy_component(), is_empty(), run_all(), SvelteComponent
+
+### Community 144 - "Community 144"
+Cohesion: 0.20
+Nodes (9): author, authorUrl, description, helpUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
+
+### Community 145 - "Community 145"
+Cohesion: 0.06
+Nodes (5): CommandManager, getListOfTemplateFiles(), ImportSVGDialog, InsertImageDialog, ScriptEngine
+
+### Community 146 - "Community 146"
+Cohesion: 0.40
+Nodes (10): blockString(), consumeMoreIndentedLines(), containsDocumentMarker(), doubleQuotedString(), foldFlowLines(), getFoldOptions(), lineLengthOverLimit(), plainString() (+2 more)
+
+### Community 147 - "Community 147"
+Cohesion: 0.09
+Nodes (45): addStatusBarBuildIndicator(), array(), aw(), createBindTarget(), createButtonGroupMountable(), createButtonMountable(), createEmbedMountable(), createExcludedMountable() (+37 more)
+
+### Community 148 - "Community 148"
+Cohesion: 0.09
+Nodes (34): $3(), AT(), cL(), Ew(), F4(), fC(), fromPayloadSignature(), g2() (+26 more)
+
+### Community 149 - "Community 149"
+Cohesion: 0.20
+Nodes (9): author, authorUrl, description, helpUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
+
+### Community 150 - "Community 150"
+Cohesion: 0.22
+Nodes (8): Diagnóstico, Evidencias, Impacto, Línea de tiempo, Prevención, Solución aplicada, <% tp.file.title %>, Validación
+
+### Community 151 - "Community 151"
+Cohesion: 0.22
+Nodes (8): Aplicación, Dudas abiertas, Ejemplo práctico, Enlaces relacionados, Explicación con palabras propias, Ideas principales, Pregunta que responde, <% tp.file.title %>
+
+### Community 152 - "Community 152"
+Cohesion: 0.22
+Nodes (8): Actividad práctica, Conocimientos previos, Ejemplo o demostración, Evaluación rápida, Materiales, Resultado de aprendizaje, Secuencia, <% tp.file.title %>
+
+### Community 153 - "Community 153"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 154 - "Community 154"
+Cohesion: 0.07
+Nodes (5): ExcalidrawSettingTab, FileSuggestionModal, FontPickerComponent, setRootElementSize(), VaultPathSuggest
+
+### Community 155 - "Community 155"
+Cohesion: 0.40
+Nodes (4): Convertir nota en tareas, Ejemplo rápido, Prompt, Variables
+
+### Community 156 - "Community 156"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, fundingUrl, id, isDesktopOnly, name, version
+
+### Community 157 - "Community 157"
+Cohesion: 0.25
+Nodes (7): Cuándo utilizarlo, Cómo funciona, Definición sencilla, Ejemplo, Fuente, Relación con otros conceptos, <% tp.file.title %>
+
+### Community 158 - "Community 158"
+Cohesion: 0.25
+Nodes (7): Agenda y compromisos, Cierre del día, Notas e ideas, Registro, Tareas completadas hoy, <% tp.date.now("dddd, D [de] MMMM [de] YYYY") %>, Tres prioridades
+
+### Community 159 - "Community 159"
+Cohesion: 0.25
+Nodes (7): Bandeja de entrada, Bloqueos, Logros de la semana, Proyectos, Revisión semanal — <% tp.date.now("YYYY-[W]WW") %>, Tareas vencidas, Tres prioridades de la próxima semana
+
+### Community 160 - "Community 160"
+Cohesion: 0.25
+Nodes (7): alwaysUpdateLinks, attachmentFolderPath, newFileFolderPath, newFileLocation, promptDelete, showLineNumber, spellcheck
+
+### Community 162 - "Community 162"
+Cohesion: 0.14
+Nodes (31): ae(), at(), awaitSelection(), Bt(), en(), Ft(), Go(), Ht() (+23 more)
+
+### Community 163 - "Community 163"
+Cohesion: 0.08
+Nodes (29): ak(), ba(), Bo(), ck(), Cs(), eq(), Fs(), Gx() (+21 more)
+
+### Community 164 - "Community 164"
+Cohesion: 0.10
+Nodes (25): activateCodeMirrorExtensions(), activateFeature(), activateLineAuthoring(), aP(), beforeSaveSettings(), clear(), conditionallyActivateBySettings(), configureLineAuthorShowStatus() (+17 more)
+
+### Community 165 - "Community 165"
+Cohesion: 0.19
+Nodes (23): applyStyles(), computeStyles(), contains(), effect(), effect2(), effect3(), getClippingParents(), getComputedStyle() (+15 more)
+
+### Community 166 - "Community 166"
+Cohesion: 0.16
+Nodes (20): addButtonsToAllLeaves(), addCommand(), applyEditorMenuCommands(), applyFileMenuCommands(), applyOrder(), constructor(), findItem(), init() (+12 more)
+
+### Community 167 - "Community 167"
+Cohesion: 0.29
+Nodes (6): Compromisos de los próximos siete días, Dashboard general, Decisiones abiertas, En foco, Mantenimientos pendientes, Reuniones recientes
+
+### Community 168 - "Community 168"
+Cohesion: 0.29
+Nodes (6): Evidencia de dominio, Objetivo de aprendizaje, Programa, Próxima acción, Sesiones, <% tp.file.title %>
+
+### Community 169 - "Community 169"
+Cohesion: 0.29
+Nodes (6): Aspectos por mejorar, Calificación final, Evaluación — <% estudiante %>, Fortalezas, Retroalimentación para el estudiante, Verificación de entregables
+
+### Community 170 - "Community 170"
+Cohesion: 0.29
+Nodes (6): Ideas aplicables, Marcas de tiempo, Síntesis, <% tp.file.title %>, Transcripción, Video
+
+### Community 171 - "Community 171"
+Cohesion: 0.25
+Nodes (7): Ajustes y complementos, Inventario de infraestructura, Pandoc, QuickAdd, Seguridad, Tasks, Templater
+
+### Community 172 - "Community 172"
+Cohesion: 0.29
+Nodes (6): Antes de mover, Clasificación de notas existentes, Criterio de finalización, Dashboard anterior, Migración ordenada de la raíz, Método recomendado
+
+### Community 173 - "Community 173"
+Cohesion: 0.04
+Nodes (74): a(), areValidElements(), around1(), changeThemeOfExcalidrawMD(), composeAlias(), composeCollection(), composeDoc(), composeEmptyNode() (+66 more)
+
+### Community 174 - "Community 174"
+Cohesion: 0.33
+Nodes (5): Cerrados, En ejecución, En espera, Ideas, Planificados
+
+### Community 175 - "Community 175"
+Cohesion: 0.33
+Nodes (5): Conceptos recientes, Cursos activos, Estudio y conocimiento, Material pendiente de procesar, Videos con transcripción
+
+### Community 176 - "Community 176"
+Cohesion: 0.33
+Nodes (5): Incidentes abiertos, Oficina, Procedimientos actualizados recientemente, Proyectos de oficina, Tareas pendientes
+
+### Community 177 - "Community 177"
+Cohesion: 0.33
+Nodes (5): Activos, En espera o pausados, Portafolio de proyectos, Sin actualización durante treinta días, Tareas agrupadas por proyecto
+
+### Community 178 - "Community 178"
+Cohesion: 0.33
+Nodes (5): Compromisos, Contexto, Reuniones, Temas relacionados, <% tp.file.title %>
+
+### Community 179 - "Community 179"
+Cohesion: 0.29
+Nodes (7): Acceso rápido, Centro de operaciones, Control operativo, Notas modificadas recientemente, Para hoy, Proyectos activos, Vencidas
+
+### Community 180 - "Community 180"
+Cohesion: 0.33
+Nodes (5): Bóveda CRRB, Convención de propiedades, Instalación como bóveda nueva, Integración con una bóveda existente, Regla para mantener limpia la raíz
+
+### Community 181 - "Community 181"
+Cohesion: 0.33
+Nodes (6): create_else_block(), create_slot(), create_then_block(), get_slot_changes(), get_slot_context(), update_slot()
+
+### Community 182 - "Community 182"
+Cohesion: 0.06
+Nodes (24): anyModifierKeysPressed(), arrayToMap(), DropManager, executeCommandLinkWithConfirmation(), getCommandLinkOptInPlugin(), _getContainerElement(), getElementsAtPointer(), getElementWithLinkAtPointer() (+16 more)
+
+### Community 183 - "Community 183"
+Cohesion: 0.12
+Nodes (4): EmbeddableMenu, getMarkdownHeadingSubpaths(), selectMarkdownBlockSubpath(), selectMarkdownHeadingSubpath()
+
+### Community 184 - "Community 184"
+Cohesion: 0.19
+Nodes (17): arrow(), computeAutoPlacement(), computeOffsets(), flip(), getAltAxis(), getBasePlacement(), getExpandedFallbackPlacements(), getFreshSideObject() (+9 more)
+
+### Community 185 - "Community 185"
+Cohesion: 0.23
+Nodes (16): detectOverflow(), expandToHashMap(), getBoundingClientRect(), getClientRectFromMixedType(), getClippingRect(), getCompositeRect(), getDocumentElement(), getDocumentRect() (+8 more)
+
+### Community 186 - "Community 186"
+Cohesion: 0.19
+Nodes (4): AIModelConfigModal, FrontmatterEditor, getGeminiSupportedSizes(), isGeminiImageModel()
+
+### Community 187 - "Community 187"
 Cohesion: 0.40
 Nodes (4): DBA y Oracle, Incidentes, Procedimientos y runbooks, Sistemas y bases
 
-### Community 215 - "Community 215"
-Cohesion: 0.16
-Nodes (16): applySubstitution(), arabicPresentationForms(), arabicRequiredLigatures(), arabicSentenceEndCheck(), arabicSentenceStartCheck(), arabicWordEndCheck(), arabicWordStartCheck(), getContextParams() (+8 more)
+### Community 188 - "Community 188"
+Cohesion: 0.40
+Nodes (4): Proyectos relacionados, Próximas tareas, Responsabilidades continuas, Área de oficina
 
-### Community 216 - "Community 216"
+### Community 189 - "Community 189"
+Cohesion: 0.40
+Nodes (4): Backlog según orden personal, Completadas recientemente, Gestión de tareas, Sin fecha límite
+
+### Community 190 - "Community 190"
+Cohesion: 0.40
+Nodes (4): Descripción, Información útil, <% tp.file.title %>, Visitas o eventos relacionados
+
+### Community 191 - "Community 191"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: Cómo ejecutar un UserScript de QuickAdd en este repositorio, Source Nodes
+
+### Community 192 - "Community 192"
+Cohesion: 0.20
+Nodes (14): _a(), Bo(), Ca(), de(), Fo(), Ge(), Ho(), Mt() (+6 more)
+
+### Community 193 - "Community 193"
+Cohesion: 0.18
+Nodes (12): Dw(), fL(), FP(), i5(), isolateSignature(), j2(), Ji(), Mw() (+4 more)
+
+### Community 194 - "Community 194"
+Cohesion: 0.20
+Nodes (12): addTimezone(), fromOneDayEarlier(), isSkippingTooManyMonths(), isSkippingTooManyYears(), next(), nextAfter(), nextAfterMonths(), nextAfterYears() (+4 more)
+
+### Community 195 - "Community 195"
+Cohesion: 0.27
+Nodes (11): aP(), _c(), Dc(), Ha(), iS(), ji(), Mf(), OP() (+3 more)
+
+### Community 196 - "Community 196"
+Cohesion: 0.18
+Nodes (10): author, authorUrl, description, fundingUrl, helpUrl, id, isDesktopOnly, minAppVersion (+2 more)
+
+### Community 197 - "Community 197"
+Cohesion: 0.20
+Nodes (9): author, authorUrl, description, fundingUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
+
+### Community 199 - "Community 199"
+Cohesion: 0.50
+Nodes (3): Flujo visual, Proyectos, Todos los proyectos abiertos
+
+### Community 200 - "Community 200"
 Cohesion: 0.50
 Nodes (3): Asignaturas y proyectos, Docencia, Material de estudio y clase
 
-### Community 217 - "Community 217"
-Cohesion: 0.18
-Nodes (10): Instalación ligera, Instalador de complementos para Windows, Windows, Bóveda CRRB, Convención de propiedades, Cuatro niveles de organización, Instalación como bóveda nueva, Integración con una bóveda existente (+2 more)
-
-### Community 218 - "Community 218"
+### Community 201 - "Community 201"
 Cohesion: 0.50
 Nodes (3): Proyectos, Tareas, Área personal
 
-### Community 230 - "Community 230"
-Cohesion: 0.06
-Nodes (47): addFileToGitignore(), addLineAuthorInfoSettings(), blame(), bShouldBeEditable(), changeToNewFilepath(), ck(), computeLineAuthorInfo(), computeSigns() (+39 more)
+### Community 202 - "Community 202"
+Cohesion: 0.50
+Nodes (3): Mapa de conocimiento: Docencia, Notas vinculadas, Núcleos
 
-### Community 231 - "Community 231"
+### Community 203 - "Community 203"
+Cohesion: 0.50
+Nodes (3): Mapa de conocimiento: Tecnología, Notas vinculadas, Núcleos
+
+### Community 204 - "Community 204"
+Cohesion: 0.50
+Nodes (3): Biblioteca de conocimiento, Contenido por tipo, Mapas principales
+
+### Community 205 - "Community 205"
+Cohesion: 0.22
+Nodes (9): areValidElements(), debounce(), format(), mergeByName(), order(), orderModifiers(), popperGenerator(), uniqueBy() (+1 more)
+
+### Community 208 - "Community 208"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 209 - "Community 209"
+Cohesion: 0.25
+Nodes (7): Ambientes, Catálogos de la bóveda, Criticidad, Estados, Niveles de requisito, Prioridades, Regla
+
+### Community 210 - "Community 210"
+Cohesion: 0.36
+Nodes (8): addAction(), addAdderButton(), addButtonsToLeaf(), addPageHeaderButton(), buttonExists(), buttonsFor(), removeButtonsFromLeaf(), s()
+
+### Community 213 - "Community 213"
 Cohesion: 0.29
 Nodes (6): Activos, Credenciales por rotar, Credenciales registradas, Dashboard de infraestructura, Máquinas virtuales, Servicios
 
-### Community 232 - "Community 232"
-Cohesion: 0.15
-Nodes (15): ba(), Bo(), is(), Jx(), ks(), ns(), qa(), qs() (+7 more)
+### Community 219 - "Community 219"
+Cohesion: 1.00
+Nodes (3): getDateFromFile(), isFormatAmbiguous(), removeEscapedCharacters()
 
-### Community 233 - "Community 233"
+### Community 220 - "Community 220"
+Cohesion: 0.29
+Nodes (6): Agrupados por tema, Estados, Pendientes prioritarios, Requisitos de software, Requisitos raíz, Todos los requisitos
+
+### Community 236 - "Community 236"
+Cohesion: 0.33
+Nodes (5): Estados sugeridos, Jerarquía, Relación con tareas, Requisitos de software, Temas sugeridos
+
+### Community 237 - "Community 237"
 Cohesion: 0.33
 Nodes (5): Credenciales asociadas, Dependencias, Identificación, Mantenimiento, <% tp.file.title %>
-
-### Community 234 - "Community 234"
-Cohesion: 0.03
-Nodes (41): addFilterToForeignObjects(), addSVGToImgSrc(), blobToBase64(), calculateUIModeValue(), CanvasNodeFactory, createImgElement(), createPNG(), createSVG() (+33 more)
-
-### Community 235 - "Community 235"
-Cohesion: 0.40
-Nodes (10): blockString(), consumeMoreIndentedLines(), containsDocumentMarker(), doubleQuotedString(), foldFlowLines(), getFoldOptions(), lineLengthOverLimit(), plainString() (+2 more)
 
 ### Community 238 - "Community 238"
 Cohesion: 0.33
 Nodes (5): Credenciales asociadas, Dependencias, Plataforma, Recursos, <% tp.file.title %>
 
 ### Community 239 - "Community 239"
-Cohesion: 0.06
-Nodes (43): _3(), au(), bh(), cO(), Df(), Dg(), DH(), e1() (+35 more)
-
-### Community 240 - "Community 240"
 Cohesion: 0.33
 Nodes (5): Acceso y operación, Credenciales, Dependencias, Propósito, <% tp.file.title %>
 
-### Community 242 - "Community 242"
-Cohesion: 0.50
-Nodes (3): Datos operativos, Historial, <% tp.file.title %>
-
-### Community 244 - "Community 244"
-Cohesion: 0.25
-Nodes (7): Ambientes, Catálogos de la bóveda, Criticidad, Estados, Niveles de requisito, Prioridades, Regla
-
-### Community 247 - "Community 247"
+### Community 240 - "Community 240"
 Cohesion: 0.33
 Nodes (5): Antes de hacer push, Restauración periódica, Secretos, Seguridad y respaldos, Trazabilidad
 
-### Community 248 - "Community 248"
-Cohesion: 0.40
-Nodes (5): b(), g(), h(), xt(), y()
-
-### Community 249 - "Community 249"
-Cohesion: 0.50
-Nodes (3): Qué hace, Restaurar estructura, Uso desde QuickAdd
-
-### Community 250 - "Community 250"
-Cohesion: 0.40
-Nodes (5): display(), F(), hide(), onClose(), Oo()
-
-### Community 251 - "Community 251"
-Cohesion: 0.40
-Nodes (4): Proyectos relacionados, Próximas tareas, Responsabilidades continuas, Área de oficina
-
-### Community 252 - "Community 252"
-Cohesion: 0.29
-Nodes (6): Agrupados por tema, Estados, Pendientes prioritarios, Requisitos de software, Requisitos raíz, Todos los requisitos
-
-### Community 254 - "Community 254"
-Cohesion: 0.22
-Nodes (10): diagramToHTML(), extractDiagramHTML(), getDiagramToHTMLFinishReason(), getJsonErrorMessage(), isDiagramToHTMLDebugEnabled(), isMaxTokenFinishReason(), logDiagramToHTMLDebug(), shouldRetryDiagramToHTML() (+2 more)
-
-### Community 255 - "Community 255"
-Cohesion: 0.50
-Nodes (3): Convenciones, Infraestructura informática, Panel
-
-### Community 256 - "Community 256"
-Cohesion: 0.33
-Nodes (5): Estados sugeridos, Jerarquía, Relación con tareas, Requisitos de software, Temas sugeridos
-
-### Community 257 - "Community 257"
-Cohesion: 0.22
-Nodes (4): Invalid, InvalidDateTimeError, InvalidDurationError, InvalidIntervalError
-
-### Community 261 - "Community 261"
-Cohesion: 0.22
-Nodes (9): createExDraw(), createExElement(), createExEllipse(), createExLine(), createExRect(), nanoid$1(), randomId(), randomInteger() (+1 more)
-
-### Community 262 - "Community 262"
-Cohesion: 0.36
-Nodes (8): tinf_build_tree(), tinf_decode_symbol(), tinf_decode_trees(), tinf_getbit(), tinf_inflate_block_data(), tinf_inflate_uncompressed_block(), tinf_read_bits(), tinf_uncompress()
-
-### Community 263 - "Community 263"
-Cohesion: 0.33
-Nodes (5): Credenciales asociadas, Dependencias, Identificación, Mantenimiento, pppppppp
-
-### Community 264 - "Community 264"
-Cohesion: 0.33
-Nodes (5): Credenciales asociadas, Dependencias, Plataforma, ppppp, Recursos
-
-### Community 265 - "Community 265"
+### Community 241 - "Community 241"
 Cohesion: 0.47
 Nodes (6): defineDependentProperty(), glyphLoader(), parseGlyfTable(), parseGlyfTableAll(), parseGlyfTableOnLowMemory(), ttfGlyphLoader()
 
-### Community 267 - "Community 267"
-Cohesion: 0.04
-Nodes (69): atomicModify(), bn(), buildMathJSContext(), computeValue(), createNoteWithTemplater(), em(), evaluateTemplaterTemplate(), executeCommandById() (+61 more)
-
-### Community 269 - "Community 269"
-Cohesion: 0.50
-Nodes (3): claves, Datos operativos, Historial
-
-### Community 270 - "Community 270"
-Cohesion: 0.67
-Nodes (4): addName(), makeFvarAxis(), makeFvarInstance(), makeFvarTable()
-
-### Community 273 - "Community 273"
-Cohesion: 0.25
-Nodes (7): getCaretRangeFromPoint(), getClientPoint(), isInstanceOfHTMLButtonElement(), isInstanceOfHTMLInputElement(), isInstanceOfHTMLSelectElement(), isInstanceOfHTMLTextAreaElement(), isPointOnText()
-
-### Community 274 - "Community 274"
-Cohesion: 0.25
-Nodes (8): addStringToPool(), findSubArray(), getEncoding(), getLanguageCode(), makeNameRecord(), makeNameTable(), parseNameTable(), reverseDict()
-
-### Community 275 - "Community 275"
-Cohesion: 0.33
-Nodes (7): createImageDiv(), getDefaultHeight(), getDefaultWidth(), getDimensionsFromAliasString(), parseAlias(), processAltText(), processInternalEmbed()
-
-### Community 276 - "Community 276"
-Cohesion: 0.33
-Nodes (5): decodeDataUrlToHtml(), getSandboxedDataUrlSrcDoc(), injectDefensiveCsp(), renderWebView(), useDefaultExcalidrawFrame()
-
-### Community 277 - "Community 277"
-Cohesion: 0.33
-Nodes (6): intIdentify(), intIdentify$2(), intStringify(), intStringify$1(), stringifyNumber(), stringifySexagesimal()
-
-### Community 278 - "Community 278"
-Cohesion: 0.60
-Nodes (5): Coverage(), FeatureList(), recordList(), ScriptList(), ushortList()
-
-### Community 279 - "Community 279"
-Cohesion: 0.50
-Nodes (5): create$1(), getElementMatrix(), getTransformMatrix(), multiply$1(), svgTransformToCSSTransform()
-
-### Community 280 - "Community 280"
+### Community 242 - "Community 242"
 Cohesion: 0.40
-Nodes (5): decompositionSubstitutionFormat1(), ligatureSubstitutionFormat1(), lookupCoverage(), singleSubstitutionFormat1(), singleSubstitutionFormat2()
+Nodes (5): display(), F(), hide(), onClose(), Oo()
 
-### Community 281 - "Community 281"
-Cohesion: 0.40
-Nodes (4): decompress(), getDecompressedScene(), getJSON(), isCompressedMD()
+### Community 243 - "Community 243"
+Cohesion: 0.50
+Nodes (3): Convenciones, Infraestructura informática, Panel
 
-### Community 283 - "Community 283"
+### Community 244 - "Community 244"
+Cohesion: 0.50
+Nodes (3): Datos operativos, Historial, <% tp.file.title %>
+
+### Community 245 - "Community 245"
+Cohesion: 0.50
+Nodes (3): Prompt, Propósito, <% tp.file.title %>
+
+### Community 247 - "Community 247"
 Cohesion: 0.50
 Nodes (3): Archivar, Archivar y reversar notas de tareas, Reversar
 
+### Community 251 - "Community 251"
+Cohesion: 0.50
+Nodes (3): Qué hace, Restaurar estructura, Uso desde QuickAdd
+
+### Community 253 - "Community 253"
+Cohesion: 0.67
+Nodes (3): Fa(), te(), Vt()
+
 ## Knowledge Gaps
-- **726 isolated node(s):** `alwaysUpdateLinks`, `attachmentFolderPath`, `newFileLocation`, `newFileFolderPath`, `promptDelete` (+721 more)
+- **692 isolated node(s):** `alwaysUpdateLinks`, `attachmentFolderPath`, `newFileLocation`, `newFileFolderPath`, `promptDelete` (+687 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **50 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **27 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `$()` connect `Knowledge` to `ContentSearcher Knowledge`, `Community 261`, `Community 262`, `forEach Knowledge`, `ExcalidrawView Knowledge`, `Community 265`, `Community 266`, `stringify Knowledge`, `Community 268`, `Community 270`, `Community 272`, `Community 273`, `Community 274`, `Community 275`, `Community 276`, `MarkdownImageEditorController Knowledge`, `Community 278`, `push Knowledge`, `Mapa de conocimiento Docencia`, `ActionButton Knowledge`, `getBoundingClientRect Knowledge`, `Community 279`, `Community 284`, `Community 280`, `Community 281`, `Community 282`, `values Knowledge`, `Community 286`, `ExcalidrawConfig Knowledge`, `Community 285`, `Community 288`, `Community 289`, `ExcalidrawData Knowledge`, `Community 290`, `Community 287`, `Community 291`, `Community 292`, `Community 293`, `Community 294`, `ToolsPanel Knowledge`, `errorlog Knowledge`, `xr Knowledge`, `slice Knowledge`, `t Knowledge`, `now Knowledge`, `InlineLinkSuggester Knowledge`, `Community 199`, `StencilLibraryManager Knowledge`, `ExcalidrawSidepanelTab Knowledge`, `Lexer Knowledge`, `grabSuggestions Knowledge`, `Community 215`, `GenericInputPrompt Knowledge`, `ExcalidrawExtrasGateway Knowledge`, `close Knowledge`, `activateFeature Knowledge`, `InsertLinkDialog Knowledge`, `DropManager Knowledge`, `parseDocument Knowledge`, `handleError Knowledge`, `Community 234`, `Community 235`, `Community 241`, `Community 277`, `Community 245`, `Community 246`, `generate object`, `diagramToHTML Knowledge`, `SelectedElementActionsMenu Knowledge`, `Community 254`?**
-  _High betweenness centrality (0.384) - this node is a cross-community bridge._
-- **Why does `__()` connect `push Knowledge` to `t d`, `InvalidZone Knowledge`, `DataviewInlineApi Knowledge`, `clear Knowledge`, `ExcalidrawAutomate Knowledge`, `get Knowledge`, `a Knowledge`, `isValid Knowledge`, `handleImageRequest Knowledge`, `destroy Knowledge`, `get Knowledge`, `warn Knowledge`, `Duration Knowledge`, `linkClick Knowledge`, `ExcalidrawSidepanelView Knowledge`, `m 1`, `indexOf Knowledge`, `from Knowledge`, `argument Knowledge`, `onClose Knowledge`, `parseCFFTable Knowledge`, `cm Knowledge`, `FixedOffsetZone Knowledge`, `GenericSuggester Knowledge`?**
-  _High betweenness centrality (0.312) - this node is a cross-community bridge._
-- **Why does `_()` connect `Knowledge` to `values Knowledge`, `Community 257`, `Community 258`, `Community 259`, `ContentSearcher Knowledge`, `DateTime Knowledge`, `Zone Knowledge`, `get Knowledge`, `assign Knowledge`, `FunctionBuilder Knowledge`, `explainQuery Knowledge`, `constructor Knowledge`, `tinf uncompress`, `DataArrayImpl Knowledge`, `create Knowledge`, `slice Knowledge`, `then Knowledge`?**
-  _High betweenness centrality (0.214) - this node is a cross-community bridge._
-- **Are the 3 inferred relationships involving `__()` (e.g. with `n()` and `nullable()`) actually correct?**
-  _`__()` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `F_()` connect `Community 34` to `Community 0`, `Community 1`, `Community 76`, `Community 52`, `Community 23`, `Community 24`, `Community 88`?**
+  _High betweenness centrality (0.200) - this node is a cross-community bridge._
+- **Why does `hue()` connect `Community 0` to `Community 34`, `Community 84`, `Community 63`?**
+  _High betweenness centrality (0.199) - this node is a cross-community bridge._
+- **Why does `y$1()` connect `Community 63` to `Community 0`, `Community 3`, `Community 100`, `Community 107`, `Community 77`, `Community 17`, `Community 18`, `Community 84`, `Community 21`?**
+  _High betweenness centrality (0.112) - this node is a cross-community bridge._
 - **What connects `alwaysUpdateLinks`, `attachmentFolderPath`, `newFileLocation` to the rest of the system?**
-  _727 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Knowledge` be split into smaller, more focused modules?**
-  _Cohesion score 0.0038355995436746525 - nodes in this community are weakly interconnected._
-- **Should `Knowledge` be split into smaller, more focused modules?**
-  _Cohesion score 0.008048630347799323 - nodes in this community are weakly interconnected._
+  _692 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.004168130195527456 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.00601996007984032 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.007448627655566182 - nodes in this community are weakly interconnected._
