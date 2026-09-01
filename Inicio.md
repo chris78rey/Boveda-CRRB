@@ -38,6 +38,12 @@ limit 12
 hide backlink
 ```
 
+## Flujo diario recomendado
+
+> 1. Usa `QuickAdd: Run` -> `CRRB - Tareas`, `CRRB - Proyectos` o `CRRB - Prompts`.
+> 2. Trabaja desde los dashboards; cada elemento nuevo conserva tags y pagina base.
+> 3. Usa el bloque `Pagina base` dentro de cada nota para volver al contexto.
+
 ## Para hoy
 
 ```tasks

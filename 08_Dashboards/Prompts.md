@@ -16,6 +16,8 @@ WHERE tipo = "prompt"
 SORT favorito DESC, categoria ASC, file.name ASC
 ```
 
+Crear un prompt desde cualquier pagina con `CRRB - Prompts` -> `Nuevo prompt`. Se guarda en `07_Recursos/Prompts` y hereda sus tags.
+
 ## Categorías
 
 ```dataview

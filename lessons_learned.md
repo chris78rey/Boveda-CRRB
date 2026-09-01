@@ -30,3 +30,8 @@ Toda automatización nueva debe responder tres preguntas: ¿cómo la descubre el
 ### Naturaleza del registro
 
 Las observaciones sobre la experiencia de uso son una evaluación crítica **INFERRED**, no relaciones extraídas por AST. Las rutas y nombres de funcionalidades deben verificarse contra el código antes de convertirlos en requisitos.
+# Mejora de automatizaciones 2026-08-31
+
+- Problema: los creadores de tareas, proyectos y prompts podían usar rutas distintas y solo heredaban tags del frontmatter.
+- Causa: cada script tenía su propia lógica y no consideraba tags inline de Obsidian.
+- Regla: centralizar rutas y extraer tags desde `frontmatter` y `metadataCache.tags`; toda nota creada debe guardar `base` y un enlace de retorno.

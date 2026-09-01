@@ -1,21 +1,21 @@
 {
   ".obsidian/app.json": {
-    "mtime": 1788229217.475049,
-    "ast_hash": "1754511611196914c614a23231c15c7e",
+    "mtime": 1788230039.133752,
+    "ast_hash": "e573195da7af3db763f41d9c9f631770",
     "semantic_hash": ""
   },
   ".obsidian/appearance.json": {
-    "mtime": 1788229021.9964223,
+    "mtime": 1788230005.0677276,
     "ast_hash": "ab8fc745f10ede81ddc195c1a2367fd4",
     "semantic_hash": ""
   },
   ".obsidian/community-plugins.json": {
-    "mtime": 1788229191.2210128,
-    "ast_hash": "ad50b4c8f4655ccf9bde767b53e28f14",
+    "mtime": 1788230006.333902,
+    "ast_hash": "8384df3f9c1d68a465d1ab67e9547e2a",
     "semantic_hash": ""
   },
   ".obsidian/core-plugins.json": {
-    "mtime": 1788229020.8596072,
+    "mtime": 1788230004.7083793,
     "ast_hash": "7c877bea49eaeabb100563bd157b9051",
     "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
   },
@@ -25,7 +25,7 @@
     "semantic_hash": ""
   },
   ".obsidian/plugins/calendar/data.json": {
-    "mtime": 1788229020.338,
+    "mtime": 1788230004.322,
     "ast_hash": "786a698c96479adab1040ea8e7c24b1b",
     "semantic_hash": "786a698c96479adab1040ea8e7c24b1b"
   },
@@ -120,7 +120,7 @@
     "semantic_hash": ""
   },
   ".obsidian/types.json": {
-    "mtime": 1788229020.952,
+    "mtime": 1788230004.909,
     "ast_hash": "ff98967538a3ef0ba5b18d57dcb644c1",
     "semantic_hash": "ff98967538a3ef0ba5b18d57dcb644c1"
   },
@@ -265,8 +265,8 @@
     "semantic_hash": ""
   },
   "08_Dashboards/Proyectos.md": {
-    "mtime": 1788224946.67581,
-    "ast_hash": "2f5d1eddd2c6c3935b2da4c233cb64f2",
+    "mtime": 1788230011.659659,
+    "ast_hash": "9edfbb06526edd17b7bc5f711712a52a",
     "semantic_hash": ""
   },
   "08_Dashboards/Tareas.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "Inicio.md": {
-    "mtime": 1788229191.2870138,
-    "ast_hash": "56593b1b3a695f193003d783faf37b1e",
+    "mtime": 1788230020.9107707,
+    "ast_hash": "3728ba08a9c1c57dd053bc710427d0d7",
     "semantic_hash": ""
   },
   "LEEME - INSTALACION.md": {
@@ -425,7 +425,7 @@
     "semantic_hash": ""
   },
   ".obsidian/plugins/obsidian-git/obsidian_askpass.sh": {
-    "mtime": 1788229022.6803794,
+    "mtime": 1788230007.8242347,
     "ast_hash": "f662d5f216d371e86d1b108ba5d22a5f",
     "semantic_hash": ""
   },
@@ -510,8 +510,8 @@
     "semantic_hash": ""
   },
   "08_Dashboards/Prompts.md": {
-    "mtime": 1788229191.2460115,
-    "ast_hash": "afdced6517c19acc6b405cb3516aa4c9",
+    "mtime": 1788229964.7854445,
+    "ast_hash": "1c647ede324d618fd55e0054a41d7b16",
     "semantic_hash": ""
   },
   "09_Plantillas/Prompt.md": {
@@ -565,18 +565,18 @@
     "semantic_hash": ""
   },
   "09_Plantillas/scripts/createProject.js": {
-    "mtime": 1788229316.7292244,
-    "ast_hash": "f87ff48c5a58b8ac1d269fa3dba07796",
+    "mtime": 1788229936.7733612,
+    "ast_hash": "a4a713a8f5e491a4f0f63ca9257483c1",
     "semantic_hash": ""
   },
   "09_Plantillas/scripts/createPrompt.js": {
-    "mtime": 1788229316.7302263,
-    "ast_hash": "eff821b49e0f6081f1f13db3d20c0b74",
+    "mtime": 1788229945.958704,
+    "ast_hash": "9eb80fc72d5a20d961ae06c06d6b1d26",
     "semantic_hash": ""
   },
   "09_Plantillas/scripts/createTaskNote.js": {
-    "mtime": 1788229316.7302263,
-    "ast_hash": "ded3a005e15d14c99744b27a501cee44",
+    "mtime": 1788229926.7955527,
+    "ast_hash": "7d7b5b7b18ce2eeafa454bdbfe561ae0",
     "semantic_hash": ""
   },
   "09_Plantillas/scripts/inheritTags.js": {
@@ -615,8 +615,18 @@
     "semantic_hash": ""
   },
   "lessons_learned.md": {
-    "mtime": 1788229526.7474744,
-    "ast_hash": "ee5468d818f3e13bae90d23035448282",
+    "mtime": 1788229983.9974601,
+    "ast_hash": "f65bd4207c34327af15d7d64aac1b0bc",
+    "semantic_hash": ""
+  },
+  "09_Plantillas/scripts/crrbUtils.js": {
+    "mtime": 1788229913.9192367,
+    "ast_hash": "1fedb4ccfc28a2b1f4ae37666ec06c47",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/daily-workflow-improvements-2026-08-31.md": {
+    "mtime": 1788229983.9974601,
+    "ast_hash": "747208a9156061a4bbf8bccde01563ec",
     "semantic_hash": ""
   }
 }
