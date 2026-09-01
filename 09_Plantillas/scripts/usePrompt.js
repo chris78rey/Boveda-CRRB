@@ -6,7 +6,14 @@ module.exports = async ({ app, quickAddApi }) => {
   if (!selected) return;
   const content = await app.vault.read(selected);
   const match = content.match(/## Prompt\s*\n([\s\S]*?)(?=\n## |$)/i);
-  const prompt = (match ? match[1] : content).trim();
+  let prompt = (match ? match[1] : content).trim();
+  const placeholders = [...new Set([...prompt.matchAll(/\{\{\s*([^{}]+?)\s*\}\}/g)].map((item) => item[1].trim()))];
+  for (const placeholder of placeholders) {
+    const value = await quickAddApi.inputPrompt(`Valor para ${placeholder}`, "");
+    if (value === null || value === undefined) return;
+    prompt = prompt.replaceAll(`{{${placeholder}}}`, String(value));
+    prompt = prompt.replaceAll(`{{ ${placeholder} }}`, String(value));
+  }
   try {
     await navigator.clipboard.writeText(prompt);
     new Notice(`Prompt copiado: ${selected.basename}`);
