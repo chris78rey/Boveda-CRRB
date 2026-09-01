@@ -14,6 +14,7 @@ causa: ""
 tags:
   - incidente
   - <% severidad %>
+<% tp.user.inheritTags(tp, ["incidente", severidad]) %>
 ---
 
 # <% tp.file.title %>

@@ -12,6 +12,7 @@ participantes: []
 tags:
   - reunion
   - <% ambito %>
+<% tp.user.inheritTags(tp, ["reunion", ambito]) %>
 ---
 
 # <% tp.file.title %>

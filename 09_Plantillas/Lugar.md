@@ -11,6 +11,7 @@ direccion: ""
 categoria: ""
 tags:
   - lugar
+<% tp.user.inheritTags(tp, ["lugar"]) %>
 ---
 
 # <% tp.file.title %>

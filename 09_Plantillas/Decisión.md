@@ -10,6 +10,7 @@ proyecto: "[[<% proyecto %>]]"
 responsable: ""
 tags:
   - decision
+<% tp.user.inheritTags(tp, ["decision"]) %>
 ---
 
 # <% tp.file.title %>

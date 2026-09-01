@@ -10,6 +10,7 @@ fecha: <% tp.date.now("YYYY-MM-DD") %>
 ambito: personal
 tags:
   - estudio
+<% tp.user.inheritTags(tp, ["estudio"]) %>
 ---
 
 # <% tp.file.title %>

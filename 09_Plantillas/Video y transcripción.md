@@ -11,6 +11,7 @@ autor: ""
 tags:
   - video
   - estudio
+<% tp.user.inheritTags(tp, ["video", "estudio"]) %>
 ---
 
 # <% tp.file.title %>

@@ -12,6 +12,7 @@ fuente: ""
 tags:
   - curso
   - estudio
+<% tp.user.inheritTags(tp, ["curso", "estudio"]) %>
 ---
 
 # <% tp.file.title %>

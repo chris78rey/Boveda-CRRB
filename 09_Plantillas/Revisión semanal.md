@@ -5,6 +5,7 @@ fecha: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - revision
   - semanal
+<% tp.user.inheritTags(tp, ["revision", "semanal"]) %>
 ---
 
 # Revisión semanal — <% tp.date.now("YYYY-[W]WW") %>

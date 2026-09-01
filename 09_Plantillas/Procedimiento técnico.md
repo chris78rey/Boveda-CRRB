@@ -9,6 +9,7 @@ sistema: ""
 riesgo: medio
 tags:
   - procedimiento
+<% tp.user.inheritTags(tp, ["procedimiento"]) %>
 ---
 
 # <% tp.file.title %>

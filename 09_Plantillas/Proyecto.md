@@ -17,6 +17,7 @@ cliente: ""
 tags:
   - proyecto
   - <% ambito %>
+<% tp.user.inheritTags(tp, ["proyecto", ambito]) %>
 ---
 
 # <% tp.file.title %>

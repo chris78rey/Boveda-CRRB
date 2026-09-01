@@ -92,11 +92,11 @@
           "type": "Capture",
           "command": true,
           "appendLink": false,
-          "captureTo": "",
-          "captureToActiveFile": true,
+          "captureTo": "00_Inbox/Tareas.md",
+          "captureToActiveFile": false,
           "activeFileWritePosition": "cursor",
           "createFileIfItDoesntExist": {
-            "enabled": false,
+            "enabled": true,
             "createWithTemplate": false,
             "template": ""
           },
@@ -715,6 +715,40 @@
         }
       ],
       "collapsed": true
+    },
+    {
+      "id": "c3000000-0000-4000-8000-000000000001",
+      "name": "crrb Task + Nota",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "c3000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/createTaskNote.js",
+            "path": "09_Plantillas/scripts/createTaskNote.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "c4000000-0000-4000-8000-000000000001",
+      "name": "Procesar nota",
+      "type": "Macro",
+      "command": true,
+      "macro": {
+        "id": "c4000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/processNote.js",
+            "path": "09_Plantillas/scripts/processNote.js",
+            "settings": {}
+          }
+        ]
+      }
     }
   ],
   "inputPrompt": "single-line",

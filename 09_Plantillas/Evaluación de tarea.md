@@ -12,6 +12,7 @@ calificacion: 0
 tags:
   - docencia
   - evaluacion
+<% tp.user.inheritTags(tp, ["docencia", "evaluacion"]) %>
 ---
 
 # Evaluación — <% estudiante %>

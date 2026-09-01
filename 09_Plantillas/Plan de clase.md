@@ -12,6 +12,7 @@ duracion_minutos: 120
 tags:
   - docencia
   - clase
+<% tp.user.inheritTags(tp, ["docencia", "clase"]) %>
 ---
 
 # <% tp.file.title %>

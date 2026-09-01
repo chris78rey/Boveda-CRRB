@@ -11,6 +11,7 @@ dependencias: []
 ultima_revision: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - sistema
+<% tp.user.inheritTags(tp, ["sistema"]) %>
 ---
 
 # <% tp.file.title %>

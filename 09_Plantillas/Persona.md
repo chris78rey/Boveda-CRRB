@@ -9,6 +9,7 @@ telefono: ""
 ultimo_contacto: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - persona
+<% tp.user.inheritTags(tp, ["persona"]) %>
 ---
 
 # <% tp.file.title %>

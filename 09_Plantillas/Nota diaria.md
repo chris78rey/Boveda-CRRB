@@ -4,6 +4,7 @@ fecha: <% tp.date.now("YYYY-MM-DD") %>
 semana: <% tp.date.now("YYYY-[W]WW") %>
 tags:
   - diario
+<% tp.user.inheritTags(tp, ["diario"]) %>
 ---
 
 # <% tp.date.now("dddd, D [de] MMMM [de] YYYY") %>

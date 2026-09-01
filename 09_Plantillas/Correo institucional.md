@@ -11,6 +11,7 @@ asunto: "<% asunto %>"
 tags:
   - correo
   - oficina
+<% tp.user.inheritTags(tp, ["correo", "oficina"]) %>
 ---
 
 # <% asunto %>

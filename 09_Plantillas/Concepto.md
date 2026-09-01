@@ -8,6 +8,7 @@ fecha_creacion: <% tp.date.now("YYYY-MM-DD") %>
 fuentes: []
 tags:
   - concepto
+<% tp.user.inheritTags(tp, ["concepto"]) %>
 ---
 
 # <% tp.file.title %>
