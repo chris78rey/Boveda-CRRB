@@ -981,6 +981,10 @@
     {
       "id": "c6100000-0000-4000-8000-000000000001", "name": "Usar prompt", "type": "Macro", "command": true, "runOnStartup": false,
       "macro": {"id": "c6100000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/usePrompt.js", "path": "09_Plantillas/scripts/usePrompt.js", "settings": {}}]}
+    },
+    {
+      "id": "c6200000-0000-4000-8000-000000000001", "name": "Gestionar tarea", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6200000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "gestionar_tarea", "path": "scripts/gestionar_tarea.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",

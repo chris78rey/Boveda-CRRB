@@ -19,16 +19,18 @@ function insertTaskSorted(content, line) {
 function notice(obsidian, message) { const NoticeClass = obsidian?.Notice ?? globalThis.Notice; if (NoticeClass) new NoticeClass(message); }
 module.exports = async ({ app, quickAddApi, obsidian }) => {
   const rawName = await quickAddApi.inputPrompt("Nombre de la tarea"); if (!rawName) return;
-  const name = safeName(rawName); const order = String(await quickAddApi.inputPrompt("Orden", "10") || "10").trim();
+  const name = safeName(rawName).toUpperCase(); const order = String(await quickAddApi.inputPrompt("Orden", "10") || "10").trim();
   const priority = await quickAddApi.suggester(["Sin prioridad", "Alta", "Media", "Baja"], ["", "🔺", "🔼", "🔽"]); if (priority === null) return;
+  const startDate = String(await quickAddApi.inputPrompt("Fecha de inicio AAAA-MM-DD (opcional)") || "").trim();
+  const dueDate = String(await quickAddApi.inputPrompt("Fecha tope AAAA-MM-DD (opcional)") || "").trim();
   const parent = app.workspace.getActiveFile(); const tags = [...new Set(["tarea", ...tagsFromFile(app, parent)])];
   await ensureFolder(app, PATHS.taskNotes); let path = `${PATHS.taskNotes}/${name}.md`; let suffix = 2;
   while (app.vault.getAbstractFileByPath(path)) path = `${PATHS.taskNotes}/${name} ${suffix++}.md`;
-  const base = wikiLink(parent); const note = `---\ntipo: tarea\nestado: pendiente\ntags:\n${tags.map((tag) => `  - ${tag}`).join("\n")}\nbase: "${base}"\n---\n\n# ${name}\n\n> [!abstract] Página base\n> ${base || "Sin página base"}\n\n## Contexto\n\n## Próximos pasos\n`;
+  const base = wikiLink(parent); const returnLink = base ? `← Volver a la página base: ${base}` : "← Volver a la página base";
+  const note = `---\ntipo: tarea\nestado: pendiente\ntags:\n${tags.map((tag) => `  - ${tag}`).join("\n")}\nbase: "${base}"\n---\n\n# ${name}\n\n${returnLink}\n\n> [!info] Estado\n> 🟡 Pendiente · ${priority || "Sin prioridad"} · Orden ${order}\n\n> [!abstract] Página base\n> ${base || "Sin página base"}\n\n## Próxima acción\n- [ ] \n\n## Contexto\n\n## Notas\n\n## Registro\n`;
   const file = await app.vault.create(path, note); const taskFile = app.vault.getAbstractFileByPath(PATHS.taskIndex);
   if (!taskFile) throw new Error(`No existe ${PATHS.taskIndex}`);
-  await app.vault.process(taskFile, (content) =>
-    insertTaskSorted(content, `- [ ] [orden :: ${order}] [[${file.path}|${name}]] ${priority || ""}`)
-  );
+  const dates = [startDate ? `🛫 ${startDate}` : "", dueDate ? `📅 ${dueDate}` : "", `➕ ${window.moment().format("YYYY-MM-DD")}`].filter(Boolean).join(" ");
+  await app.vault.process(taskFile, (content) => insertTaskSorted(content, `- [ ] [orden :: ${order}] [[${file.path}|${name}]] ${priority || ""} ${dates}`.trim()));
   await app.workspace.getLeaf(true).openFile(file); notice(obsidian, `Tarea creada y añadida a ${PATHS.taskIndex}`);
 };

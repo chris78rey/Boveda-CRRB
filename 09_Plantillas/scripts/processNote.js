@@ -29,7 +29,7 @@ module.exports = async (params) => {
   if (!action) return;
 
   if (action === "Añadir tarea") {
-    const task = String(await quickAddApi.inputPrompt("Tarea relacionada") || "").trim();
+    const task = String(await quickAddApi.inputPrompt("Tarea relacionada") || "").trim().toUpperCase();
     if (!task) return;
     const order = String(await quickAddApi.inputPrompt("Orden", "10") || "10").trim();
     const taskFile = app.vault.getAbstractFileByPath("00_Inbox/Tareas.md");
