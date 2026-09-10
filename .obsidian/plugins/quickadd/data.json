@@ -985,6 +985,10 @@
     {
       "id": "c6200000-0000-4000-8000-000000000001", "name": "Gestionar tarea", "type": "Macro", "command": true, "runOnStartup": false,
       "macro": {"id": "c6200000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "gestionar_tarea", "path": "scripts/gestionar_tarea.js", "settings": {}}]}
+    },
+    {
+      "id": "c6300000-0000-4000-8000-000000000001", "name": "Biblioteca interactiva de prompts", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6300000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "prompt_modal", "path": "scripts/prompt_modal.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",
