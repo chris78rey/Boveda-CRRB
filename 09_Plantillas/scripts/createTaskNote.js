@@ -1,4 +1,22 @@
-const { PATHS, tagsFromFile, safeName, wikiLink, ensureFolder, notice } = require("./crrbUtils");
+const PATHS = { taskNotes: "00_Inbox/Notas de tareas", taskIndex: "00_Inbox/Tareas.md" };
+function normalizeTags(value) { return (Array.isArray(value) ? value : value == null ? [] : [value]).flatMap((tag) => String(tag).split(",")).map((tag) => tag.trim().replace(/^#/, "")).filter(Boolean); }
+function tagsFromFile(app, file) { const cache = file && app.metadataCache.getFileCache(file); return [...new Set([...normalizeTags(cache?.frontmatter?.tags), ...(cache?.tags ?? []).map((item) => String(item.tag).replace(/^#/, ""))])]; }
+function safeName(value) { return String(value || "Sin nombre").trim().replace(/[\\/:*?"<>|#]/g, "-").replace(/\s+/g, " "); }
+function wikiLink(file) { return file ? `[[${file.path}|${file.basename}]]` : ""; }
+async function ensureFolder(app, folder) { let current = ""; for (const part of folder.split("/")) { current = current ? `${current}/${part}` : part; if (!app.vault.getAbstractFileByPath(current)) await app.vault.createFolder(current); } }
+function orderOf(line) { const match = line.match(/\[orden\s*::\s*(-?\d+(?:\.\d+)?)\]/i); return match ? Number(match[1]) : Number.NEGATIVE_INFINITY; }
+function insertTaskSorted(content, line) {
+  const markerIndex = content.indexOf("## Pendientes");
+  if (markerIndex === -1) return `${content.trimEnd()}\n${line}\n`;
+  const bodyStart = content.indexOf("\n", markerIndex); if (bodyStart === -1) return `${content}\n${line}\n`;
+  const before = content.slice(0, bodyStart + 1); const lines = content.slice(bodyStart + 1).split("\n");
+  const firstTask = lines.findIndex((item) => /^\s*- \[[ xX]\]/.test(item));
+  if (firstTask === -1) return `${before}${lines.join("\n").trimEnd()}\n${line}\n`;
+  let end = firstTask; while (end < lines.length && /^\s*- \[[ xX]\]/.test(lines[end])) end++;
+  const tasks = lines.slice(firstTask, end); tasks.push(line); tasks.sort((a, b) => orderOf(b) - orderOf(a));
+  return before + lines.slice(0, firstTask).join("\n") + (firstTask ? "\n" : "") + tasks.join("\n") + "\n" + lines.slice(end).join("\n");
+}
+function notice(obsidian, message) { const NoticeClass = obsidian?.Notice ?? globalThis.Notice; if (NoticeClass) new NoticeClass(message); }
 module.exports = async ({ app, quickAddApi, obsidian }) => {
   const rawName = await quickAddApi.inputPrompt("Nombre de la tarea"); if (!rawName) return;
   const name = safeName(rawName); const order = String(await quickAddApi.inputPrompt("Orden", "10") || "10").trim();
@@ -9,6 +27,8 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
   const base = wikiLink(parent); const note = `---\ntipo: tarea\nestado: pendiente\ntags:\n${tags.map((tag) => `  - ${tag}`).join("\n")}\nbase: "${base}"\n---\n\n# ${name}\n\n> [!abstract] Página base\n> ${base || "Sin página base"}\n\n## Contexto\n\n## Próximos pasos\n`;
   const file = await app.vault.create(path, note); const taskFile = app.vault.getAbstractFileByPath(PATHS.taskIndex);
   if (!taskFile) throw new Error(`No existe ${PATHS.taskIndex}`);
-  await app.vault.append(taskFile, `\n- [ ] [orden :: ${order}] [[${file.path}|${name}]] ${priority || ""}`);
+  await app.vault.process(taskFile, (content) =>
+    insertTaskSorted(content, `- [ ] [orden :: ${order}] [[${file.path}|${name}]] ${priority || ""}`)
+  );
   await app.workspace.getLeaf(true).openFile(file); notice(obsidian, `Tarea creada y añadida a ${PATHS.taskIndex}`);
 };

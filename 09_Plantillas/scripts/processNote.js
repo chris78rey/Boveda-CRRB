@@ -14,6 +14,8 @@ function linkFor(file) {
   return file ? `[[${file.path.replace(/\\/g, "/")}]]` : "";
 }
 
+const { insertTaskSorted } = require("./taskIndex");
+
 module.exports = async (params) => {
   const { app, quickAddApi } = params;
   const source = app.workspace.getActiveFile();
@@ -34,11 +36,7 @@ module.exports = async (params) => {
     if (!taskFile) throw new Error("No existe 00_Inbox/Tareas.md");
     await app.vault.process(taskFile, (content) => {
       const line = `- [ ] [orden :: ${order}] [[${source.basename}]] — ${task}`;
-      const marker = "## Pendientes";
-      const index = content.indexOf(marker);
-      if (index === -1) return `${line}\n${content}`;
-      const end = content.indexOf("\n", index);
-      return `${content.slice(0, end + 1)}${line}\n${content.slice(end + 1)}`;
+      return insertTaskSorted(content, line);
     });
     new Notice("Tarea añadida y enlazada a la nota actual.");
     return;
