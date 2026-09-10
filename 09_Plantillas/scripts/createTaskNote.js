@@ -32,5 +32,6 @@ module.exports = async ({ app, quickAddApi, obsidian }) => {
   if (!taskFile) throw new Error(`No existe ${PATHS.taskIndex}`);
   const dates = [startDate ? `🛫 ${startDate}` : "", dueDate ? `📅 ${dueDate}` : "", `➕ ${window.moment().format("YYYY-MM-DD")}`].filter(Boolean).join(" ");
   await app.vault.process(taskFile, (content) => insertTaskSorted(content, `- [ ] [orden :: ${order}] [[${file.path}|${name}]] ${priority || ""} ${dates}`.trim()));
-  await app.workspace.getLeaf(true).openFile(file); notice(obsidian, `Tarea creada y añadida a ${PATHS.taskIndex}`);
+  await app.workspace.getLeaf(true).openFile(taskFile, { state: { mode: "preview" }, active: true });
+  notice(obsidian, `Tarea creada, ordenada y mostrada en modo lectura.`);
 };
