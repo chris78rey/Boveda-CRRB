@@ -1,25 +1,22 @@
 <%*
 const inheritedTags = await tp.user.heredar_tags(tp);
-const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
-const categoria = await tp.system.prompt("Categoría del prompt", "Generales");
-const proposito = await tp.system.prompt("Propósito", "");
+const tagsYaml = inheritedTags.length ? inheritedTags.map((tag) => `  - ${tag}`).join("\n") : "  - prompt";
+const folderParts = tp.file.folder(true).split("/");
+const categoria = folderParts[folderParts.length - 1] || "general";
 %>---
 tipo: prompt
 fecha_creacion: <% tp.date.now("YYYY-MM-DD") %>
 categoria: "<% categoria %>"
-proposito: "<% proposito %>"
 favorito: false
 modelo: cualquiera
-tags:<% tagsYaml %>
+tags:
+<% tagsYaml %>
 ---
 
 # <% tp.file.title %>
 
-## Propósito
-
-<% proposito %>
-
 ## Prompt
 
-Escribe aquí el prompt. Usa placeholders como `{{servidor}}`, `{{error}}` o
-`{{ambiente|produccion}}`. Al copiarlo, QuickAdd solicitará sus valores.
+Escribe aquí las instrucciones desde el editor visual de QuickAdd. Usa
+placeholders como `{{TEMA}}`, `{{CONTEXTO}}` o `{{OBJETIVO}}`; la biblioteca los
+detectará automáticamente al ejecutar el prompt.

@@ -7,7 +7,9 @@ tags:
 
 # Biblioteca de prompts
 
-Ejecutar `QuickAdd: Run` → `CRRB - Prompts` → `Copiar prompt`.
+Abrir `QuickAdd: Run` → `Biblioteca interactiva de prompts` o
+`CRRB - Prompts` → `Abrir biblioteca visual`. Desde esa ventana se crean
+categorías, prompts individuales y grupos, y se ejecutan con vista previa.
 
 ```dataview
 TABLE categoria, proposito, favorito, modelo
@@ -16,7 +18,18 @@ WHERE tipo = "prompt"
 SORT favorito DESC, categoria ASC, file.name ASC
 ```
 
-Crear un prompt desde cualquier pagina con `CRRB - Prompts` -> `Nuevo prompt`. Se guarda en `07_Recursos/Prompts` y hereda sus tags.
+La creación recomendada es desde la biblioteca visual; el comando anterior
+`CRRB - Prompts` → `Nuevo prompt` se conserva para compatibilidad con el flujo
+QuickAdd tradicional.
+
+## Grupos
+
+```dataview
+TABLE categoria, file.link AS Grupo
+FROM "07_Recursos/Prompts"
+WHERE tipo = "grupo"
+SORT categoria ASC, file.name ASC
+```
 
 ## Categorías
 

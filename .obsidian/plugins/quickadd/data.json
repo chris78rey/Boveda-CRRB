@@ -872,19 +872,23 @@
       "choices": [
         {
           "id": "c5010000-0000-4000-8000-000000000001",
-          "name": "Nuevo prompt",
-          "type": "Capture",
+          "name": "Nuevo prompt (editor visual)",
+          "type": "Macro",
           "command": true,
-          "appendLink": false,
-          "captureTo": "07_Recursos/Prompts/{{VALUE:Categoria}}/{{VALUE:Nombre del prompt}}.md",
-          "captureToActiveFile": false,
-          "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Prompt.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "runOnStartup": false,
+          "macro": {
+            "name": "Nuevo prompt (editor visual)",
+            "id": "c5010000-0000-4000-8000-000000000002",
+            "commands": [
+              {
+                "name": "prompt_modal",
+                "type": "UserScript",
+                "id": "c5010000-0000-4000-8000-000000000003",
+                "path": "scripts/prompt_modal.js",
+                "settings": {}
+              }
+            ]
+          }
         },
         {
           "id": "c5020000-0000-4000-8000-000000000001",
@@ -908,6 +912,26 @@
           "template": "08_Dashboards/Prompts.md",
           "fileName": "08_Dashboards/Prompts.md",
           "openFile": true
+        },
+        {
+          "id": "c5040000-0000-4000-8000-000000000001",
+          "name": "Abrir biblioteca visual",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Abrir biblioteca visual",
+            "id": "c5040000-0000-4000-8000-000000000002",
+            "commands": [
+              {
+                "name": "prompt_modal",
+                "type": "UserScript",
+                "id": "c5040000-0000-4000-8000-000000000003",
+                "path": "scripts/prompt_modal.js",
+                "settings": {}
+              }
+            ]
+          }
         }
       ],
       "collapsed": false
@@ -976,7 +1000,7 @@
     },
     {
       "id": "c6000000-0000-4000-8000-000000000001", "name": "Nuevo prompt", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createPrompt.js", "path": "09_Plantillas/scripts/createPrompt.js", "settings": {}}]}
+      "macro": {"id": "c6000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "prompt_modal", "path": "scripts/prompt_modal.js", "settings": {}}]}
     },
     {
       "id": "c6100000-0000-4000-8000-000000000001", "name": "Usar prompt", "type": "Macro", "command": true, "runOnStartup": false,
@@ -989,6 +1013,10 @@
     {
       "id": "c6300000-0000-4000-8000-000000000001", "name": "Biblioteca interactiva de prompts", "type": "Macro", "command": true, "runOnStartup": false,
       "macro": {"id": "c6300000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "prompt_modal", "path": "scripts/prompt_modal.js", "settings": {}}]}
+    },
+    {
+      "id": "c6400000-0000-4000-8000-000000000001", "name": "Nueva categoría de prompts", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6400000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "crear_categoria_prompt", "path": "scripts/crear_categoria_prompt.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",

@@ -1,0 +1,1 @@
+cd /home/crrb/Documentos/vault2025/Boveda-CRRB && repomix . --include "AGENTS.md,lessons_learned.md,scripts/prompt_modal.js,scripts/crear_categoria_prompt.js,scripts/copiar_prompt.js,.obsidian/plugins/quickadd/data.json,09_Plantillas/Prompt.md,07_Recursos/Prompts/**,graphify-out/GRAPH_REPORT.md" -o repomix-prompts.xml

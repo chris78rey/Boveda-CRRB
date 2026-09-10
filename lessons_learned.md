@@ -35,3 +35,10 @@ Las observaciones sobre la experiencia de uso son una evaluación crítica **INF
 - Problema: los creadores de tareas, proyectos y prompts podían usar rutas distintas y solo heredaban tags del frontmatter.
 - Causa: cada script tenía su propia lógica y no consideraba tags inline de Obsidian.
 - Regla: centralizar rutas y extraer tags desde `frontmatter` y `metadataCache.tags`; toda nota creada debe guardar `base` y un enlace de retorno.
+
+## Lección de prompts interactivos — 2026-09-10
+
+- Problema: la biblioteca modal no abría o cargaba otro prompt; también desaparecieron opciones y el combobox dejó de seleccionar correctamente.
+- Causas: QuickAdd no resolvió `require()` local ni `require("obsidian")`; el filtrado usó índices de la lista completa después de filtrar.
+- Regla: los UserScripts de QuickAdd deben ser autónomos, sin imports locales ni módulos de Obsidian; el selector debe mapear siempre por referencia al archivo visible, no por índice de una lista distinta.
+- Verificación: validar con `node --check`, probar selección filtrada, placeholders multilínea, copiar, crear y modificar antes de declarar el flujo operativo.
