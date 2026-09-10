@@ -1017,6 +1017,10 @@
     {
       "id": "c6400000-0000-4000-8000-000000000001", "name": "Nueva categoría de prompts", "type": "Macro", "command": true, "runOnStartup": false,
       "macro": {"id": "c6400000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "crear_categoria_prompt", "path": "scripts/crear_categoria_prompt.js", "settings": {}}]}
+    },
+    {
+      "id": "c6500000-0000-4000-8000-000000000001", "name": "Importar y exportar prompts", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6500000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "export_import_prompts", "path": "scripts/export_import_prompts.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",
