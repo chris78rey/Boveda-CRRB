@@ -139,6 +139,38 @@ module.exports = async ({ app }) => {
   };
 
   const timestamp = () => new Date().toISOString().replace(/[:.]/g, "-").replace("T", " ").replace("Z", "");
+  const deleteCode = (entry) => {
+    let hash = 0;
+    for (const character of entry.path) hash = (hash * 31 + character.charCodeAt(0)) >>> 0;
+    return String(hash % 1000000).padStart(6, "0");
+  };
+  const askDeleteConfirmation = (record, code) => new Promise((resolve) => {
+    const layer = el("div", "", "crrb-prompt-dialog-layer");
+    const dialog = el("div", "", "crrb-prompt-dialog");
+    const input = el("input"); input.type = "text"; input.inputMode = "numeric"; input.placeholder = "Escribe el código de 6 dígitos"; input.style.width = "100%";
+    const actions = el("div", "", "crrb-prompt-actions");
+    const remove = button("Confirmar eliminación", "crrb-danger"); const cancel = button("Cancelar", "crrb-quiet");
+    dialog.append(el("h3", "Eliminar prompt"), el("p", `Para mover “${record.name}” al respaldo, escribe este código: ${code}`), input, el("p", "El archivo se conservará en una carpeta de respaldo recuperable.", "crrb-prompt-muted"), actions);
+    actions.append(remove, cancel); layer.appendChild(dialog); overlay.appendChild(layer); input.focus();
+    const finish = (value) => { layer.remove(); resolve(value); };
+    remove.onclick = () => finish(input.value.trim() === code);
+    cancel.onclick = () => finish(false);
+  });
+  const deleteRecord = async (record) => {
+    const code = deleteCode(record);
+    const confirmed = await askDeleteConfirmation(record, code);
+    if (!confirmed) { notice("Código incorrecto o eliminación cancelada. No se eliminó nada."); return; }
+    try {
+      const archive = `99_Archivo/Prompts-eliminados/${timestamp()}`;
+      await ensureFolder(archive);
+      await app.fileManager.renameFile(record.file, `${archive}/${record.file.name}`);
+      selected = null;
+      entries = await loadEntries();
+      detail.replaceChildren(el("p", "Selecciona un prompt para ver sus detalles.", "crrb-prompt-empty"));
+      renderLibrary();
+      notice("Prompt movido al respaldo. Puedes recuperarlo desde 99_Archivo/Prompts-eliminados.");
+    } catch (error) { notice(`No se pudo eliminar: ${error.message}`); }
+  };
   const copyText = async (value) => {
     if (!globalThis.navigator?.clipboard?.writeText) throw new Error("El portapapeles no está disponible en Obsidian.");
     await globalThis.navigator.clipboard.writeText(value);
@@ -165,6 +197,8 @@ module.exports = async ({ app }) => {
     .crrb-prompt-overlay button.crrb-primary { background: #547d70; color: #fffdf8; border-color: #466b60; }
     .crrb-prompt-overlay button.crrb-primary:hover { background: #41675c; }
     .crrb-prompt-overlay button.crrb-quiet { background: #f7f2e8; }
+    .crrb-prompt-overlay button.crrb-danger { background: #f3d6cf; color: #7b3027; border-color: #c98f83; }
+    .crrb-prompt-overlay button.crrb-danger:hover { background: #e9bdb3; }
     .crrb-prompt-list { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
     .crrb-prompt-card { width: 100%; text-align: left; min-height: 86px; height: auto; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 7px; padding: 14px 18px !important; background: #fffdf8 !important; border-color: #b6c8bf !important; line-height: 1.35; }
     .crrb-prompt-card strong { font-size: 1.08rem; }
@@ -465,7 +499,8 @@ module.exports = async ({ app }) => {
 
   const renderPromptDetail = (record, detail) => {
     detail.replaceChildren();
-    detail.append(el("h3", `${record.name} · ${record.category}`), el("p", `Archivo: ${record.path}`, "crrb-prompt-muted"));
+    const identity = el("div", "", "crrb-prompt-output-header"); identity.append(el("h3", `${record.name} · ${record.category}`)); const deleteButton = button("Eliminar prompt", "crrb-danger"); identity.appendChild(deleteButton); detail.append(identity, el("p", `Archivo: ${record.path} · Código: ${deleteCode(record)}`, "crrb-prompt-muted"));
+    deleteButton.onclick = () => deleteRecord(record);
     const detected = placeholderInfo(record.body);
     if (detected.length) {
       detail.appendChild(el("h3", "Completa los placeholders"));
@@ -485,7 +520,8 @@ module.exports = async ({ app }) => {
     const group = record.group;
     const sourceFor = (option) => option.refPath ? entries.find((entry) => entry.path === option.refPath)?.body || "" : option.instructions;
     const sources = group.options.map(sourceFor);
-    detail.append(el("h3", `${group.name} · ${record.category}`), el("p", `Entidad relacionada: ${record.path}`, "crrb-prompt-muted"));
+    const identity = el("div", "", "crrb-prompt-output-header"); identity.append(el("h3", `${group.name} · ${record.category}`)); const deleteButton = button("Eliminar grupo", "crrb-danger"); identity.appendChild(deleteButton); detail.append(identity, el("p", `Entidad relacionada: ${record.path} · Código: ${deleteCode(record)}`, "crrb-prompt-muted"));
+    deleteButton.onclick = () => deleteRecord(record);
     if (!group.options.length) { detail.appendChild(el("p", "Este grupo no contiene opciones utilizables.", "crrb-prompt-empty")); return; }
     groupState.selected = new Set(); groupState.sharedValues = {}; groupState.extraValues = {}; groupState.reuseShared = true;
     const shared = [...new Map(group.shared.map((name) => [keyOf(name), name])).values()];
@@ -520,20 +556,22 @@ module.exports = async ({ app }) => {
   const search = el("input", "", "crrb-prompt-search"); search.placeholder = "Buscar por nombre o archivo...";
   const renderCategoryOptions = () => { const old = category.value; const all = el("option", "Todas las categorías"); all.value = ""; category.replaceChildren(all); categories().forEach((item) => { const option = el("option", item); option.value = item; category.appendChild(option); }); category.value = categories().includes(old) ? old : ""; };
   const close = button("Cerrar", "crrb-quiet"); close.style.marginTop = "18px"; close.onclick = () => { overlay.remove(); style.remove(); };
+  const refreshLibrary = async () => { entries = await loadEntries(); if (selected && !entries.some((entry) => entry.path === selected.path)) selected = null; renderLibrary(); notice("Biblioteca actualizada."); };
   const renderLibrary = () => {
     panel.replaceChildren();
     panel.append(el("h2", "Biblioteca visual de prompts"), el("p", "Selecciona un prompt individual o un grupo, completa sus datos y revisa la vista previa antes de copiar.", "crrb-prompt-muted"));
     const toolbar = el("div", "", "crrb-prompt-toolbar");
     renderCategoryOptions(); const allTypes = el("option", "Todos los tipos"); allTypes.value = ""; const individualType = el("option", "Individuales"); individualType.value = "Individuales"; const groupType = el("option", "Grupos"); groupType.value = "Grupos"; type.replaceChildren(allTypes, individualType, groupType);
-    const addCategory = button("＋ Nueva categoría"); const create = button("＋ Crear prompt o grupo", "crrb-primary");
-    toolbar.append(el("label", "Categoría"), category, el("label", "Tipo"), type, search, addCategory, create); panel.appendChild(toolbar);
+    const addCategory = button("＋ Nueva categoría"); const create = button("＋ Crear prompt o grupo", "crrb-primary"); const refresh = button("↻ Actualizar");
+    toolbar.append(el("label", "Categoría"), category, el("label", "Tipo"), type, search, refresh, addCategory, create); panel.appendChild(toolbar);
     const filtered = entries.filter((entry) => (!category.value || entry.category === category.value) && (!type.value || (type.value === "Individuales" ? entry.type === "prompt" : entry.type === "group")) && (!search.value || `${entry.name} ${entry.path}`.toLowerCase().includes(search.value.toLowerCase())));
     if (!filtered.length) list.replaceChildren(el("p", "No hay elementos que coincidan con el filtro.", "crrb-prompt-empty"));
-    else { list.replaceChildren(); filtered.forEach((entry) => { const card = button(""); card.className = "crrb-prompt-card"; card.append(el("strong", entry.name), el("small", `${entry.type === "group" ? "Grupo" : "Individual"} · ${entry.category}`), el("small", entry.path)); card.onclick = () => { selected = entry; Object.keys(values).forEach((key) => delete values[key]); if (entry.type === "group") renderGroupDetail(entry, detail); else renderPromptDetail(entry, detail); }; list.appendChild(card); }); }
+    else { list.replaceChildren(); filtered.forEach((entry) => { const card = button(""); card.className = "crrb-prompt-card"; const title = el("div", "", "crrb-prompt-output-header"); title.append(el("strong", entry.name)); const codeButton = button(`Código ${deleteCode(entry)}`); codeButton.onclick = async (event) => { event.stopPropagation(); try { await copyText(deleteCode(entry)); notice(`Código ${deleteCode(entry)} copiado.`); } catch (error) { notice(error.message); } }; title.appendChild(codeButton); card.append(title, el("small", `${entry.type === "group" ? "Grupo" : "Individual"} · ${entry.category}`), el("small", entry.path)); card.onclick = () => { selected = entry; Object.keys(values).forEach((key) => delete values[key]); if (entry.type === "group") renderGroupDetail(entry, detail); else renderPromptDetail(entry, detail); }; list.appendChild(card); }); }
     panel.append(list, detail, close);
     if (selected && entries.some((entry) => entry.path === selected.path)) { const current = entries.find((entry) => entry.path === selected.path); if (current.type === "group") renderGroupDetail(current, detail); else renderPromptDetail(current, detail); }
     category.onchange = renderLibrary; type.onchange = renderLibrary; search.oninput = renderLibrary;
     addCategory.onclick = async () => { await createCategory(); renderLibrary(); };
+    refresh.onclick = refreshLibrary;
     create.onclick = () => openEditor();
   };
   renderLibrary();
