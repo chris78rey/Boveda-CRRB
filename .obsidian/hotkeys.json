@@ -1,0 +1,56 @@
+{
+  "quickadd:choice:dee94833-bb7d-4e96-a5ae-96b322977bad": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "T"
+    }
+  ],
+  "quickadd:choice:400e3b07-f53d-4260-95af-26d4f0e20d83": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "K"
+    }
+  ],
+  "outgoing-links:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "L"
+    }
+  ],
+  "backlink:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "J"
+    }
+  ],
+  "outgoing-links:open-for-current": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "H"
+    }
+  ],
+  "backlink:open-backlinks": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "A"
+    }
+  ]
+}
