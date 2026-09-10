@@ -1,0 +1,3 @@
+Objetivo pendiente: convertir la bóveda en una plantilla base reutilizable para varias bóvedas.
+Estado: plan persistido en docs/plan-boveda-base-multiuso.md; aún no separar código.
+Siguiente paso: inventariar rutas fijas, scripts, QuickAdd, plantillas y configuración.
