@@ -165,10 +165,10 @@ module.exports = async ({ app }) => {
     .crrb-prompt-overlay button.crrb-primary { background: #547d70; color: #fffdf8; border-color: #466b60; }
     .crrb-prompt-overlay button.crrb-primary:hover { background: #41675c; }
     .crrb-prompt-overlay button.crrb-quiet { background: #f7f2e8; }
-    .crrb-prompt-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 18px; }
-    .crrb-prompt-card { text-align: left; min-height: 92px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; background: #fffdf8 !important; border-color: #b6c8bf !important; }
+    .crrb-prompt-list { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+    .crrb-prompt-card { width: 100%; text-align: left; min-height: 86px; height: auto; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 7px; padding: 14px 18px !important; background: #fffdf8 !important; border-color: #b6c8bf !important; line-height: 1.35; }
     .crrb-prompt-card strong { font-size: 1.08rem; }
-    .crrb-prompt-card small { color: #52645f; font-weight: normal; }
+    .crrb-prompt-card small { color: #52645f; font-weight: normal; line-height: 1.35; overflow-wrap: anywhere; }
     .crrb-prompt-detail { margin-top: 22px; padding: 20px; border: 1px solid #b8c9c1; border-radius: 16px; background: #edf3ee; }
     .crrb-prompt-field { margin: 14px 0; }
     .crrb-prompt-field label { display: block; font-weight: 700; margin-bottom: 6px; }
