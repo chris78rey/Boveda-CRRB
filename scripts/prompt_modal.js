@@ -174,9 +174,10 @@ module.exports = async ({ app }) => {
     .crrb-prompt-field label { display: block; font-weight: 700; margin-bottom: 6px; }
     .crrb-prompt-preview { min-height: 180px; background: #fffdf8 !important; }
     .crrb-prompt-option-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-    .crrb-prompt-option { text-align: left; min-height: 90px; background: #fffdf8 !important; }
+    .crrb-prompt-option { width: 100%; height: auto; min-height: 90px; text-align: left; white-space: normal !important; overflow-wrap: anywhere; word-break: normal; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 7px; padding: 14px !important; background: #fffdf8 !important; line-height: 1.35; }
     .crrb-prompt-option.is-selected { background: #b9d6c9 !important; border: 3px solid #547d70 !important; }
-    .crrb-prompt-option span { display: block; font-size: 1.08rem; }
+    .crrb-prompt-option span { display: block; max-width: 100%; font-size: 1.08rem; white-space: normal !important; overflow-wrap: anywhere; line-height: 1.3; }
+    .crrb-prompt-option small { display: block; max-width: 100%; white-space: normal !important; overflow-wrap: anywhere; line-height: 1.3; }
     .crrb-prompt-output { margin-top: 14px; padding: 14px; background: #fffdf8; border: 1px solid #c4d2cb; border-radius: 12px; }
     .crrb-prompt-output-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
     .crrb-prompt-output-header button { min-height: 36px; padding: 7px 11px; }

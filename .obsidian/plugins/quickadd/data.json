@@ -1021,6 +1021,10 @@
     {
       "id": "c6500000-0000-4000-8000-000000000001", "name": "Importar y exportar prompts", "type": "Macro", "command": true, "runOnStartup": false,
       "macro": {"id": "c6500000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "export_import_prompts", "path": "scripts/export_import_prompts.js", "settings": {}}]}
+    },
+    {
+      "id": "c6600000-0000-4000-8000-000000000001", "name": "Importar prompts con OpenRouter", "type": "Macro", "command": true, "runOnStartup": false,
+      "macro": {"id": "c6600000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "openrouter_ingest", "path": "scripts/openrouter_ingest.js", "settings": {}}]}
     }
   ],
   "inputPrompt": "single-line",
