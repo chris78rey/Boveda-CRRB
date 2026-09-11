@@ -147,7 +147,18 @@ module.exports = async ({ app }) => {
   const askDeleteConfirmation = (record, code) => new Promise((resolve) => {
     const layer = el("div", "", "crrb-prompt-dialog-layer");
     const dialog = el("div", "", "crrb-prompt-dialog");
-    const input = el("input"); input.type = "text"; input.inputMode = "numeric"; input.placeholder = "Escribe el código de 6 dígitos"; input.style.width = "100%";
+    const input = el("input"); input.type = "text"; input.inputMode = "numeric"; input.maxLength = 6; input.autocomplete = "off"; input.spellcheck = false; input.placeholder = "Escribe manualmente el código de 6 dígitos"; input.style.width = "100%";
+    input.addEventListener("paste", (event) => event.preventDefault());
+    input.addEventListener("drop", (event) => event.preventDefault());
+    input.addEventListener("dragover", (event) => event.preventDefault());
+    input.addEventListener("beforeinput", (event) => {
+      if (event.inputType === "insertFromPaste" || event.inputType === "insertFromDrop") event.preventDefault();
+    });
+    input.addEventListener("contextmenu", (event) => event.preventDefault());
+    input.addEventListener("keydown", (event) => {
+      const editingKeys = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "Home", "End", "Tab"];
+      if (!editingKeys.includes(event.key) && !/^[0-9]$/.test(event.key)) event.preventDefault();
+    });
     const actions = el("div", "", "crrb-prompt-actions");
     const remove = button("Confirmar eliminación", "crrb-danger"); const cancel = button("Cancelar", "crrb-quiet");
     dialog.append(el("h3", "Eliminar prompt"), el("p", `Para mover “${record.name}” al respaldo, escribe este código: ${code}`), input, el("p", "El archivo se conservará en una carpeta de respaldo recuperable.", "crrb-prompt-muted"), actions);
@@ -156,6 +167,16 @@ module.exports = async ({ app }) => {
     remove.onclick = () => finish(input.value.trim() === code);
     cancel.onclick = () => finish(false);
   });
+  const showPromptModal = (title, text) => {
+    const layer = el("div", "", "crrb-prompt-dialog-layer");
+    const dialog = el("div", "", "crrb-prompt-dialog");
+    const area = el("textarea", text, "crrb-prompt-preview"); area.readOnly = true; area.rows = 22;
+    const actions = el("div", "", "crrb-prompt-actions"); const copy = button("Copiar prompt", "crrb-primary"); const close = button("Cerrar", "crrb-quiet");
+    dialog.append(el("h3", title), area, actions); actions.append(copy, close); layer.appendChild(dialog); overlay.appendChild(layer);
+    copy.onclick = async () => { try { await copyText(text); notice("Prompt copiado al portapapeles."); } catch (error) { notice(error.message); } };
+    close.onclick = () => layer.remove();
+    area.focus();
+  };
   const deleteRecord = async (record) => {
     const code = deleteCode(record);
     const confirmed = await askDeleteConfirmation(record, code);
@@ -180,8 +201,10 @@ module.exports = async ({ app }) => {
   style.textContent = `
     .crrb-prompt-overlay, .crrb-prompt-overlay * { box-sizing: border-box; }
     .crrb-prompt-overlay { font-family: Arial, Verdana, sans-serif; letter-spacing: .01em; }
-    .crrb-prompt-panel { width: min(1040px, 96vw); max-height: 94vh; overflow: auto; background: #f7f2e8; color: #263238; border: 2px solid #b9c9c1; border-radius: 20px; padding: 28px; box-shadow: 0 20px 70px #16202a66; }
+    .crrb-prompt-panel { width: min(1500px, 98vw); height: 96vh; max-height: 96vh; overflow: auto; background: #f7f2e8; color: #263238; border: 2px solid #b9c9c1; border-radius: 20px; padding: 28px; box-shadow: 0 20px 70px #16202a66; }
     .crrb-prompt-panel h2 { margin: 0 0 8px; font-size: 1.65rem; color: #23433d; }
+    .crrb-prompt-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: -28px; z-index: 3; padding: 2px 0 12px; background: #f7f2e8; }
+    .crrb-prompt-heading button { flex: 0 0 auto; min-height: 40px; padding: 8px 13px; }
     .crrb-prompt-panel h3 { margin: 22px 0 10px; color: #31574f; font-size: 1.2rem; }
     .crrb-prompt-muted { color: #52645f; margin-top: 0; line-height: 1.55; }
     .crrb-prompt-toolbar, .crrb-prompt-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -216,7 +239,7 @@ module.exports = async ({ app }) => {
     .crrb-prompt-output-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
     .crrb-prompt-output-header button { min-height: 36px; padding: 7px 11px; }
     .crrb-prompt-dialog-layer { position: fixed; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; padding: 18px; background: #26323866; }
-    .crrb-prompt-dialog { width: min(900px, 94vw); max-height: 92vh; overflow: auto; background: #f7f2e8; border: 2px solid #b9c9c1; border-radius: 18px; padding: 24px; box-shadow: 0 18px 60px #16202a66; }
+    .crrb-prompt-dialog { width: min(1280px, 96vw); max-height: 94vh; overflow: auto; background: #f7f2e8; border: 2px solid #b9c9c1; border-radius: 18px; padding: 28px; box-shadow: 0 18px 60px #16202a66; }
     .crrb-prompt-dialog h3 { margin-top: 0; }
     .crrb-prompt-type { display: flex; gap: 12px; margin: 12px 0 18px; }
     .crrb-prompt-type button { flex: 1; font-size: 1.1rem; min-height: 54px; }
@@ -258,6 +281,11 @@ module.exports = async ({ app }) => {
     wrap.append(label, input);
     parent.appendChild(wrap);
     return input;
+  };
+  const compactField = (parent, labelText, value = "") => {
+    const wrap = el("div", "", "crrb-prompt-field crrb-prompt-compact-field");
+    const label = el("label", labelText); const input = el("input");
+    input.value = value; input.setAttribute("aria-label", labelText); wrap.append(label, input); parent.appendChild(wrap); return input;
   };
   const addChips = (parent, source) => {
     const box = el("div", "", "crrb-prompt-chips");
@@ -361,9 +389,24 @@ module.exports = async ({ app }) => {
     return savedFile;
   };
 
+  const chooseElementType = () => new Promise((resolve) => {
+    const layer = el("div", "", "crrb-prompt-dialog-layer");
+    const dialog = el("div", "", "crrb-prompt-dialog");
+    const choices = el("div", "", "crrb-prompt-type");
+    const individual = button("Prompt individual", "crrb-primary");
+    const group = button("Grupo de prompts", "crrb-primary");
+    const cancel = button("Cancelar", "crrb-quiet");
+    dialog.append(el("h3", "¿Qué deseas crear?"), el("p", "Elige el tipo para mostrarte solamente los campos que necesitas.", "crrb-prompt-muted"), choices, cancel);
+    choices.append(individual, group); layer.appendChild(dialog); overlay.appendChild(layer);
+    const finish = (value) => { layer.remove(); resolve(value); };
+    individual.onclick = () => finish("prompt"); group.onclick = () => finish("group"); cancel.onclick = () => finish(null);
+  });
+
   const openEditor = async (record = null) => {
+    let creationType = record?.type || null;
+    if (!record) { creationType = await chooseElementType(); if (!creationType) return; }
     const state = {
-      type: record?.type || "prompt",
+      type: creationType || "prompt",
       name: record?.name || "",
       category: record?.category || categories()[0] || "general",
       instructions: record?.body || "",
@@ -391,7 +434,7 @@ module.exports = async ({ app }) => {
       individual.classList.toggle("is-active", state.type === "prompt");
       group.classList.toggle("is-active", state.type === "group");
       typeButtons.append(individual, group);
-      content.append(typeTitle, typeButtons);
+      if (record) content.append(typeTitle, typeButtons);
       individual.onclick = () => { state.type = "prompt"; renderEditor(); };
       group.onclick = () => { state.type = "group"; renderEditor(); };
 
@@ -504,7 +547,7 @@ module.exports = async ({ app }) => {
     const detected = placeholderInfo(record.body);
     if (detected.length) {
       detail.appendChild(el("h3", "Completa los placeholders"));
-      detected.forEach((item) => { const input = field(detail, `{{${item.name}}}`, values[item.key] || "", 4); input.placeholder = item.fallback || `Escribe el valor de ${item.name}`; input.oninput = () => { values[item.key] = input.value; renderPromptPreview(); }; });
+      detected.forEach((item) => { const input = compactField(detail, `{{${item.name}}}`, values[item.key] || ""); input.placeholder = item.fallback || `Escribe el valor de ${item.name}`; input.oninput = () => { values[item.key] = input.value; renderPromptPreview(); }; });
     } else detail.appendChild(el("p", "Este prompt no tiene placeholders detectados.", "crrb-prompt-muted"));
     const preview = el("textarea", "", "crrb-prompt-preview"); preview.readOnly = true; preview.rows = 10; detail.append(el("h3", "Vista previa"), preview);
     const actions = el("div", "", "crrb-prompt-actions"); const copy = button("Copiar resultado", "crrb-primary"); const open = button("Abrir resultado en una nota"); const modify = button("Modificar prompt"); actions.append(copy, open, modify); detail.appendChild(actions);
@@ -526,23 +569,23 @@ module.exports = async ({ app }) => {
     groupState.selected = new Set(); groupState.sharedValues = {}; groupState.extraValues = {}; groupState.reuseShared = true;
     const shared = [...new Map(group.shared.map((name) => [keyOf(name), name])).values()];
     const sharedBox = el("div"); detail.append(el("h3", "Datos compartidos"), sharedBox);
-    shared.forEach((name) => { const input = field(sharedBox, `{{${name}}}`, "", 3); input.placeholder = `Valor compartido para ${name}`; input.oninput = () => { groupState.sharedValues[keyOf(name)] = input.value; renderGroupPreview(); }; });
+    shared.forEach((name) => { const input = compactField(sharedBox, `{{${name}}}`, ""); input.placeholder = `Valor compartido para ${name}`; input.oninput = () => { groupState.sharedValues[keyOf(name)] = input.value; renderGroupPreview(); }; });
     const reuseRow = el("label", "", "crrb-prompt-check-card"); const reuse = el("input"); reuse.type = "checkbox"; reuse.checked = true; reuse.onchange = () => { groupState.reuseShared = reuse.checked; renderGroupFields(); renderGroupPreview(); }; reuseRow.append(reuse, el("span", "Reutilizar los valores compartidos en todas las opciones seleccionadas")); sharedBox.appendChild(reuseRow);
     detail.appendChild(el("h3", "Selecciona uno o varios métodos"));
     const optionGrid = el("div", "", "crrb-prompt-option-grid"); detail.appendChild(optionGrid);
-    group.options.forEach((option, index) => { const card = button(""); card.className = "crrb-prompt-option"; card.append(el("span", option.name), el("small", option.refPath ? "Opción reutilizada" : "Opción guardada en el grupo")); card.onclick = () => { if (groupState.selected.has(index)) groupState.selected.delete(index); else groupState.selected.add(index); card.classList.toggle("is-selected", groupState.selected.has(index)); renderGroupFields(); renderGroupPreview(); }; optionGrid.appendChild(card); });
+    group.options.forEach((option, index) => { const card = button(""); card.className = "crrb-prompt-option"; card.append(el("span", option.name), el("small", "Seleccionar este método")); card.onclick = () => { groupState.selected = new Set([index]); [...optionGrid.children].forEach((item, itemIndex) => item.classList.toggle("is-selected", itemIndex === index)); renderGroupFields(); renderGroupPreview(); }; optionGrid.appendChild(card); });
     const fieldsBox = el("div"); const previewsBox = el("div"); detail.append(fieldsBox, previewsBox);
     const renderGroupFields = () => {
       fieldsBox.replaceChildren();
       const additional = [...new Map([...groupState.selected].flatMap((index) => placeholderInfo(sources[index])).filter((item) => !shared.some((name) => keyOf(name) === item.key)).map((item) => [item.key, item])).values()];
-      if (additional.length) { fieldsBox.appendChild(el("h3", "Placeholders adicionales")); additional.forEach((item) => { const input = field(fieldsBox, `{{${item.name}}}`, groupState.extraValues[item.key] || "", 4); input.placeholder = `Solo necesario para los métodos seleccionados: ${item.name}`; input.oninput = () => { groupState.extraValues[item.key] = input.value; renderGroupPreview(); }; }); }
-      if (!groupState.reuseShared && groupState.selected.size && shared.length) { fieldsBox.appendChild(el("h3", "Datos compartidos por método")); [...groupState.selected].forEach((index) => shared.forEach((name) => { const key = `${index}:${keyOf(name)}`; const input = field(fieldsBox, `${group.options[index].name} · {{${name}}}`, groupState.extraValues[key] || "", 3); input.oninput = () => { groupState.extraValues[key] = input.value; renderGroupPreview(); }; })); }
+      if (additional.length) { fieldsBox.appendChild(el("h3", "Placeholders adicionales")); additional.forEach((item) => { const input = compactField(fieldsBox, `{{${item.name}}}`, groupState.extraValues[item.key] || ""); input.placeholder = `Solo necesario para los métodos seleccionados: ${item.name}`; input.oninput = () => { groupState.extraValues[item.key] = input.value; renderGroupPreview(); }; }); }
+      if (!groupState.reuseShared && groupState.selected.size && shared.length) { fieldsBox.appendChild(el("h3", "Datos compartidos por método")); [...groupState.selected].forEach((index) => shared.forEach((name) => { const key = `${index}:${keyOf(name)}`; const input = compactField(fieldsBox, `${group.options[index].name} · {{${name}}}`, groupState.extraValues[key] || ""); input.oninput = () => { groupState.extraValues[key] = input.value; renderGroupPreview(); }; })); }
     };
     const renderGroupPreview = () => {
       previewsBox.replaceChildren();
       if (!groupState.selected.size) { previewsBox.appendChild(el("p", "Selecciona al menos un método para ver su vista previa.", "crrb-prompt-empty")); return; }
       const outputs = [...groupState.selected].map((index) => { const local = { ...groupState.extraValues }; shared.forEach((name) => { const key = keyOf(name); local[key] = groupState.reuseShared ? groupState.sharedValues[key] || "" : groupState.extraValues[`${index}:${key}`] || ""; }); return { title: group.options[index].name, text: replacePlaceholders(sources[index], local) }; });
-      outputs.forEach((output) => { const box = el("div", "", "crrb-prompt-output"); const header = el("div", "", "crrb-prompt-output-header"); header.appendChild(el("strong", output.title)); const copy = button("Copiar este resultado"); copy.onclick = async () => { try { await copyText(output.text); notice(`Copiado: ${output.title}`); } catch (error) { notice(error.message); } }; header.appendChild(copy); const area = el("textarea", "", "crrb-prompt-preview"); area.readOnly = true; area.rows = 9; area.value = output.text; box.append(header, area); previewsBox.appendChild(box); });
+      outputs.forEach((output) => { const box = el("div", "", "crrb-prompt-output"); const header = el("div", "", "crrb-prompt-output-header"); header.appendChild(el("strong", output.title)); const view = button("Ver prompt completo", "crrb-primary"); view.onclick = () => showPromptModal(output.title, output.text); header.appendChild(view); const area = el("textarea", "", "crrb-prompt-preview"); area.readOnly = true; area.rows = 5; area.value = output.text; box.append(header, area); previewsBox.appendChild(box); });
       const actions = el("div", "", "crrb-prompt-actions"); const copyAll = button("Copiar todos", "crrb-primary"); const open = button("Abrir todos en una nota"); const modify = button("Modificar grupo"); actions.append(copyAll, open, modify); previewsBox.appendChild(actions);
       copyAll.onclick = async () => { try { await copyText(outputs.map((item) => `${item.title}\n\n${item.text}`).join("\n\n---\n\n")); notice("Todos los resultados fueron copiados."); } catch (error) { notice(error.message); } }; open.onclick = () => openResult(group.name, outputs); modify.onclick = () => openEditor(record);
     };
@@ -559,9 +602,9 @@ module.exports = async ({ app }) => {
   const refreshLibrary = async () => { entries = await loadEntries(); if (selected && !entries.some((entry) => entry.path === selected.path)) selected = null; renderLibrary(); notice("Biblioteca actualizada."); };
   const renderLibrary = () => {
     panel.replaceChildren();
-    panel.append(el("h2", "Biblioteca visual de prompts"), el("p", "Selecciona un prompt individual o un grupo, completa sus datos y revisa la vista previa antes de copiar.", "crrb-prompt-muted"));
+    const heading = el("div", "", "crrb-prompt-heading"); heading.append(el("h2", "Biblioteca visual de prompts")); const closeTop = button("× Cerrar", "crrb-quiet"); closeTop.onclick = close.onclick; heading.appendChild(closeTop); panel.append(heading, el("p", "Selecciona un prompt individual o un grupo, completa sus datos y revisa la vista previa antes de copiar.", "crrb-prompt-muted"));
     const toolbar = el("div", "", "crrb-prompt-toolbar");
-    renderCategoryOptions(); const allTypes = el("option", "Todos los tipos"); allTypes.value = ""; const individualType = el("option", "Individuales"); individualType.value = "Individuales"; const groupType = el("option", "Grupos"); groupType.value = "Grupos"; type.replaceChildren(allTypes, individualType, groupType);
+    renderCategoryOptions(); const oldType = type.value; const allTypes = el("option", "Todos los tipos"); allTypes.value = ""; const individualType = el("option", "Individuales"); individualType.value = "Individuales"; const groupType = el("option", "Grupos"); groupType.value = "Grupos"; type.replaceChildren(allTypes, individualType, groupType); type.value = ["", "Individuales", "Grupos"].includes(oldType) ? oldType : "";
     const addCategory = button("＋ Nueva categoría"); const create = button("＋ Crear prompt o grupo", "crrb-primary"); const refresh = button("↻ Actualizar");
     toolbar.append(el("label", "Categoría"), category, el("label", "Tipo"), type, search, refresh, addCategory, create); panel.appendChild(toolbar);
     const filtered = entries.filter((entry) => (!category.value || entry.category === category.value) && (!type.value || (type.value === "Individuales" ? entry.type === "prompt" : entry.type === "group")) && (!search.value || `${entry.name} ${entry.path}`.toLowerCase().includes(search.value.toLowerCase())));

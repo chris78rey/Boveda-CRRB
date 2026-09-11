@@ -1,0 +1,444 @@
+/* CRRB - tema oscuro accesible v2
+   No aplica fuentes ni fondos directamente al canvas de Graph. */
+.theme-dark {
+  --crrb-bg: #121826;
+  --crrb-panel: #1d2635;
+  --crrb-panel-alt: #263449;
+  --crrb-text: #fff7e6;
+  --crrb-muted: #d9e2ec;
+  --crrb-orange: #ffb000;
+  --crrb-aqua: #62e6d2;
+  --crrb-border: #8ea4bd;
+  --background-primary: var(--crrb-bg);
+  --background-primary-alt: var(--crrb-panel);
+  --background-secondary: var(--crrb-panel);
+  --background-secondary-alt: var(--crrb-panel-alt);
+  --background-modifier-hover: #334760;
+  --background-modifier-active-hover: #3b506b;
+  --background-modifier-border: var(--crrb-border);
+  --background-modifier-border-hover: var(--crrb-orange);
+  --background-modifier-border-focus: var(--crrb-aqua);
+  --background-modifier-form-field: #101621;
+  --background-modifier-form-field-highlighted: #263449;
+  --text-normal: var(--crrb-text);
+  --text-muted: var(--crrb-muted);
+  --text-faint: #b8c7d7;
+  --text-accent: var(--crrb-orange);
+  --text-accent-hover: #ffd166;
+  --text-on-accent: #121826;
+  --link-color: var(--crrb-aqua);
+  --link-color-hover: #a6fff1;
+  --interactive-normal: #263449;
+  --interactive-hover: #334760;
+  --interactive-accent: var(--crrb-orange);
+  --interactive-accent-hover: #ffc94d;
+  --caret-color: var(--crrb-orange);
+  --font-text: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
+  --font-interface: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
+  --font-monospace: "Cascadia Mono", "DejaVu Sans Mono", monospace;
+  --tab-background-active: var(--crrb-panel-alt);
+  --tab-container-background: var(--crrb-panel);
+  --tab-text-color: var(--crrb-muted);
+  --tab-text-color-active: var(--crrb-text);
+  --tab-text-color-focused: var(--crrb-text);
+  --tab-text-color-focused-active-current: var(--crrb-orange);
+  --tab-divider-color: var(--crrb-border);
+  --tab-outline-color: var(--crrb-border);
+  --tab-outline-width: 1px;
+  --graph-text: var(--crrb-orange);
+  --graph-line: #9aabc0;
+  --graph-node: var(--crrb-orange);
+  --graph-node-focused: var(--crrb-aqua);
+  --graph-node-tag: var(--crrb-orange);
+  --graph-node-attachment: var(--crrb-muted);
+  --graph-node-unresolved: var(--crrb-muted);
+}
+
+/* Fuente accesible solo en texto y controles HTML; no se aplica a Graph. */
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view,
+.theme-dark .modal-container,
+.theme-dark .menu,
+.theme-dark .popover,
+.theme-dark .suggestion-container,
+.theme-dark .nav-files-container,
+.theme-dark .backlink-pane,
+.theme-dark .outgoing-link-pane,
+.theme-dark .outline,
+.theme-dark .tag-pane,
+.theme-dark .search-result-container {
+  font-family: var(--font-interface);
+  color: var(--crrb-text);
+}
+
+/* Superficie Markdown: vence el fondo blanco fijo de Gitsidian. */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-source-view,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-section,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-sizer,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-editor,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-scroller {
+  background-color: var(--crrb-bg);
+  color: var(--crrb-text);
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-gutters {
+  background-color: var(--crrb-panel);
+  color: var(--crrb-muted);
+  border-inline-end: 1px solid var(--crrb-border);
+}
+
+.theme-dark .workspace-split.mod-root .view-content .markdown-preview-view,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view {
+  background-color: var(--crrb-bg);
+  color: var(--crrb-text);
+  font-family: var(--font-text);
+  line-height: 1.65;
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view p,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view li,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view td,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view th,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view blockquote,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-line {
+  color: var(--crrb-text);
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h1,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h2,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h3,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h4,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h5,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h6,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .cm-header {
+  color: var(--crrb-text);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h1,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h2,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .markdown-preview-view h3 {
+  border-bottom: 2px solid var(--crrb-border);
+  padding-bottom: 0.28em;
+}
+
+.theme-dark .workspace-leaf-content[data-type="markdown"] .metadata-container,
+.theme-dark .workspace-leaf-content[data-type="markdown"] .metadata-property {
+  color: var(--crrb-text);
+}
+
+.theme-dark .workspace,
+.theme-dark .workspace-leaf-content,
+.theme-dark .workspace-tab-header-container,
+.theme-dark .workspace-ribbon,
+.theme-dark .status-bar,
+.theme-dark .titlebar {
+  background: var(--crrb-bg);
+  color: var(--crrb-text);
+  border-color: var(--crrb-border);
+}
+
+.theme-dark .workspace-split.mod-left-split,
+.theme-dark .workspace-split.mod-right-split {
+  background: var(--crrb-panel);
+}
+
+.theme-dark .workspace-split.mod-left-split,
+.theme-dark .workspace-split.mod-right-split {
+  border-inline: 1px solid var(--crrb-border);
+}
+
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title,
+.theme-dark .tree-item-inner,
+.theme-dark .backlink-pane .tree-item-self,
+.theme-dark .outgoing-link-pane .tree-item-self {
+  color: var(--crrb-text);
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.45;
+  padding-block: 0.28rem;
+  border-bottom: 1px solid rgb(142 164 189 / 35%);
+}
+
+.theme-dark .nav-file-title:hover,
+.theme-dark .nav-folder-title:hover,
+.theme-dark .tree-item-self:hover {
+  background: var(--crrb-panel-alt);
+  color: var(--crrb-text);
+}
+
+.theme-dark .nav-file-title.is-active,
+.theme-dark .tree-item-self.is-active {
+  background: var(--crrb-panel-alt);
+  border-inline-start: 3px solid var(--crrb-orange);
+  color: var(--crrb-orange);
+}
+
+.theme-dark .workspace-tab-header {
+  background: var(--crrb-panel);
+  color: var(--crrb-muted);
+  border: 1px solid var(--crrb-border);
+  border-bottom: 3px solid var(--crrb-border);
+  border-radius: 5px;
+  margin: 0.2rem 0.15rem;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  background: var(--crrb-panel-alt);
+  color: var(--crrb-text);
+  border-color: var(--crrb-orange);
+  font-weight: 700;
+}
+
+.theme-dark .menu,
+.theme-dark .popover,
+.theme-dark .modal-container .modal,
+.theme-dark .suggestion-container {
+  background: var(--crrb-panel);
+  color: var(--crrb-text);
+  border: 1px solid var(--crrb-border);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 40%);
+}
+
+.theme-dark .menu-item,
+.theme-dark .suggestion-item {
+  color: var(--crrb-text);
+  border-bottom: 1px solid rgb(142 164 189 / 25%);
+}
+
+.theme-dark .menu-item:hover,
+.theme-dark .menu-item.selected,
+.theme-dark .suggestion-item.is-selected {
+  background: var(--crrb-panel-alt);
+  color: var(--crrb-orange);
+}
+
+.theme-dark input[type="text"],
+.theme-dark input[type="search"],
+.theme-dark input[type="url"],
+.theme-dark input[type="number"],
+.theme-dark input[type="date"],
+.theme-dark textarea,
+.theme-dark select,
+.theme-dark .text-input,
+.theme-dark .search-input-container {
+  background: #101621;
+  color: var(--crrb-text);
+  border: 1px solid var(--crrb-border);
+}
+
+.theme-dark input[type="text"]:focus,
+.theme-dark input[type="search"]:focus,
+.theme-dark input[type="url"]:focus,
+.theme-dark input[type="number"]:focus,
+.theme-dark input[type="date"]:focus,
+.theme-dark textarea:focus,
+.theme-dark select:focus,
+.theme-dark .text-input:focus,
+.theme-dark .search-input-container:focus-within {
+  border-color: var(--crrb-aqua);
+  box-shadow: 0 0 0 2px rgb(98 230 210 / 25%);
+}
+
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-rendered h3 {
+  color: var(--crrb-text);
+  border-bottom: 2px solid var(--crrb-border);
+  padding-bottom: 0.25em;
+}
+
+.theme-dark .markdown-rendered a,
+.theme-dark .markdown-preview-view a,
+.theme-dark .cm-link {
+  color: var(--crrb-aqua);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+}
+
+.theme-dark .markdown-rendered table,
+.theme-dark .markdown-preview-view table,
+.theme-dark [data-callout],
+.theme-dark .task-list-item,
+.theme-dark .metadata-property {
+  background: var(--crrb-panel);
+  border: 1px solid var(--crrb-border);
+  color: var(--crrb-text);
+}
+
+.theme-dark .markdown-rendered th,
+.theme-dark .markdown-rendered td,
+.theme-dark .markdown-preview-view th,
+.theme-dark .markdown-preview-view td {
+  border: 1px solid var(--crrb-border);
+  color: var(--crrb-text);
+  padding: 0.55rem 0.7rem;
+}
+
+.theme-dark .markdown-rendered th,
+.theme-dark .markdown-preview-view th,
+.theme-dark [data-callout-title],
+.theme-dark .metadata-property-key {
+  color: var(--crrb-orange);
+  font-weight: 700;
+}
+
+.theme-dark .task-list-item.is-checked {
+  color: var(--crrb-muted);
+  opacity: 1;
+}
+
+.theme-dark .task-list-item-checkbox {
+  accent-color: var(--crrb-aqua);
+  width: 1.15em;
+  height: 1.15em;
+}
+
+.theme-dark .block-language-tasks {
+  color: var(--crrb-text);
+}
+
+.theme-dark .block-language-tasks input[type="text"],
+.theme-dark .block-language-tasks input[type="search"] {
+  background-color: #101621;
+  color: var(--crrb-text);
+  border: 1px solid var(--crrb-border);
+}
+
+.theme-dark .block-language-tasks input[type="text"]::placeholder,
+.theme-dark .block-language-tasks input[type="search"]::placeholder {
+  color: var(--crrb-muted);
+  opacity: 1;
+}
+
+.theme-dark .markdown-rendered pre,
+.theme-dark .markdown-preview-view pre,
+.theme-dark .cm-editor .HyperMD-codeblock {
+  background: #101621;
+  border: 1px solid var(--crrb-border);
+  color: var(--crrb-muted);
+}
+
+/* Vista grafica nativa: solo variables y controles HTML, sin tocar Canvas. */
+.theme-dark .workspace-leaf-content[data-type="graph"],
+.theme-dark .workspace-leaf-content[data-type="localgraph"] {
+  --graph-background: var(--crrb-bg);
+  --background-primary: var(--crrb-bg);
+  --background-primary-alt: var(--crrb-panel);
+  --graph-text: var(--crrb-orange);
+  --graph-line: #9aabc0;
+  --graph-node: var(--crrb-orange);
+  --graph-node-focused: var(--crrb-aqua);
+  --graph-node-tag: var(--crrb-orange);
+  --graph-node-attachment: var(--crrb-muted);
+  --graph-node-unresolved: var(--crrb-muted);
+}
+
+/* Puente de colores de la Vista gráfica nativa de Obsidian/WebGL. */
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-text,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-text {
+  color: var(--graph-text);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-line,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-line {
+  color: var(--graph-line);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-fill,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-fill {
+  color: var(--graph-node);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-fill-highlight,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-fill-highlight,
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-line-highlight,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-line-highlight {
+  color: var(--graph-node-focused);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-fill-tag,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-fill-tag {
+  color: var(--graph-node-tag);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-fill-attachment,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-fill-unresolved,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-arrow,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-arrow {
+  color: var(--graph-node);
+}
+
+/* Refuerzo del color de etiquetas: algunas versiones/temas leen el color
+   desde el nodo .graph-view y no solamente desde --graph-text. */
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view {
+  --graph-text: var(--crrb-orange);
+  --graph-node: var(--crrb-orange);
+  --graph-node-focused: var(--crrb-aqua);
+  --graph-node-tag: var(--crrb-orange);
+  --graph-node-attachment: var(--crrb-muted);
+  --graph-node-unresolved: var(--crrb-muted);
+  --graph-line: #9aabc0;
+  --graph-background: var(--crrb-bg);
+  --font-text: Verdana, "Atkinson Hyperlegible", sans-serif;
+  --font-interface: Verdana, "Atkinson Hyperlegible", sans-serif;
+  --text-normal: var(--crrb-orange);
+  --text-muted: var(--crrb-orange);
+  --text-faint: var(--crrb-orange);
+  font-family: Verdana, "Atkinson Hyperlegible", sans-serif;
+  color: var(--crrb-orange);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-view.color-text,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-view.color-text {
+  --graph-text: #ffb000;
+  color: #ffb000;
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls {
+  background: var(--crrb-panel);
+  color: var(--crrb-text);
+  border: 1px solid var(--crrb-border);
+  font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls .setting-item,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls .setting-item {
+  border-bottom: 1px solid var(--crrb-border);
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls .setting-item-name,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls .setting-item-name,
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls label,
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls label {
+  color: var(--crrb-text);
+  font-weight: 700;
+}
+
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls input[type="search"],
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls input[type="search"],
+.theme-dark .workspace-leaf-content[data-type="graph"] .graph-controls input[type="text"],
+.theme-dark .workspace-leaf-content[data-type="localgraph"] .graph-controls input[type="text"] {
+  background: #101621;
+  color: var(--crrb-text);
+  border: 1px solid var(--crrb-border);
+}
+
+.theme-dark .app-container :focus-visible {
+  outline: 2px solid var(--crrb-aqua);
+  outline-offset: 2px;
+}

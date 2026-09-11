@@ -1,7 +1,9 @@
 {
   "enabledCssSnippets": [
-    "crrb-dashboard",
-    "crrb-lectura-accesible"
+    "crrb-modo-oscuro-v2"
   ],
-  "baseFontSize": 17
+  "baseFontSize": 20,
+  "cssTheme": "Typewriter",
+  "theme": "moonstone",
+  "accentColor": "#ffb000"
 }

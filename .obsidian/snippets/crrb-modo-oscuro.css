@@ -1,0 +1,557 @@
+/* CRRB - modo oscuro de alto contraste para lectura */
+
+.theme-dark {
+  --crrb-dark-bg: #101417;
+  --crrb-dark-panel: #171d21;
+  --crrb-dark-text: #f5f7fa;
+  --crrb-dark-muted: #d2d9df;
+  --crrb-dark-border: #aebbc4;
+  --crrb-dark-accent: #8ee6cf;
+}
+
+/* Fuente accesible: usa OpenDyslexic si esta instalada y tiene alternativas */
+.markdown-preview-view,
+.markdown-source-view,
+.nav-file-title,
+.nav-folder-title,
+.backlink-pane,
+.outgoing-link-pane,
+.modal,
+.menu {
+  font-family: "OpenDyslexic", "Atkinson Hyperlegible", "Verdana", sans-serif !important;
+}
+
+/* Graph View usa canvas: una fuente accesible heredada puede deformar sus etiquetas */
+.graph-view,
+.graph-view canvas,
+.graph-controls {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view,
+.theme-dark .view-content {
+  background: var(--crrb-dark-bg);
+  color: var(--crrb-dark-text) !important;
+}
+
+.theme-dark .markdown-preview-view p,
+.theme-dark .markdown-preview-view li,
+.theme-dark .markdown-preview-view td,
+.theme-dark .markdown-preview-view span,
+.theme-dark .cm-content,
+.theme-dark .cm-line {
+  color: var(--crrb-dark-text) !important;
+}
+
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view {
+  font-size: 1.06em;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+}
+
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-preview-view h2,
+.theme-dark .markdown-preview-view h3 {
+  color: #ffffff !important;
+  border-bottom: 2px solid var(--crrb-dark-border);
+  padding-bottom: 0.28em;
+  line-height: 1.35;
+}
+
+.theme-dark .markdown-preview-view blockquote,
+.theme-dark .markdown-preview-view .callout,
+.theme-dark .markdown-preview-view table,
+.theme-dark .markdown-preview-view pre,
+.theme-dark .markdown-preview-view ul,
+.theme-dark .markdown-preview-view ol {
+  background: var(--crrb-dark-panel);
+  border: 1px solid var(--crrb-dark-border);
+  border-radius: 8px;
+}
+
+.theme-dark .markdown-preview-view blockquote,
+.theme-dark .markdown-preview-view .callout {
+  border-left: 5px solid var(--crrb-dark-accent);
+  padding: 0.8em 1em;
+}
+
+.theme-dark .markdown-preview-view th,
+.theme-dark .markdown-preview-view td {
+  color: var(--crrb-dark-text) !important;
+  border-right: 1px solid var(--crrb-dark-border);
+  border-bottom: 1px solid var(--crrb-dark-border);
+  padding: 0.55em 0.7em;
+}
+
+.theme-dark .markdown-preview-view th {
+  background: #263238;
+  color: #ffffff;
+}
+
+.theme-dark .markdown-preview-view a,
+.theme-dark .cm-hmd-internal-link,
+.theme-dark .cm-link {
+  color: var(--crrb-dark-accent) !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.theme-dark .markdown-preview-view code,
+.theme-dark .markdown-source-view .cm-inline-code {
+  color: #ffffff;
+  background: #252d33;
+  border: 1px solid var(--crrb-dark-border);
+  border-radius: 4px;
+  padding: 0.08em 0.3em;
+}
+
+.theme-dark .markdown-preview-view hr {
+  border: 0;
+  border-top: 2px solid var(--crrb-dark-border);
+}
+
+.theme-dark .markdown-preview-view .task-list-item-checkbox {
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/* Fallback: el fragmento activo fuerza el modo oscuro en la pagina,
+   incluso si el tema base no agrega la clase .theme-dark. */
+.markdown-preview-view,
+.markdown-source-view,
+.markdown-preview-view .view-content,
+.markdown-source-view .view-content {
+  background: #101417 !important;
+  color: #f5f7fa !important;
+}
+
+.markdown-preview-view p,
+.markdown-preview-view li,
+.markdown-preview-view td,
+.markdown-preview-view th,
+.markdown-preview-view span,
+.cm-content,
+.cm-line {
+  color: #f5f7fa !important;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  color: #ffffff !important;
+  border-bottom-color: #aebbc4 !important;
+}
+
+.markdown-preview-view blockquote,
+.markdown-preview-view .callout,
+.markdown-preview-view table,
+.markdown-preview-view pre,
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  background: #171d21 !important;
+  border-color: #aebbc4 !important;
+}
+
+.markdown-preview-view a,
+.cm-hmd-internal-link,
+.cm-link {
+  color: #8ee6cf !important;
+}
+
+.callout,
+.callout-title,
+.callout-title-inner,
+.callout-content,
+.metadata-container,
+.metadata-property,
+.metadata-property-key,
+.metadata-property-value,
+.metadata-property-value span,
+.task-list-item,
+.task-list-item-checkbox,
+.tasks-list-text {
+  color: #f5f7fa !important;
+}
+
+.callout,
+.metadata-container,
+.metadata-property,
+.task-list-item {
+  background: #171d21 !important;
+  border-color: #aebbc4 !important;
+}
+
+code,
+.cm-inline-code,
+.metadata-property-value,
+.metadata-input-longtext,
+.metadata-input-number,
+.metadata-input-text {
+  background: #252d33 !important;
+  color: #ffffff !important;
+}
+
+.tasks-list-text a,
+.task-list-item a {
+  color: #8ee6cf !important;
+}
+
+.task-list-item.is-checked,
+.task-list-item.is-checked .tasks-list-text,
+.task-list-item.is-checked .tasks-list-text * {
+  color: #cbd5db !important;
+  opacity: 1 !important;
+}
+
+.task-list-item.is-checked code,
+.task-list-item.is-checked mark,
+.task-list-item code,
+.task-list-item mark {
+  background: #252d33 !important;
+  color: #e8edf0 !important;
+}
+
+.task-list-item .task-description,
+.task-list-item .task-description span,
+.task-list-item .task-description code {
+  background-color: transparent !important;
+  color: #e8edf0 !important;
+}
+
+/* Interfaz completa: barras, menus laterales y paneles */
+.app-container,
+.workspace,
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner,
+.workspace-tab-header,
+.workspace-tab-header.is-active,
+.mod-left-split,
+.mod-right-split,
+.side-dock-ribbon,
+.nav-files-container,
+.workspace-leaf-content,
+.workspace-leaf-content .view-header,
+.status-bar,
+.titlebar,
+.menu,
+.suggestion-container,
+.modal {
+  background-color: #050708 !important;
+  color: #f5f7fa !important;
+}
+
+.workspace-tab-header-inner-title,
+.nav-file-title,
+.nav-folder-title,
+.side-dock-ribbon-action,
+.view-header-title,
+.status-bar-item,
+.menu-item,
+.setting-item-name,
+.setting-item-description {
+  color: #f5f7fa !important;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.menu-item:hover,
+.workspace-tab-header:hover {
+  background-color: #263238 !important;
+}
+
+.workspace-tab-header.is-active {
+  border-bottom: 2px solid #8ee6cf !important;
+}
+
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right {
+  background-color: #0b0f11 !important;
+  border-color: #aebbc4 !important;
+}
+
+/* Graph View / Graphify: etiquetas y nodos con alto contraste */
+.graph-view,
+.graph-view.color-fill,
+.graph-view.color-fill-focused,
+.graph-view.color-text,
+.graph-view.color-line,
+.graph-view.color-arrow {
+  --graph-background: #050708;
+  --graph-node: #dce6eb;
+  --graph-node-focused: #ffffff;
+  --graph-text: #ff9f1c;
+  --graph-line: #73838d;
+  --graph-line-highlight: #8ee6cf;
+  --graph-arrow: #8ee6cf;
+  --background-primary: #050708;
+  --background-primary-alt: #0b0f11;
+  --background-secondary: #0b0f11;
+  --text-normal: #ff9f1c !important;
+  --text-muted: #ffbf5a !important;
+  background: #050708 !important;
+  color: #ffffff !important;
+}
+
+.graph-controls,
+.graph-controls .nav-header,
+.graph-controls .setting-item-name,
+.graph-controls .setting-item-description,
+.graph-controls .clickable-icon {
+  color: #f5f7fa !important;
+}
+
+.graph-controls {
+  background: #0b0f11 !important;
+  border-left: 1px solid #aebbc4 !important;
+}
+
+.graph-view,
+.graph-view-container,
+.graph-view canvas {
+  color: #ff9f1c !important;
+  --text-normal: #ff9f1c !important;
+  --text-muted: #ffbf5a !important;
+  --text-faint: #ffc978 !important;
+  --graph-text: #ff9f1c !important;
+}
+
+.graph-controls input,
+.graph-controls input[type="search"],
+.graph-controls .search-input-container {
+  background: #171d21 !important;
+  color: #ffffff !important;
+  border: 2px solid #aebbc4 !important;
+  caret-color: #ff9f1c !important;
+}
+
+.graph-controls input::placeholder {
+  color: #d2d9df !important;
+}
+
+.graph-controls .search-input-clear-button,
+.graph-controls .clickable-icon {
+  color: #ffffff !important;
+}
+
+.graph-controls input::placeholder {
+  color: #ffffff !important;
+  opacity: 0.9 !important;
+}
+
+/* Paleta de alto contraste, menos agresiva que negro puro */
+.app-container,
+.workspace,
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner,
+.workspace-tab-header,
+.mod-left-split,
+.mod-right-split,
+.side-dock-ribbon,
+.nav-files-container,
+.workspace-leaf-content,
+.workspace-leaf-content .view-header,
+.status-bar,
+.titlebar,
+.menu,
+.modal,
+.markdown-preview-view,
+.markdown-source-view,
+.markdown-preview-view .view-content,
+.markdown-source-view .view-content {
+  background-color: #121826 !important;
+  color: #fff7e6 !important;
+}
+
+.markdown-preview-view p,
+.markdown-preview-view li,
+.markdown-preview-view td,
+.markdown-preview-view th,
+.markdown-preview-view span,
+.cm-content,
+.cm-line,
+.nav-file-title,
+.nav-folder-title,
+.backlink-pane,
+.outgoing-link-pane,
+.graph-controls {
+  color: #fff7e6 !important;
+}
+
+.graph-view,
+.graph-view-container,
+.workspace-leaf-content[data-type="graph"],
+.workspace-leaf-content[data-type="graph"] .view-content,
+.workspace-leaf-content[data-type="localgraph"],
+.workspace-leaf-content[data-type="localgraph"] .view-content {
+  background-color: #121826 !important;
+  --background-primary: #121826;
+  --background-primary-alt: #1d2635;
+  --background-secondary: #1d2635;
+  --text-normal: #fff7e6 !important;
+  --text-muted: #d9e2ec !important;
+  --graph-text: #ffb000 !important;
+  --graph-node: #d9e2ec;
+  --graph-node-focused: #ffffff;
+  --graph-line: #8292a6;
+  --graph-line-highlight: #62e6d2;
+  --graph-arrow: #62e6d2;
+}
+
+.graph-controls,
+.graph-controls input,
+.graph-controls .search-input-container {
+  background-color: #1d2635 !important;
+  color: #fff7e6 !important;
+  border-color: #d9e2ec !important;
+}
+
+.markdown-preview-view a,
+.cm-hmd-internal-link,
+.cm-link,
+.tasks-list-text a,
+.task-list-item a {
+  color: #62e6d2 !important;
+}
+
+.tag,
+.internal-link,
+.metadata-property-value {
+  color: #ffb000 !important;
+}
+
+/* Bordes visibles para separar toda la interfaz */
+.workspace-tab-header-container,
+.workspace-tab-header,
+.workspace-tab-header.is-active,
+.workspace-leaf-content,
+.workspace-leaf-content .view-header,
+.mod-left-split,
+.mod-right-split,
+.nav-files-container,
+.backlink-pane,
+.outgoing-link-pane,
+.status-bar,
+.titlebar,
+.side-dock-ribbon,
+.graph-controls,
+.menu,
+.modal {
+  border-color: #8fa4b5 !important;
+}
+
+.workspace-tab-header {
+  border: 1px solid #607486 !important;
+  border-bottom: 3px solid #607486 !important;
+  margin-right: 2px;
+}
+
+.workspace-tab-header.is-active {
+  border-color: #ffb000 !important;
+  border-bottom: 3px solid #ffb000 !important;
+  background-color: #263448 !important;
+}
+
+.workspace-tab-header-container,
+.workspace-leaf-content .view-header,
+.status-bar,
+.titlebar {
+  border-bottom: 2px solid #607486 !important;
+}
+
+.mod-left-split,
+.mod-right-split,
+.side-dock-ribbon {
+  border-right: 2px solid #607486 !important;
+}
+
+.mod-right-split {
+  border-left: 2px solid #607486 !important;
+  border-right: 0 !important;
+}
+
+/* Vista grafica nativa de Obsidian */
+.workspace-leaf-content[data-type="graph"],
+.workspace-leaf-content[data-type="graph"] .view-content,
+.workspace-leaf-content[data-type="graph"] .graph-view-container,
+.workspace-leaf-content[data-type="localgraph"],
+.workspace-leaf-content[data-type="localgraph"] .view-content {
+  background: #050708 !important;
+  color: #ffffff !important;
+  --background-primary: #050708;
+  --background-primary-alt: #0b0f11;
+  --background-secondary: #0b0f11;
+  --text-normal: #ffffff;
+  --text-muted: #d2d9df;
+  --graph-text: #ff9f1c;
+  --graph-node: #dce6eb;
+  --graph-node-unresolved: #ffffff;
+  --graph-node-focused: #ffffff;
+  --graph-line: #73838d;
+  --graph-line-highlight: #8ee6cf;
+  --graph-arrow: #8ee6cf;
+}
+
+
+/* Navegacion lateral mas visible (+25% aprox.) */
+.nav-file-title,
+.nav-folder-title,
+.nav-folder-collapse-indicator,
+.workspace-tab-header-inner-title,
+.backlink-pane .tree-item-self,
+.outgoing-link-pane .tree-item-self,
+.embedded-backlinks .tree-item-self {
+  font-size: 1.25em !important;
+  font-weight: 700 !important;
+}
+
+.nav-file-title,
+.nav-folder-title,
+.backlink-pane .tree-item-self,
+.outgoing-link-pane .tree-item-self,
+.embedded-backlinks .tree-item-self {
+  min-height: 1.75em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content,
+.tree-item-inner {
+  line-height: 1.35;
+  font-weight: 700 !important;
+}
+
+.markdown-preview-view,
+.markdown-source-view,
+.markdown-preview-view .view-content,
+.markdown-source-view .view-content {
+  background-color: #050708 !important;
+}
+
+.markdown-preview-view a,
+.cm-hmd-internal-link,
+.cm-link,
+.tasks-list-text a,
+.task-list-item a {
+  color: #64ffe0 !important;
+  font-weight: 700 !important;
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.menu-item:hover,
+.workspace-tab-header:hover {
+  background-color: #123c39 !important;
+  color: #ffffff !important;
+}
+
+.tag,
+.metadata-property-value,
+.internal-link {
+  color: #ffe66d !important;
+  font-weight: 700 !important;
+}

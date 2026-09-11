@@ -97,7 +97,11 @@ module.exports = async ({ app }) => {
     let key = "", model = "google/gemini-3.1-flash-lite";
     try {
       const fs = require("fs");
-      const configPath = "/home/crrb/.config/crrb/openrouter.env";
+      const path = require("path");
+      const os = require("os");
+      const configPath = process.platform === "win32"
+        ? path.join(process.env.APPDATA || os.homedir(), "crrb", "openrouter.env")
+        : path.join(os.homedir(), ".config", "crrb", "openrouter.env");
       if (fs.existsSync(configPath)) {
         const env = fs.readFileSync(configPath, "utf8");
         key = env.match(/^OPENROUTER_API_KEY=(.*)$/m)?.[1]?.trim() || "";
@@ -106,7 +110,7 @@ module.exports = async ({ app }) => {
       if (!key) {
         key = await modal("API key de OpenRouter");
         model = await modal("Modelo de OpenRouter", model);
-        fs.mkdirSync("/home/crrb/.config/crrb", { recursive: true });
+        fs.mkdirSync(path.dirname(configPath), { recursive: true });
         fs.writeFileSync(configPath, `OPENROUTER_API_KEY=${key}\nOPENROUTER_MODEL=${model}\n`, { mode: 0o600 });
       }
     } catch (error) { throw new Error("No se pudo leer la configuración de OpenRouter: " + error.message); }
@@ -125,7 +129,24 @@ REGLAS DE INTERPRETACIÓN:
 FORMATO OBLIGATORIO: responde únicamente JSON válido, sin markdown ni explicaciones, con esta forma exacta:
 {"items":[{"type":"group","name":"Nombre","category":"estudio","sharedPlaceholders":[],"instructions":"","options":[{"name":"Botón 1","instructions":"Texto completo"}]}]}
 Para un prompt individual usa options:[] e instructions con todo el texto. Todos los grupos deben tener al menos dos opciones y cada option.instructions debe contener texto real.`;
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", { method: "POST", headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" }, body: JSON.stringify({ model, temperature: 0.1, messages: [{ role: "system", content: systemPrompt }, { role: "user", content: source }] }) });
+    const request = () => fetch("https://openrouter.ai/api/v1/chat/completions", { method: "POST", headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" }, body: JSON.stringify({ model, temperature: 0.1, messages: [{ role: "system", content: systemPrompt }, { role: "user", content: source }] }) });
+    let response = await request();
+    if (!response.ok && (response.status === 401 || response.status === 403)) {
+      const replacement = await modal("La clave no fue aceptada. Corrígela", key);
+      if (!replacement) throw new Error("No se actualizó la clave de OpenRouter");
+      key = replacement;
+      try {
+        const fs = require("fs");
+        const path = require("path");
+        const os = require("os");
+        const configPath = process.platform === "win32"
+          ? path.join(process.env.APPDATA || os.homedir(), "crrb", "openrouter.env")
+          : path.join(os.homedir(), ".config", "crrb", "openrouter.env");
+        fs.mkdirSync(path.dirname(configPath), { recursive: true });
+        fs.writeFileSync(configPath, `OPENROUTER_API_KEY=${key}\nOPENROUTER_MODEL=${model}\n`, { mode: 0o600 });
+      } catch (error) { throw new Error("No se pudo guardar la nueva clave: " + error.message); }
+      response = await request();
+    }
     if (!response.ok) throw new Error("OpenRouter respondió " + response.status);
     const raw = (await response.json()).choices?.[0]?.message?.content || "";
     try {

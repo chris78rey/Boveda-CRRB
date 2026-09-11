@@ -52,5 +52,8 @@
       ],
       "key": "A"
     }
-  ]
+  ],
+  "quickadd:choice:c6300000-0000-4000-8000-000000000001": [{ "modifiers": ["Ctrl", "Alt"], "key": "P" }],
+  "quickadd:choice:c6600000-0000-4000-8000-000000000001": [{ "modifiers": ["Ctrl", "Alt"], "key": "I" }],
+  "quickadd:choice:c6000000-0000-4000-8000-000000000001": [{ "modifiers": ["Ctrl", "Alt"], "key": "N" }]
 }
