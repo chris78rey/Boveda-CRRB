@@ -1,0 +1,111 @@
+/* CRRB - lectura accesible: bordes visibles, ritmo y separacion */
+
+:root {
+  --crrb-border: #6f817d;
+  --crrb-border-strong: #405b56;
+  --crrb-reading-bg: #fffdf8;
+  --crrb-reading-text: #243238;
+}
+
+.markdown-preview-view,
+.markdown-source-view {
+  color: var(--crrb-reading-text);
+  font-size: 1.06em;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+}
+
+.markdown-preview-section,
+.cm-content {
+  max-width: 78ch;
+}
+
+.markdown-preview-view p,
+.markdown-preview-view li,
+.cm-line {
+  margin-bottom: 0.7em;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-source-view .cm-header {
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  border-bottom: 2px solid var(--crrb-border);
+  padding-bottom: 0.28em;
+}
+
+.markdown-preview-view blockquote,
+.markdown-preview-view .callout,
+.markdown-preview-view table,
+.markdown-preview-view pre,
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  border: 1px solid var(--crrb-border);
+  border-radius: 8px;
+}
+
+.markdown-preview-view blockquote,
+.markdown-preview-view .callout {
+  border-left: 5px solid var(--crrb-border-strong);
+  padding: 0.8em 1em;
+}
+
+.markdown-preview-view table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border-right: 1px solid var(--crrb-border);
+  border-bottom: 1px solid var(--crrb-border);
+  padding: 0.55em 0.7em;
+}
+
+.markdown-preview-view th:last-child,
+.markdown-preview-view td:last-child {
+  border-right: 0;
+}
+
+.markdown-preview-view tr:last-child td {
+  border-bottom: 0;
+}
+
+.markdown-preview-view a,
+.cm-hmd-internal-link,
+.cm-link {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.markdown-preview-view code,
+.markdown-source-view .cm-inline-code {
+  border: 1px solid var(--crrb-border);
+  border-radius: 4px;
+  padding: 0.08em 0.3em;
+}
+
+.markdown-preview-view hr {
+  border: 0;
+  border-top: 2px solid var(--crrb-border);
+  margin: 2em 0;
+}
+
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view input[type="checkbox"] {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: middle;
+}
+
+.workspace-leaf-content[data-type="markdown"] .view-content {
+  background: var(--crrb-reading-bg);
+}

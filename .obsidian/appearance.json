@@ -1,5 +1,7 @@
 {
   "enabledCssSnippets": [
-    "crrb-dashboard"
-  ]
+    "crrb-dashboard",
+    "crrb-lectura-accesible"
+  ],
+  "baseFontSize": 17
 }
