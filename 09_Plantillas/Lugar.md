@@ -1,6 +1,7 @@
 <%*
 const lat = await tp.system.prompt("Latitud", "");
 const lon = await tp.system.prompt("Longitud", "");
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
@@ -12,6 +13,7 @@ location:
 direccion: ""
 categoria: ""
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>
@@ -27,4 +29,3 @@ tags:<% tagsYaml %>
 - Enlace:
 
 ## Visitas o eventos relacionados
-

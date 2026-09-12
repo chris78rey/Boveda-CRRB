@@ -1,5 +1,6 @@
 <%*
 const tema = await tp.system.prompt("Tema principal", "");
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
@@ -12,6 +13,7 @@ progreso: 0
 siguiente_sesion: ""
 fuente: ""
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

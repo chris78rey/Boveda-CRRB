@@ -1,5 +1,6 @@
 <%*
 const severidad = await tp.system.suggester(["Crítica", "Alta", "Media", "Baja"], ["critica", "alta", "media", "baja"]);
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const sistema = await tp.system.prompt("Sistema afectado", "");
@@ -14,6 +15,7 @@ severidad: <% severidad %>
 sistema: "<% sistema %>"
 causa: ""
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

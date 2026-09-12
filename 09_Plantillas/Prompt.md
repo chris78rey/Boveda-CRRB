@@ -1,4 +1,5 @@
 <%*
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? inheritedTags.map((tag) => `  - ${tag}`).join("\n") : "  - prompt";
 const folderParts = tp.file.folder(true).split("/");
@@ -11,6 +12,7 @@ favorito: false
 modelo: cualquiera
 tags:
 <% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

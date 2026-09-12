@@ -1,0 +1,9 @@
+{
+  "id": "crrb-origin-context",
+  "name": "CRRB Origin Context",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Hereda tags y enlace de origen al crear una nota desde un wikilink.",
+  "author": "CRRB",
+  "isDesktopOnly": false
+}

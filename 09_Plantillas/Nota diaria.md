@@ -1,4 +1,5 @@
 <%*
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
@@ -6,6 +7,7 @@ tipo: diario
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 semana: <% tp.date.now("YYYY-[W]WW") %>
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.date.now("dddd, D [de] MMMM [de] YYYY") %>

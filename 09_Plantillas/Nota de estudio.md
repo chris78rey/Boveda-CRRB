@@ -1,5 +1,6 @@
 <%*
 const tema = await tp.system.prompt("Tema", "");
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const fuente = await tp.system.prompt("Fuente", "");
@@ -11,6 +12,7 @@ fuente: "<% fuente %>"
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 ambito: personal
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

@@ -1,4 +1,5 @@
 <%*
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const id = await tp.system.prompt("ID del requisito", "RF-001");
@@ -21,6 +22,7 @@ proyecto: "[[<% proyecto %>]]"
 responsable: ""
 fecha_objetivo: ""
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% id %> — <% tp.file.title %>

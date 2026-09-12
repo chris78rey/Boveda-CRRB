@@ -1,6 +1,7 @@
 <%*
 const estudiante = await tp.system.prompt("Estudiante", "");
 const actividad = await tp.system.prompt("Actividad", "");
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 %>---
@@ -12,6 +13,7 @@ actividad: "<% actividad %>"
 fecha: <% tp.date.now("YYYY-MM-DD") %>
 calificacion: 0
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # Evaluación — <% estudiante %>

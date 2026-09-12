@@ -29,8 +29,18 @@ Templater ya apunta a `09_Plantillas` y ejecuta automáticamente las instruccion
 de cada plantilla cuando QuickAdd crea una nota. Para crear manualmente una nota
 se puede usar **Templater: Create new note from template**.
 
-Las plantillas usan la función `scripts/heredar_tags.js`: al crear una nota desde
-otra nota, copian sus tags; si la nota origen no tiene tags, generan `tags: []`.
+Las plantillas usan las funciones `scripts/heredar_tags.js` y
+`scripts/origen_nota.js`: al crear una nota desde otra nota, copian sus tags y
+guardan un enlace a la nota de origen en la propiedad `base`. Así cada nota
+conserva la tabla, dashboard o índice desde el que fue creada. Si no existe una
+nota de origen, generan tags vacíos y `base: ""`.
+
+Para crear una nota directamente desde un enlace como `[[Nota nueva]]` sin usar
+Templater, está habilitado el complemento local **CRRB Origin Context**. Cuando
+detecta un enlace entrante hacia una nota Markdown nueva, agrega los tags de la
+nota origen, la propiedad `base` y un backlink visible. No actúa sobre notas
+creadas sin origen, plantillas ni archivos archivados.
+
 La fecha de creación se calcula con la fecha actual mediante `tp.date.now`.
 Después de cambiar la carpeta de scripts, recargar Obsidian para que Templater
 vuelva a cargar la función.

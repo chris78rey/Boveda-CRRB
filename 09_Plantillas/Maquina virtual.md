@@ -1,4 +1,5 @@
 <%*
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const estado = await tp.system.suggester(["Activo", "Mantenimiento", "Retirado", "Propuesto"], ["activo", "mantenimiento", "retirado", "propuesto"]);
@@ -21,6 +22,7 @@ almacenamiento_gb: 0
 responsable: ""
 criticidad: media
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

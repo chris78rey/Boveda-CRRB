@@ -1,5 +1,6 @@
 <%*
 const ambito = await tp.system.suggester(["Oficina", "Externo", "Docencia", "Personal"], ["oficina", "externo", "docencia", "personal"]);
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const proyecto = await tp.system.prompt("Proyecto relacionado (sin corchetes)", "");
@@ -12,6 +13,7 @@ hora: <% tp.date.now("HH:mm") %>
 proyecto: "[[<% proyecto %>]]"
 participantes: []
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>

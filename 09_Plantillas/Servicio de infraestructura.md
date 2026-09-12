@@ -1,4 +1,5 @@
 <%*
+const origen = await tp.user.origen_nota(tp);
 const inheritedTags = await tp.user.heredar_tags(tp);
 const tagsYaml = inheritedTags.length ? `\n${inheritedTags.map((tag) => `  - ${tag}`).join("\n")}` : " []";
 const ambiente = await tp.system.suggester(["Producción", "Pruebas", "Desarrollo", "Laboratorio"], ["produccion", "pruebas", "desarrollo", "laboratorio"]);
@@ -15,6 +16,7 @@ responsable: ""
 criticidad: media
 dependencias: []
 tags:<% tagsYaml %>
+base: "<% origen %>"
 ---
 
 # <% tp.file.title %>
