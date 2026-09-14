@@ -5,6 +5,9 @@ cssclasses:
 tags:
   - dashboard
   - estudio
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Estudio y conocimiento

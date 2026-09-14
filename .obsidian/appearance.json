@@ -2,8 +2,8 @@
   "enabledCssSnippets": [
     "crrb-modo-oscuro-v2"
   ],
-  "baseFontSize": 20,
-  "cssTheme": "Typewriter",
+  "baseFontSize": 18,
+  "cssTheme": "Baseline",
   "theme": "moonstone",
   "accentColor": "#ffb000"
 }

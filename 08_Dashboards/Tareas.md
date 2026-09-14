@@ -5,6 +5,9 @@ cssclasses:
 tags:
   - dashboard
   - tareas
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Gestión de tareas

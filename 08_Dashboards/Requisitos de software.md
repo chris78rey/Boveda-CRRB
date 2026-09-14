@@ -3,6 +3,9 @@ tipo: dashboard
 tags:
   - dashboard
   - requisitos
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Requisitos de software

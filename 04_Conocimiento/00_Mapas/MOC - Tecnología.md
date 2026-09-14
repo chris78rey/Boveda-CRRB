@@ -4,6 +4,7 @@ tema: tecnologia
 tags:
   - moc
   - tecnologia
+base: "[[09_Plantillas/Nota de estudio.md|Nota de estudio]]"
 ---
 
 # Mapa de conocimiento: Tecnología

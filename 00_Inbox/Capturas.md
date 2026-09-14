@@ -3,6 +3,7 @@ tipo: inbox
 estado: activo
 tags:
   - inbox
+base: "[[09_Plantillas/Revisión semanal.md|Revisión semanal]]"
 ---
 
 # Capturas

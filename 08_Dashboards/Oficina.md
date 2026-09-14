@@ -6,6 +6,9 @@ ambito: oficina
 tags:
   - dashboard
   - oficina
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Oficina

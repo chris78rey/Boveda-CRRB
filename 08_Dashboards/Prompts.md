@@ -3,6 +3,9 @@ tipo: dashboard
 tags:
   - dashboard
   - prompt
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Biblioteca de prompts

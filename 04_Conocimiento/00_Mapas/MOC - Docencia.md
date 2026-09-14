@@ -4,6 +4,8 @@ tema: docencia
 tags:
   - moc
   - docencia
+  - conocimiento
+base: "[[04_Conocimiento/Conocimiento - Índice.md|Conocimiento - Índice]]"
 ---
 
 # Mapa de conocimiento: Docencia

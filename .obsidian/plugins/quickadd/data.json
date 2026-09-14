@@ -92,7 +92,18 @@
           "type": "Macro",
           "command": true,
           "runOnStartup": false,
-          "macro": {"id": "400e3b07-f53d-4260-95af-26d4f0e20d84", "commands": [{"name": "crear_tarea_con_nota", "type": "UserScript", "id": "400e3b07-f53d-4260-95af-26d4f0e20d85", "path": "09_Plantillas/scripts/createTaskNote.js", "settings": {}}]},
+          "macro": {
+            "id": "400e3b07-f53d-4260-95af-26d4f0e20d84",
+            "commands": [
+              {
+                "name": "crear_tarea_con_nota",
+                "type": "UserScript",
+                "id": "400e3b07-f53d-4260-95af-26d4f0e20d85",
+                "path": "09_Plantillas/scripts/createTaskNote.js",
+                "settings": {}
+              }
+            ]
+          },
           "appendLink": false,
           "captureTo": "",
           "captureToActiveFile": true,
@@ -232,7 +243,18 @@
           "type": "Macro",
           "command": true,
           "runOnStartup": false,
-          "macro": {"id": "c1010000-0000-4000-8000-000000000002", "commands": [{"name": "capturar_tarea_ordenada", "type": "UserScript", "id": "c1010000-0000-4000-8000-000000000003", "path": "scripts/capturar_tarea_ordenada.js", "settings": {}}]},
+          "macro": {
+            "id": "c1010000-0000-4000-8000-000000000002",
+            "commands": [
+              {
+                "name": "capturar_tarea_ordenada",
+                "type": "UserScript",
+                "id": "c1010000-0000-4000-8000-000000000003",
+                "path": "scripts/capturar_tarea_ordenada.js",
+                "settings": {}
+              }
+            ]
+          },
           "appendLink": false,
           "captureTo": "00_Inbox/Tareas.md",
           "captureToActiveFile": false,
@@ -274,7 +296,18 @@
           "type": "Macro",
           "command": true,
           "runOnStartup": false,
-          "macro": {"id": "c1020000-0000-4000-8000-000000000002", "commands": [{"name": "capturar_tarea_ordenada", "type": "UserScript", "id": "c1020000-0000-4000-8000-000000000003", "path": "scripts/capturar_tarea_ordenada.js", "settings": {}}]},
+          "macro": {
+            "id": "c1020000-0000-4000-8000-000000000002",
+            "commands": [
+              {
+                "name": "capturar_tarea_ordenada",
+                "type": "UserScript",
+                "id": "c1020000-0000-4000-8000-000000000003",
+                "path": "scripts/capturar_tarea_ordenada.js",
+                "settings": {}
+              }
+            ]
+          },
           "appendLink": false,
           "captureTo": "00_Inbox/Tareas.md",
           "captureToActiveFile": false,
@@ -797,12 +830,36 @@
           "captureTo": "03_Areas/Infraestructura/Equipos/{{VALUE:Nombre o hostname}}.md",
           "captureToActiveFile": false,
           "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Equipo de infraestructura.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": true,
+            "template": "09_Plantillas/Equipo de infraestructura.md"
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
         },
         {
           "id": "c4020000-0000-4000-8000-000000000001",
@@ -813,12 +870,36 @@
           "captureTo": "03_Areas/Infraestructura/Maquinas virtuales/{{VALUE:Nombre o hostname}}.md",
           "captureToActiveFile": false,
           "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Maquina virtual.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": true,
+            "template": "09_Plantillas/Maquina virtual.md"
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
         },
         {
           "id": "c4030000-0000-4000-8000-000000000001",
@@ -829,12 +910,36 @@
           "captureTo": "03_Areas/Infraestructura/Credenciales/{{VALUE:Nombre descriptivo}}.md",
           "captureToActiveFile": false,
           "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Credencial de infraestructura.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": true,
+            "template": "09_Plantillas/Credencial de infraestructura.md"
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
         },
         {
           "id": "c4040000-0000-4000-8000-000000000001",
@@ -845,12 +950,36 @@
           "captureTo": "03_Areas/Infraestructura/Servicios/{{VALUE:Nombre del servicio}}.md",
           "captureToActiveFile": false,
           "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Servicio de infraestructura.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": true,
+            "template": "09_Plantillas/Servicio de infraestructura.md"
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
         },
         {
           "id": "c4050000-0000-4000-8000-000000000001",
@@ -862,7 +991,7 @@
           "openFile": true
         }
       ],
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "c5000000-0000-4000-8000-000000000001",
@@ -900,7 +1029,13 @@
             "name": "Copiar prompt",
             "id": "c5020000-0000-4000-8000-000000000002",
             "commands": [
-              {"name": "copiar_prompt", "type": "UserScript", "id": "c5020000-0000-4000-8000-000000000003", "path": "scripts/copiar_prompt.js", "settings": {}}
+              {
+                "name": "copiar_prompt",
+                "type": "UserScript",
+                "id": "c5020000-0000-4000-8000-000000000003",
+                "path": "scripts/copiar_prompt.js",
+                "settings": {}
+              }
             ]
           }
         },
@@ -934,7 +1069,7 @@
           }
         }
       ],
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "c6000000-0000-4000-8000-000000000001",
@@ -951,12 +1086,36 @@
           "captureTo": "02_Proyectos/{{VALUE:Proyecto}}/Requisitos/{{VALUE:ID del requisito}} - {{VALUE:Título}}.md",
           "captureToActiveFile": false,
           "activeFileWritePosition": "bottom",
-          "createFileIfItDoesntExist": {"enabled": true, "createWithTemplate": true, "template": "09_Plantillas/Requisito de software.md"},
-          "format": {"enabled": false, "format": ""},
-          "insertAfter": {"enabled": false, "after": "", "insertAtEnd": false, "considerSubsections": false, "createIfNotFound": false, "createIfNotFoundLocation": "top"},
-          "newLineCapture": {"enabled": false, "direction": "below"},
-          "prepend": false, "task": false, "openFile": true,
-          "fileOpening": {"location": "tab", "direction": "vertical", "mode": "default", "focus": true}
+          "createFileIfItDoesntExist": {
+            "enabled": true,
+            "createWithTemplate": true,
+            "template": "09_Plantillas/Requisito de software.md"
+          },
+          "format": {
+            "enabled": false,
+            "format": ""
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          }
         },
         {
           "id": "c6020000-0000-4000-8000-000000000001",
@@ -968,7 +1127,7 @@
           "openFile": true
         }
       ],
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "c7000000-0000-4000-8000-000000000001",
@@ -976,7 +1135,19 @@
       "type": "Macro",
       "command": true,
       "runOnStartup": false,
-      "macro": {"name": "Archivar notas de tareas", "id": "c7000000-0000-4000-8000-000000000002", "commands": [{"name": "archivar_notas_tareas", "type": "UserScript", "id": "c7000000-0000-4000-8000-000000000003", "path": "scripts/archivar_notas_tareas.js", "settings": {}}]}
+      "macro": {
+        "name": "Archivar notas de tareas",
+        "id": "c7000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "name": "archivar_notas_tareas",
+            "type": "UserScript",
+            "id": "c7000000-0000-4000-8000-000000000003",
+            "path": "scripts/archivar_notas_tareas.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
       "id": "c7010000-0000-4000-8000-000000000001",
@@ -984,47 +1155,199 @@
       "type": "Macro",
       "command": true,
       "runOnStartup": false,
-      "macro": {"name": "Reversar notas de tareas", "id": "c7010000-0000-4000-8000-000000000002", "commands": [{"name": "reversar_notas_tareas", "type": "UserScript", "id": "c7010000-0000-4000-8000-000000000003", "path": "scripts/reversar_notas_tareas.js", "settings": {}}]}
+      "macro": {
+        "name": "Reversar notas de tareas",
+        "id": "c7010000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "name": "reversar_notas_tareas",
+            "type": "UserScript",
+            "id": "c7010000-0000-4000-8000-000000000003",
+            "path": "scripts/reversar_notas_tareas.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c3000000-0000-4000-8000-000000000001", "name": "crrb Task + Nota", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c3000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createTaskNote.js", "path": "09_Plantillas/scripts/createTaskNote.js", "settings": {}}]}
+      "id": "e673f466-a150-429f-a131-0d0e1207ed7e",
+      "name": "crrb Task + Nota",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c3000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/createTaskNote.js",
+            "path": "09_Plantillas/scripts/createTaskNote.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c4000000-0000-4000-8000-000000000001", "name": "Procesar nota", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c4000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/processNote.js", "path": "09_Plantillas/scripts/processNote.js", "settings": {}}]}
+      "id": "1515d20a-f389-4cf7-b559-60034d1e3064",
+      "name": "Procesar nota",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c4000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/processNote.js",
+            "path": "09_Plantillas/scripts/processNote.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c5000000-0000-4000-8000-000000000001", "name": "Nuevo proyecto", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c5000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/createProject.js", "path": "09_Plantillas/scripts/createProject.js", "settings": {}}]}
+      "id": "2aab04e3-f42e-4c40-bb60-dde40c5411d5",
+      "name": "Nuevo proyecto",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c5000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/createProject.js",
+            "path": "09_Plantillas/scripts/createProject.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6000000-0000-4000-8000-000000000001", "name": "Nuevo prompt", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6000000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "prompt_modal", "path": "scripts/prompt_modal.js", "settings": {}}]}
+      "id": "0c1f3492-d7aa-4a19-b199-6fca7337595b",
+      "name": "Nuevo prompt",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6000000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "prompt_modal",
+            "path": "scripts/prompt_modal.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6100000-0000-4000-8000-000000000001", "name": "Usar prompt", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6100000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "09_Plantillas/scripts/usePrompt.js", "path": "09_Plantillas/scripts/usePrompt.js", "settings": {}}]}
+      "id": "c6100000-0000-4000-8000-000000000001",
+      "name": "Usar prompt",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6100000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "09_Plantillas/scripts/usePrompt.js",
+            "path": "09_Plantillas/scripts/usePrompt.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6200000-0000-4000-8000-000000000001", "name": "Gestionar tarea", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6200000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "gestionar_tarea", "path": "scripts/gestionar_tarea.js", "settings": {}}]}
+      "id": "c6200000-0000-4000-8000-000000000001",
+      "name": "Gestionar tarea",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6200000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "gestionar_tarea",
+            "path": "scripts/gestionar_tarea.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6300000-0000-4000-8000-000000000001", "name": "Biblioteca interactiva de prompts", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6300000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "prompt_modal", "path": "scripts/prompt_modal.js", "settings": {}}]}
+      "id": "c6300000-0000-4000-8000-000000000001",
+      "name": "Biblioteca interactiva de prompts",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6300000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "prompt_modal",
+            "path": "scripts/prompt_modal.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6400000-0000-4000-8000-000000000001", "name": "Nueva categoría de prompts", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6400000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "crear_categoria_prompt", "path": "scripts/crear_categoria_prompt.js", "settings": {}}]}
+      "id": "c6400000-0000-4000-8000-000000000001",
+      "name": "Nueva categoría de prompts",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6400000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "crear_categoria_prompt",
+            "path": "scripts/crear_categoria_prompt.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6500000-0000-4000-8000-000000000001", "name": "Importar y exportar prompts", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6500000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "export_import_prompts", "path": "scripts/export_import_prompts.js", "settings": {}}]}
+      "id": "c6500000-0000-4000-8000-000000000001",
+      "name": "Importar y exportar prompts",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6500000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "export_import_prompts",
+            "path": "scripts/export_import_prompts.js",
+            "settings": {}
+          }
+        ]
+      }
     },
     {
-      "id": "c6600000-0000-4000-8000-000000000001", "name": "Importar prompts con OpenRouter", "type": "Macro", "command": true, "runOnStartup": false,
-      "macro": {"id": "c6600000-0000-4000-8000-000000000002", "commands": [{"type": "UserScript", "name": "openrouter_ingest", "path": "scripts/openrouter_ingest.js", "settings": {}}]}
+      "id": "c6600000-0000-4000-8000-000000000001",
+      "name": "Importar prompts con OpenRouter",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "id": "c6600000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "openrouter_ingest",
+            "path": "scripts/openrouter_ingest.js",
+            "settings": {}
+          }
+        ]
+      }
     }
   ],
   "inputPrompt": "single-line",

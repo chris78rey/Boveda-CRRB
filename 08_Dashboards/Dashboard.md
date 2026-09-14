@@ -4,6 +4,9 @@ cssclasses:
   - crrb-dashboard
 tags:
   - dashboard
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Dashboard general

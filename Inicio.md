@@ -4,6 +4,9 @@ cssclasses:
   - crrb-dashboard
 tags:
   - dashboard
+  - sistema/obsidian
+  - guia
+base: "[[LEEME - INSTALACION.md|LEEME - INSTALACION]]"
 ---
 
 # Centro de operaciones

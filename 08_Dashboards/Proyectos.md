@@ -5,6 +5,9 @@ cssclasses:
 tags:
   - dashboard
   - proyecto
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Portafolio de proyectos

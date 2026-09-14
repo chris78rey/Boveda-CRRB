@@ -4,6 +4,9 @@ area: infraestructura
 tags:
   - dashboard
   - infraestructura
+  - sistema/obsidian
+  - guia
+base: "[[Inicio.md|Inicio]]"
 ---
 
 # Dashboard de infraestructura

@@ -4,6 +4,8 @@ tipo: tablero
 tags:
   - proyecto
   - kanban
+  - sistema/obsidian
+base: "[[Configuracion/Ajustes y complementos.md|Ajustes y complementos]]"
 ---
 
 ## Ideas
