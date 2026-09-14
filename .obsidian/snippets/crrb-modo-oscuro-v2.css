@@ -1,41 +1,77 @@
 /* CRRB - tema oscuro accesible v2
    No aplica fuentes ni fondos directamente al canvas de Graph. */
+.theme-light,
 .theme-dark {
-  --crrb-bg: #121826;
-  --crrb-panel: #1d2635;
-  --crrb-panel-alt: #263449;
-  --crrb-text: #fff7e6;
-  --crrb-muted: #d9e2ec;
-  --crrb-orange: #ffb000;
-  --crrb-aqua: #62e6d2;
-  --crrb-border: #8ea4bd;
+  --font-text: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
+  --font-interface: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
+  --font-monospace: "Cascadia Mono", "DejaVu Sans Mono", monospace;
+}
+
+.theme-light {
+  --background-primary: #FFFFFF;
+  --background-primary-alt: #FFFFFF;
+  --background-secondary: #FFFFFF;
+  --background-secondary-alt: #FFFFFF;
+  --background-modifier-hover: #F0F0F0;
+  --background-modifier-active-hover: #E0E0E0;
+  --background-modifier-border: #000000;
+  --background-modifier-border-hover: #000000;
+  --background-modifier-border-focus: #000000;
+  --text-normal: #000000;
+  --text-muted: #000000;
+  --text-faint: #000000;
+  --text-accent: #000000;
+  --text-accent-hover: #000000;
+  --text-on-accent: #FFFFFF;
+  --link-color: #000000;
+  --link-color-hover: #000000;
+  --interactive-normal: #FFFFFF;
+  --interactive-hover: #F0F0F0;
+  --interactive-accent: #000000;
+  --interactive-accent-hover: #000000;
+  --caret-color: #000000;
+  --graph-text: #000000;
+  --graph-line: #000000;
+  --graph-node: #000000;
+  --graph-node-focused: #FFFFFF;
+  --graph-node-tag: #000000;
+  --graph-node-attachment: #000000;
+  --graph-node-unresolved: #000000;
+}
+
+.theme-dark {
+  --crrb-bg: #000000;
+  --crrb-panel: #000000;
+  --crrb-panel-alt: #000000;
+  --crrb-text: #FFFFFF;
+  --crrb-muted: #FFFFFF;
+  --crrb-orange: #FFFFFF;
+  --crrb-aqua: #FFFFFF;
+  --crrb-border: #FFFFFF;
   --background-primary: var(--crrb-bg);
   --background-primary-alt: var(--crrb-panel);
   --background-secondary: var(--crrb-panel);
   --background-secondary-alt: var(--crrb-panel-alt);
-  --background-modifier-hover: #334760;
-  --background-modifier-active-hover: #3b506b;
+  --background-modifier-hover: #202020;
+  --background-modifier-active-hover: #303030;
   --background-modifier-border: var(--crrb-border);
   --background-modifier-border-hover: var(--crrb-orange);
   --background-modifier-border-focus: var(--crrb-aqua);
-  --background-modifier-form-field: #101621;
-  --background-modifier-form-field-highlighted: #263449;
+  --background-modifier-form-field: #000000;
+  --background-modifier-form-field-highlighted: #202020;
   --text-normal: var(--crrb-text);
   --text-muted: var(--crrb-muted);
-  --text-faint: #b8c7d7;
+  --text-faint: #FFFFFF;
   --text-accent: var(--crrb-orange);
-  --text-accent-hover: #ffd166;
-  --text-on-accent: #121826;
+  --text-accent-hover: #FFFFFF;
+  --text-on-accent: #000000;
   --link-color: var(--crrb-aqua);
-  --link-color-hover: #a6fff1;
-  --interactive-normal: #263449;
-  --interactive-hover: #334760;
+  --link-color-hover: #FFFFFF;
+  --interactive-normal: #000000;
+  --interactive-hover: #202020;
   --interactive-accent: var(--crrb-orange);
-  --interactive-accent-hover: #ffc94d;
+  --interactive-accent-hover: #FFFFFF;
   --caret-color: var(--crrb-orange);
-  --font-text: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
-  --font-interface: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
-  --font-monospace: "Cascadia Mono", "DejaVu Sans Mono", monospace;
   --tab-background-active: var(--crrb-panel-alt);
   --tab-container-background: var(--crrb-panel);
   --tab-text-color: var(--crrb-muted);
@@ -46,7 +82,7 @@
   --tab-outline-color: var(--crrb-border);
   --tab-outline-width: 1px;
   --graph-text: var(--crrb-orange);
-  --graph-line: #9aabc0;
+  --graph-line: #FFFFFF;
   --graph-node: var(--crrb-orange);
   --graph-node-focused: var(--crrb-aqua);
   --graph-node-tag: var(--crrb-orange);
@@ -441,4 +477,18 @@
 .theme-dark .app-container :focus-visible {
   outline: 2px solid var(--crrb-aqua);
   outline-offset: 2px;
+}
+
+/* Resalta los enlaces al pasar el cursor o recibir foco. */
+.theme-light a:hover,
+.theme-light a:focus-visible,
+.theme-dark a:hover,
+.theme-dark a:focus-visible {
+  background-color: #FF8C00;
+  color: #000000 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+  outline: 2px solid #000000;
+  outline-offset: 1px;
 }
