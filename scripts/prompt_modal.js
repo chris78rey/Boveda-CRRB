@@ -601,6 +601,8 @@ module.exports = async ({ app }) => {
   const close = button("Cerrar", "crrb-quiet"); close.style.marginTop = "18px"; close.onclick = () => { overlay.remove(); style.remove(); };
   const refreshLibrary = async () => { entries = await loadEntries(); if (selected && !entries.some((entry) => entry.path === selected.path)) selected = null; renderLibrary(); notice("Biblioteca actualizada."); };
   const renderLibrary = () => {
+    const searchHadFocus = document.activeElement === search;
+    const searchCursor = search.selectionStart;
     panel.replaceChildren();
     const heading = el("div", "", "crrb-prompt-heading"); heading.append(el("h2", "Biblioteca visual de prompts")); const closeTop = button("× Cerrar", "crrb-quiet"); closeTop.onclick = close.onclick; heading.appendChild(closeTop); panel.append(heading, el("p", "Selecciona un prompt individual o un grupo, completa sus datos y revisa la vista previa antes de copiar.", "crrb-prompt-muted"));
     const toolbar = el("div", "", "crrb-prompt-toolbar");
@@ -611,6 +613,7 @@ module.exports = async ({ app }) => {
     if (!filtered.length) list.replaceChildren(el("p", "No hay elementos que coincidan con el filtro.", "crrb-prompt-empty"));
     else { list.replaceChildren(); filtered.forEach((entry) => { const card = button(""); card.className = "crrb-prompt-card"; const title = el("div", "", "crrb-prompt-output-header"); title.append(el("strong", entry.name)); const codeButton = button(`Código ${deleteCode(entry)}`); codeButton.onclick = async (event) => { event.stopPropagation(); try { await copyText(deleteCode(entry)); notice(`Código ${deleteCode(entry)} copiado.`); } catch (error) { notice(error.message); } }; title.appendChild(codeButton); card.append(title, el("small", `${entry.type === "group" ? "Grupo" : "Individual"} · ${entry.category}`), el("small", entry.path)); card.onclick = () => { selected = entry; Object.keys(values).forEach((key) => delete values[key]); if (entry.type === "group") renderGroupDetail(entry, detail); else renderPromptDetail(entry, detail); }; list.appendChild(card); }); }
     panel.append(list, detail, close);
+    if (searchHadFocus) { search.focus(); search.setSelectionRange(searchCursor, searchCursor); }
     if (selected && entries.some((entry) => entry.path === selected.path)) { const current = entries.find((entry) => entry.path === selected.path); if (current.type === "group") renderGroupDetail(current, detail); else renderPromptDetail(current, detail); }
     category.onchange = renderLibrary; type.onchange = renderLibrary; search.oninput = renderLibrary;
     addCategory.onclick = async () => { await createCategory(); renderLibrary(); };
