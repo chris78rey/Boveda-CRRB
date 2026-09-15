@@ -1314,6 +1314,25 @@
       }
     },
     {
+      "id": "c6700000-0000-4000-8000-000000000001",
+      "name": "Exportar biblioteca portable (ZIP)",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Exportar biblioteca portable (ZIP)",
+        "id": "c6700000-0000-4000-8000-000000000002",
+        "commands": [
+          {
+            "type": "UserScript",
+            "name": "exportar_biblioteca_portable",
+            "path": "scripts/exportar_biblioteca_portable.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
       "id": "c6500000-0000-4000-8000-000000000001",
       "name": "Importar y exportar prompts",
       "type": "Macro",
